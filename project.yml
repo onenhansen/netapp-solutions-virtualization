@@ -1,5 +1,5 @@
 settings:
-  name: "NetApp Virtualization solutions"
+  name: "Virtualization solutions"
   internal:
     pdf_enabled: true
   prod:
