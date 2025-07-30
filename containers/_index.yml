@@ -1,0 +1,56 @@
+indexpage:
+  title: NetApp Container Solutions
+  lead: "NetApp Container Solutions are validated deployments of many popular Kubernetes-based container orchestrators and their integration with NetApp storage management systems and software."
+  summary: "NetApp Container Solutions are validated deployments of many popular Kubernetes-based container orchestrators and their integration with NetApp storage management systems and software."
+  tiles:
+#
+    - title: "Anthos with NetApp"
+      links:
+        - title: "Solution Overview"
+          url: a-w-n_solution_overview.html
+        - title: "Anthos Overview"
+          url: a-w-n_overview_anthos.html
+        - title: "NetApp Storage Integrations"
+          url: a-w-n_overview_storint.html
+        - title: "Use Cases"
+          url: a-w-n_use_cases.html
+        - title: "Videos and Demos"
+          url: a-w-n_videos_and_demos.html
+#
+    - title: "Red Hat OpenShift with NetApp"
+      links:
+        - title: "Solution Overview"
+          url: rh-os-n_solution_overview.html
+        - title: "Red Hat OpenShift Overview"
+          url: ../openshift/os-overview.html
+        - title: "NetApp Storage Integrations"
+          url: ../openshift/os-storint-overview.html
+        - title: "Use Cases"
+          url: rh-os-n_use_cases.html
+        - title: "Videos and Demos"
+          url: ../openshift/os-videos-and-demos.html
+#
+    - title: "VMware Tanzu with NetApp"
+      links:
+        - title: "Solution Overview"
+          url: vtwn_solution_overview.html
+        - title: "VMware Tanzu Overview"
+          url: vtwn_overview_vmware_tanzu.html
+        - title: "NetApp Storage Integrations"
+          url: vtwn_overview_storint.html
+        - title: "Videos and Demos"
+          url: vtwn_videos_and_demos.html
+#
+    - title: "About Our Resources for Containers"
+      links:
+        - title: "NetApp Trident"
+          url: https://netapp.io/persistent-storage-provisioner-for-kubernetes/
+#
+    - title: "About Our Partner Solutions"
+      links:
+        - title: "Anthos Website"
+          url: https://cloud.google.com/anthos
+        - title: "Red Hat OpenShift Website"
+          url: https://www.redhat.com/en/technologies/cloud-computing/openshift
+        - title: "VMware Tanzu Website"
+          url: https://tanzu.vmware.com/

@@ -1,0 +1,39 @@
+indexpage:
+  title: NetApp Solutions for Hyper-V Virtualization
+  lead: "NetApp Hyper-V Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Hyper-V."
+  summary: "NetApp Hyper-V Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Hyper-V."
+  tiles:
+    - title: "Getting Started"
+      links:
+        - title: "Introduction to Hyper-V on Windows Server"
+          url: https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
+        - title: "Hyper-V Technology Overview"
+          url: https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview       
+#
+    - title: "Deploying Microsoft Hyper-V on NetApp Storage"
+      links:
+        - title: "Overview"
+          url: hyperv-deploy.html
+        - title: "Pre-requisites for deployment"
+          url: hyperv-deploy-prereqs.html
+        - title: "Considerations for deployment"
+          url: hyperv-deploy-considerations.html
+        - title: "Data Protection"
+          url: hyperv-deploy-data-protection.html
+        - title: "Conclusion"
+          url: hyperv-deploy-conclusion.html
+        - title: "Migration using FlexClone and Powershell"
+          url: hyperv-deploy-script.html
+#
+    - title: "Solutions for Hyper-V with NetApp"
+      links:
+        - title: "SnapMirror Active Sync with Stretch Clusters"
+          url: hyperv-smas.html
+        - title: "NetApp SMI-S Provider support for Microsoft Hyper-V"
+          url: hyperv-smis.html
+#
+    - title: "Additional Resources"
+      links:
+        - title: "Deployment guidelines and storage best practices for Hyper-V"
+          url: https://docs.netapp.com/us-en/ontap-apps-dbs/microsoft/win_overview.html
+#
