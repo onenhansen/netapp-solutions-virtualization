@@ -1,0 +1,153 @@
+section: vmware
+title: "VMware Virtualization"
+url: /vmware/index.html
+entries:
+  - title: "Getting Started with NetApp and VMware"
+    pdf-filename: "Getting Started with NetApp and VMware"
+    entries: 
+      - title: "Overview"
+        url: /vmware/vmw-getting-started-overview.html
+      - title: "NetApp Storage Options"
+        url: /vmware/vmw-getting-started-ntap-options.html
+      - title: "vSphere Metro Storage Cluster"
+        url: /vmware/vmw-getting-started-vmsc.html        
+      - title: "ONTAP Tools for VMware (OTV)"
+        url: /vmware/vmw-getting-started-otv.html
+      - title: "VMware Automation with ONTAP"
+        url: /vmware/vmw-getting-started-automation.html
+      - title: "SnapCenter"
+        url: /vmware/vmw-getting-started-snapcenter.html
+      - title: "Hybrid Multi-Cloud"
+        url: /vmware/vmw-getting-started-hmc.html
+      - title: "Addressing Security and Ransomware for VMware Workloads"
+        url: /vmware/vmw-getting-started-security.html
+      - title: "Migrating VM workloads to ONTAP"
+        url: /vmware/vmw-getting-started-migration.html
+      - title: "BlueXP Disaster Recovery (DRaaS)"
+        url: /vmware/vmw-dr-gs.html      
+      - title: "Data Infrastructure Insights (DII)"
+        url: /vmware/vmw-getting-started-dii.html
+      - title: "VM Data Collector (VMDC)"
+        url: /vmware/vmw-getting-started-vmdc.html
+# # # #
+  - title: "VMware Cloud Foundation (VCF) on NetApp"
+    pdf-filename: "VMware Cloud Foundation (VCF) on NetApp"
+    entries:
+      - title: "Overview"
+        url: /vmware/vmw-vcf-overview.html
+      - title: "Migrate Existing Infrastructure to VCF"
+        entries:
+          - title: "Convert Existing vCenter Instance to VCF Management Domain (NFS)"
+            url: /vmware/vmw-vcf-mgmt-nfs.html
+          - title: "Convert vCenter Instance (FC datastore) to VCF Management Domain"
+            url: /vmware/vmw-vcf-mgmt-fc.html
+#
+      - title: "Provision VCF Environment with Principal Storage"
+        entries:
+          - title: "Overview"
+            url: /vmware/vmw-vcf-provision.html
+          - title: "Management Domain with FC"
+            url: /vmware/vmw-vcf-mgmt-principal-fc.html
+          - title: "Management Domain with NFS"
+            url: /vmware/vmw-vcf-mgmt-principal-nfs.html
+          - title: "Virtual Infrastructure Workload Domain with FC"
+            url: /vmware/vmw-vcf-viwld-principal-fc.html     
+          - title: "Virtual Infrastructure Workload Domain with NFS"
+            url: /vmware/vmw-vcf-viwld-principal-nfs.html      
+#
+      - title: "Expand VCF Environment with Supplemental Storage"
+        entries:
+          - title: "Overview"
+            url: /vmware/vmw-vcf-expand.html
+          - title: "Management Domain with iSCSI"
+            url: /vmware/vmw-vcf-mgmt-supplemental-iscsi.html
+          - title: "Management Domain with FC"
+            url: /vmware/vmw-vcf-mgmt-supplemental-fc.html
+          - title: "Virtual Infrastructure Workload Domain with vVols (iSCSI)"
+            url: /vmware/vmw-vcf-viwld-supp-iscsi-vvols.html
+          - title: "Virtual Infrastructure Workload Domain with vVols (NFS)"
+            url: /vmware/vmw-vcf-viwld-supp-nfs-vvols.html
+          - title: "Virtual Infrastructure Workload Domain with NVMe/TCP"
+            url: /vmware/vmw-vcf-viwld-supp-nvme.html
+          - title: "Virtual Infrastructure Workload Domain with FC"
+            url: /vmware/vmw-vcf-viwld-supp-fc.html
+#      
+      - title: "Protect Workloads with NetApp SnapCenter"      
+        entries:
+          - title: "Protect VCF Workload Domain"
+            url: /vmware/vmw-vcf-scv-viwld.html
+          - title: "Protect VCF Multiple Workload Domains"
+            url: /vmware/vmw-vcf-scv-multiwkld-protection.html
+          - title: "Protect VCF Workload Domain with NVMe"
+            url: /vmware/vmw-vcf-scv-nvme.html
+          - title: "Protecting VCF Workloads with SnapCenter"
+            url: /vmware/vmw-vcf-protect-sc.html
+          - title: "Protecting VCF Workloads with VMware vSphere Metro Storage Cluster (vMSC)"
+            url: /vmware/vmw-vcf-protect-vmsc.html
+          - title: "Disaster Recovery using BlueXP DRaaS"
+            url: /vmware/vmw-vcf-disaster-recovery.html
+          - title: "3-2-1 Data Protection for VMware with SnapCenter Plug-in and BlueXP backup and recovery for VMs"
+            url: /vmware/vmw-vcf-321-data-protection.html
+# 
+      - title: "High Availability with VMware vSphere Metro Storage Cluster (vMSC)" 
+        entries: 
+          - title: "Stretch Cluster for Management Domain using SnapMirror active sync"
+            url: /vmware/vmw-vcf-vmsc-mgmt-smas.html
+          - title: "Stretch Cluster for Management Domain using MetroCluster"
+            url: /vmware/vmw-vcf-vmsc-mgmt-mcc.html
+          - title: "Stretch Cluster for VI Workload Domain using SnapMirror active sync"
+            url: /vmware/vmw-vcf-vmsc-viwld-smas.html
+          - title: "Stretch Cluster for VI Workload Domain using MetroCluster"
+            url: /vmware/vmw-vcf-vmsc-viwld-mcc.html
+# 
+      - title: "Migrate VMs"
+        url: /migration/migrate-vms-to-ontap-datastore.html
+      - title: "Disaster Recovery with BlueXP DRaaS"
+        entries: 
+          - title: "DR using BlueXP DRaaS for VMFS Datastores"
+            url: /vmware/vmw-disaster-recovery-vmfs.html
+          - title: "DR using BlueXP DRaaS for NFS Datastores"
+            url: /vmware/vmw-disaster-recovery-nfs.html
+#
+      - title: "Ransomware Protection"
+        url: /vmware/vmw-nfs-arp.html
+      - title: "Monitor Workloads with Data Infrastructure Insights (DII)"
+        url: /vmware/vmw-dii.html
+# # # #
+  - title: "VMware vSphere Foundation (VVF) on NetApp"
+    pdf-filename: "VMware vSphere Foundation (VVF) on NetApp"
+    entries:
+      - title: "Overview"
+        url: /vmware/vmw-vvf-overview.html
+      - title: "VMware Virtualization for ONTAP: Best Practices"
+        url: /vmware/vmw-vsphere-with-ontap.html
+      - title: "What's New with VMware vSphere 8"
+        url: /vmware/vmw-vsphere8-overview.html
+      - title: "VMFS Deployment Guide for vSphere 8"
+        url: /vmware/vmw-vmfs-deploy.html    
+      - title: "Modern & Cloud-Connected All-Flash For vSphere 8"
+        url: /vmware/vmw-vsphere8.html
+      - title: "NFS nConnect Feature with NetApp and VMware"
+        url: /vmware/vmw-vsphere8-nfs-nconnect.html
+      - title: "Manage NFS Datastores with OTV 10"
+        url: /vmware/vmw-nfs-otv10.html
+      - title: "Disaster Recovery of NFS Datastores with VMware Site Recovery Manager"
+        url: /vmware/vmw-nfs-vlsr.html    
+      - title: "VMware vSphere Metro Storage Cluster with SnapMirror active sync"
+        url: /vmware//vmware-vmsc-with-smas.html
+      - title: "Convert SnapMirror active sync asymmetric active/active to symmetric active/active with VMSC"
+        url: /vmware//vmware-smbc-cvt-smas.html
+
+# # # #
+  - title: "VMware Virtual Volumes (vVols) on NetApp"
+    pdf-filename: "VMware Virtual Volumes (vVols) on NetApp"
+    entries:
+      - title: "Using vVols with ONTAP"
+        url: /vmware/vmw-vvol-overview.html
+# # # #
+  - title: "Additional Information"
+    entries:
+      - title: "Virtual Machine Data Collector"
+        url: /vmware//vmdc.html
+      - title: "Videos"
+        url: /vmware/vmw-demos-videos.html

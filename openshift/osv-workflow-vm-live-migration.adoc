@@ -1,0 +1,43 @@
+---
+sidebar: sidebar
+permalink: openshift/osv-workflow-vm-live-migration.html
+keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization
+summary: Red Hat OpenShift Virtualization with NetApp ONTAP
+---
+
+= Migrate a VM between two nodes in a Red Hat OpenShift cluster
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Migrate a VM in OpenShift Virtualization between two nodes in the cluster with no downtime. This procedure includes confirming the disks use RWX-compatible storage classes, initiating the migration, and monitoring the progress.
+
+== VM Live Migration
+
+Live Migration is a process of migrating a VM instance from one node to another in an OpenShift cluster with no downtime. For live migration to work in an OpenShift cluster, VMs must be bound to PVCs with shared ReadWriteMany access mode. Trident backends configured using ontap-nas drivers support RWX access mode for FileSystem protocols nfs and smb. Refer to the documentation link:https://docs.netapp.com/us-en/trident/trident-use/ontap-nas.html[here]. Trident backends configured using ontap-san drivers support RWX access mode for block volumeMode for iSCSI and NVMe/TCP protocols. Refer to the documentation link:https://docs.netapp.com/us-en/trident/trident-use/ontap-san.html[here].
+
+Therefore, for live migration to succeed, the VMs must be provisioned with disks (boot disks and additional hot plug disks) with PVCs using ontap-nas or ontap-san (volumeMode: Block) storage classes. When the PVCs are created, Trident creates ONTAP volumes in an SVM which is NFS-enabled or iSCSI enabled.
+
+image:redhat-openshift-055.png[VM Live Migration architecture]
+
+To perform a live migration of a VM that has been created previously and is in a Running state perform the following steps:
+
+.   Select the VM that you want to live-migrate.
+.   Click on *Configuration* tab.
+.   Ensure that all the disks of the VM are created using Storage classes that can support RWX access mode.
+.   Click on *Actions* on the right corner and then select *Migrate*.
+.   To look at the progression of the Migration, go to Virtualization > Overview on the left hand side menu and then click on the *Migrations* tab. 
+The Migration of the VM will transition from *Pending* to *Scheduling* to *Succeeded*
+
+
+NOTE: A VM instance in an OpenShift cluster automatically migrates to another node when the original node is placed into maintenance mode if the evictionStrategy is set to LiveMigrate.
+
+image:rh-os-n-use-case-vm-live-migrate-001.png[VM Live Migrate start]
+
+image:rh-os-n-use-case-vm-live-migrate-002.png[VM Live Migrate Succeeded]
+
+
+// NetApp Solutions restructuring (jul 2025) - renamed from containers/rh-os-n_use_case_openshift_virtualization_workflow_vm_live_migration.adoc

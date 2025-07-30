@@ -1,0 +1,35 @@
+---
+sidebar: sidebar
+permalink: hyperv/hyperv-deploy.html
+keywords: hyperv, hyper-v, deploy, netapp, virtualization, overview
+summary: "The solution provides the steps required to deploy Hyper-V on NetApp storage"   
+---
+
+= Learn about Microsoft Hyper-V deployment with ONTAP storage systems
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Computer virtualization with Microsoft is enabled through the Hyper-V role of Windows Server. Learn how to create and manage a virtualized computing environment using ONTAP storage systems and Windows Server capabilities.
+
+The Windows Server platform uses the Hyper-V role to provide virtualization technology. Hyper-V is one of many optional roles that are offered with Windows Server. 
+
+== Overview
+
+The Hyper-V role enables us to create and manage a virtualized computing environment by using virtualization technology built into Windows Server. The Hyper-V technology virtualizes hardware to provide an environment in which you can run multiple operating systems at the same time on one physical computer. Hyper-V enables you to create and manage virtual machines and their resources. Each virtual machine is an isolated, virtualized computer system that can run its own operating system. Hyper-V provides infrastructure to virtualize applications and workloads that supports a variety of business goals aimed at improving efficiency and reducing costs which is a perfect alternative to VMware vSphere, especially when organizations are looking for co-existence of multiple hypervisors during the current market conditions.  
+
+== Audience
+
+This document describes the architecture and deployment procedures for the Hyper-V Cluster configuration with the NetApp ONTAP systems. The intended audience for this document includes sales engineers, field consultants, professional services, IT managers, partner engineers, and customers who want to deploy Hyper-V as the primary or as an alternate hypervisor.  
+
+== Architecture 
+
+The architecture described in this document specifically includes Microsoft Windows Server 2022 and Hyper-V virtualization. NetApp strongly recommends virtualization software and infrastructure management software as part of every deployment. The configuration uses the best practices for each component to enable a reliable, enterprise-class infrastructure. 
+
+== Use Case Summary 
+
+This document describes the deployment procedures and best practices to set up Hyper-V cluster to optimally perform as a workload on Microsoft Windows Server 2022 using NetApp All-flash FAS and ASA arrays models. The server operating system/hypervisor is Microsoft Windows Server 2022. The guidance covers NetApp storage systems that serve data over storage area network (SAN) and network-attached storage (NAS) protocols. 
+

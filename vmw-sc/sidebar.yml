@@ -1,0 +1,15 @@
+section: vmw-sc
+title: "VMware Sovereign Cloud"
+url: /vmw-sc/index.html
+entries:
+  - title: "VMware Resources for Sovereign Cloud"
+    url: /vmw-sc/vmware-resources.html
+#
+  - title: "NetApp and VMware Sovereign Cloud"
+    pdf-filename: "NetApp and VMware Sovereign Cloud"
+    entries:
+        - title: "Sovereign Cloud Overview"
+          url: /vmware/vmw-sovereign-cloud.html
+        - title: "Uses Cases with NetApp"
+          url: /vmware/vmw-sovereign-cloud-use-cases.html
+#
