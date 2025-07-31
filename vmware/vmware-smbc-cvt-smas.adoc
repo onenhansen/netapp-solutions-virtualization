@@ -25,7 +25,7 @@ Combining vMSC with SM active sync ensures data consistency and immediate failov
 
 SM active sync, previously known as SnapMirror Business Continuity (SMBC), enables business services to continue operating even through a complete site failure, supporting applications to fail over transparently using a secondary copy. Beginning with ONTAP 9.15.1, SM active sync supports a symmetric active/active capability. Symmetric active/active enables read and write I/O operations from both copies of a protected LUN with bidirectional synchronous replication so that both LUN copies can serve I/O operations locally. 
 
-This document shows you the steps of how to convert SM active sync asymmetric active/active to SM active sync symmetric active/active in a VMware stretch cluster environment, in other words converts a SM active sync from an automated failover policy to automated failover-duplex policy. For the details of how to setup the vMSC with SnapMirror active sync (SM-as) utilizing System Manager and ONTAP Tools, check link:https://docs.netapp.com/us-en/netapp-solutions/vmware/vmware-vmsc-with-smas.html[VMware vSphere Metro Storage Cluster with SnapMirror active sync].
+This document shows you the steps of how to convert SM active sync asymmetric active/active to SM active sync symmetric active/active in a VMware stretch cluster environment, in other words converts a SM active sync from an automated failover policy to automated failover-duplex policy. For the details of how to setup the vMSC with SnapMirror active sync (SM-as) utilizing System Manager and ONTAP Tools, check link:vmw-vmsc-with-smas.html[VMware vSphere Metro Storage Cluster with SnapMirror active sync].
 
 == Prerequisites
 

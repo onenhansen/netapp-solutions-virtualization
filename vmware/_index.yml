@@ -5,8 +5,6 @@ indexpage:
   tiles:
     - title: "Getting Started with NetApp and VMware"
       links:
-        - title: "VMware and NetApp: Better Together"
-          url: /vmware-netapp.html
         - title: "Overview"
           url: vmw-getting-started-overview.html
         - title: "NetApp Storage Options"

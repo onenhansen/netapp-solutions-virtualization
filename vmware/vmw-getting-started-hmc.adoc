@@ -19,7 +19,7 @@ Discover how NetApp and VMware streamline hybrid multicloud setups by integratin
 
 This approach enables businesses to easily migrate workloads, optimize resource usage, and maintain consistent operations across both environments.
 
-For more information on hybrid cloud scenarios with VMware and NetApp, see link:https://docs.netapp.com/us-en/netapp-solutions/ehc/ehc-overview.html#vmware-cloud-options-in-public-cloud[Overview of NetApp Hybrid Multicloud with VMware].
+For more information on hybrid cloud scenarios with VMware and NetApp, see link:https://docs.netapp.com/us-en/netapp-solutions-cloud/vmware/vmw-hybrid-overview.html#vmware-cloud-options-in-public-cloud[Overview of NetApp Hybrid Multicloud with VMware^].
 
 == VMware Deployment Scenarios with NetApp
 

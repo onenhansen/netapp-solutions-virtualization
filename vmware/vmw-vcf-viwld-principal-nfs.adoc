@@ -25,7 +25,7 @@ In this use case we outline the procedure to configure an NFS datastore on ONTAP
 
 For more information, refer to the NFS v3 Reference Guide for vSphere 8.
 
-For more information on using Fibre Channel with NetApp storage systems, refer to https://docs.netapp.com/us-en/netapp-solutions/vmware/vmware_nfs_overview.html[NFS v3 Reference Guide for vSphere 8].
+For more information on using Fibre Channel with NetApp storage systems, refer to link:vmw-vvf-overview.html[NFS v3 Reference Guide for vSphere 8].
 
 == Scenario Overview
 
@@ -60,7 +60,7 @@ For information on configuring ONTAP storage systems refer to the link:https://d
 
 For information on configuring VCF refer to link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf.html[VMware Cloud Foundation Documentation].
 
-For more information on using NFS with vSphere clusters, refer to the https://docs.netapp.com/us-en/netapp-solutions/vmware/vmware_nfs_overview.html[NFS v3 Reference Guide for vSphere 8].
+For more information on using NFS with vSphere clusters, refer to the link:vmw-vvf-overview.html[NFS v3 Reference Guide for vSphere 8].
 
 {nbsp}
 image:vmware-vcf-aff-070.png[NFS architecture diagram]

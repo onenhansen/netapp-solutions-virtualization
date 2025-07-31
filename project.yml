@@ -18,24 +18,17 @@ product-family:
 
 sidebar:
   entries:
-    - title: "NetApp Solutions Documentation"
+    - title: "Virtualization solutions"
       url: /index.html
     - section: vmw-sc
     - section: virtualization
     - section: containers
 #
-    - title: "SAP & SAP HANA"
-      url: https://docs.netapp.com/us-en/netapp-solutions-sap/
-    - title: "FlexPod Solutions"
-      url: https://docs.netapp.com/us-en/flexpod/
- #
     - title: "Video Collection"
       url: /videos.html
     - title: "Blogs"
       url: /blogs.html
     - title: "Change Log"
       url: /whats-new.html
-    - title: "About NetApp Solutions"
-      url: /about.html
     - title: "Legal notices"
       url: /legal-notices.html

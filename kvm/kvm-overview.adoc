@@ -131,7 +131,7 @@ Based on storage protocol used, additional packages needs to be available on the
 
 Storage pool details are stored in XML file at /etc/libvirt/storage.
 
-To import VM data from a vSphere environment, Look into https://docs.netapp.com/us-en/netapp-solutions/vm-migrate/shift-toolkit-overview.html[Shift toolkit].
+To import VM data from a vSphere environment, look into link:../migration/shift-toolkit-overview.html[Shift toolkit].
 
 == Network
 
