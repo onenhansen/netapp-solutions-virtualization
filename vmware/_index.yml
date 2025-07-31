@@ -12,7 +12,7 @@ indexpage:
         - title: "Videos"
           url: vmw-demos-videos.html
         - title: "Blogs"
-          url: /../blogs.html#vmware
+          url: /../blogs.html
 #
     - title: "Setting Up VMware Cloud Foundation (VCF) on NetApp"
       links: 
