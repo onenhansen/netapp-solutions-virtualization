@@ -55,15 +55,6 @@ indexpage:
         - title: "VMware vSphere Metro Storage Cluster with SnapMirror active sync"
           url: vmw-vmsc-with-smas.html
 #
-    - title: "VMware Cloud Offerings"
-      links:
-        - title: "NetApp on AWS VMware Cloud (VMC)"
-          url: /../ehc/aws-vmc.html
-        - title: "NetApp on Azure VMware Solution (AVS)"
-          url: /../ehc/azure-avs.html
-        - title: "NetApp on Google Cloud VMware Engine (GCVE)"
-          url: /../ehc/gcp-gcve.html
-#
     - title: "Tools and Utilities"
       links:
         - title: "Virtual Machine Data Collector"

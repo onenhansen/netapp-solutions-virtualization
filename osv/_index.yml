@@ -6,64 +6,64 @@ indexpage:
     - title: "Overview"
       links:
         - title: "Red Hat OpenShift Virtualization"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_overview.html
+          url: ../openshift/osv-overview.html
         - title: "NetApp Storage Systems"
-          url: ../containers/rh-os-n_overview_netapp.html
+          url: ../openshift/os-netapp-overview.html
         - title: "NetApp Storage Integration"
-          url: ../containers/rh-os-n_overview_storint.html
+          url: ../openshift/os-storint-overview.html
         - title: "Best Practices Recommendations"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_bpg.html
+          url: ../openshift/os-osv-bpg.html
         - title: "Blogs"
           url: ../blogs.html#containers-osv
         - title: "Videos"
-          url: ../containers/rh-os-n_videos_and_demos.html
+          url: ../openshift/os-videos-and-demos.html
 #
     - title: "Deployment"
       links:
         - title: "Overview"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_deployment_prerequisites.html
+          url: ../openshift/osv-deployment-prerequisites.html
         - title: "OpenShift Virtualization Installation"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_deployment.html
+          url: ../openshift/osv-deployment.html
         - title: "VM Creation"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_workflow_create_vm.html
+          url: ../openshift/osv-workflow-create-vm.html
         - title: "VM Cloning"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_workflow_clone_vm.html
+          url: ../openshift/osv-workflow-clone-vm.html
         - title: "VM Creation from a Snapshot"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_workflow_vm_from_snapshot.html
+          url: ../openshift/osv-workflow-vm-from-snapshot.html
 #
     - title: "VM Migration"
       links:
         - title: "VM Migration from VMware"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_workflow_vm_migration_using_mtv.html
+          url: ../openshift/osv-workflow-vm-migration-mtv.html
         - title: "VM Live Migration"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_workflow_vm_live_migration.html
+          url: ../openshift/osv-workflow-vm-live-migration.html
 #
     - title: "Data Protection using Trident protect"
       links:
         - title: "Overview"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_tp_dp_overview.html
+          url: ../openshift/osv-vm-dp-using-tp.html
 #
     - title: "Data Protection using 3rd party"
       links:
         - title: "Overview"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_tp_dp_overview.html
+          url: ../openshift/osv-vm-dp-using-tp.html
         - title: "OADP Installation"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_dataprotection_installation.html
+          url: ../openshift/osv-oadp-installation.html
         - title: "Backup using Velero"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_dataprotection_backup.html
+          url: ../openshift/osv-vm-dp-using-velero.html
         - title: "Restore using Velero"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_dataprotection_restore.html
+          url: ../openshift/osv-vm-restore-using-velero.html
         - title: "Deleting Backups and Restores"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_dataprotection_delete.html
+          url: ../openshift/osv-vm-dp-delete-using-velero.html
 #
     - title: "Monitoring"
       links:
         - title: "Overview"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_ci_overview.html
+          url: ../openshift/os-ci-overview.html
         - title: "Cloud Insights Integration"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_ci_integration.html
+          url: ../openshift/os-ci-integration.html
         - title: "Sample Monitoring"
-          url: ../containers/rh-os-n_use_case_openshift_virtualization_ci_samples.html
+          url: ../openshift/os-ci-samples.html
 #
     - title: "Additional Resources"
       links:
