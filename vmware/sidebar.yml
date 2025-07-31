@@ -134,9 +134,9 @@ entries:
       - title: "Disaster Recovery of NFS Datastores with VMware Site Recovery Manager"
         url: /vmware/vmw-nfs-vlsr.html    
       - title: "VMware vSphere Metro Storage Cluster with SnapMirror active sync"
-        url: /vmware//vmware-vmsc-with-smas.html
+        url: /vmware/vmw-vmsc-with-smas.html
       - title: "Convert SnapMirror active sync asymmetric active/active to symmetric active/active with VMSC"
-        url: /vmware//vmware-smbc-cvt-smas.html
+        url: /vmware/vmware-smbc-cvt-smas.html
 
 # # # #
   - title: "VMware Virtual Volumes (vVols) on NetApp"
@@ -148,6 +148,6 @@ entries:
   - title: "Additional Information"
     entries:
       - title: "Virtual Machine Data Collector"
-        url: /vmware//vmdc.html
+        url: /assess/vmw-vmdc.html
       - title: "Videos"
         url: /vmware/vmw-demos-videos.html
