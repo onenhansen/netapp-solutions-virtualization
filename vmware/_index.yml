@@ -57,8 +57,6 @@ indexpage:
 #
     - title: "VMware Cloud Offerings"
       links:
-        - title: "NetApp Hybrid Multicloud with VMware"
-          url: /../ehc/index.html
         - title: "NetApp on AWS VMware Cloud (VMC)"
           url: /../ehc/aws-vmc.html
         - title: "NetApp on Azure VMware Solution (AVS)"
