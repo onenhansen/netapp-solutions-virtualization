@@ -19,7 +19,7 @@ Migrating VMware workloads to ONTAP improves data management and performance wit
 
 This migration enables seamless integration, improved data protection, and greater flexibility in managing virtualized environments, ensuring a smooth transition with minimal downtime. 
 
-For more information on migrating VMware workloads to ONTAP backed datastores, see the link:https://docs.netapp.com/us-en/netapp-solutions/vmware/migrate-vms-to-ontap-datastore.html[Migrate VMs to ONTAP Datastores].
+For more information on migrating VMware workloads to ONTAP backed datastores, see the link:../migration/migrate-vms-to-ontap-datastore.html[Migrate VMs to ONTAP Datastores].
 
 == Use Cases
 

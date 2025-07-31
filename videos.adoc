@@ -15,21 +15,7 @@ keywords: netapp, solutions, videos, demos
 [.lead]
 Overview of the videos and demos highlighting specific features of many of NetApp's solutions.
 
-[[ai]]
-.Artificial Intelligence (AI) and Modern Data Analytics
-[%collapsible%open]
-====
-* link:https://www.youtube.com/playlist?list=PLdXI3bZJEw7nSrRhuolRPYqvSlGLuTOAO[NetApp AI solutions^]
-
-* link:https://www.youtube.com/playlist?list=PLdXI3bZJEw7n1sWK-QGq4QMI1VBJS-ZZW[MLOps^]
-
-// video::e87773e3-dc53-4195-83ed-b0d50100a788[panopto, title="DevOps Acceleration with DataOps Toolkit and Trident Protect Cloud Bursting", width=360]
-====
-
-[[db]]
-.Enterprise Applications and Databases
-[%collapsible%open]
-====
+== Enterprise Applications and Databases
 [underline]#*Videos for open source databases*#
 
 video::c381b887-8c8b-4d7d-8b0f-b0c0010c5c04[panopto, title="PostgreSQL automated deployment, HA/DR replication setup, failover, resync", width=360]
@@ -71,45 +57,9 @@ video::VcQMJIRzhoY[youtube, title="Automated Oracle 19c RAC Deployment on FlexPo
 *Case Study*
 
 * link:https://customers.netapp.com/en/sap-azure-netapp-files-case-study[SAP on Azure NetApp Files^]
-====
 
-[[hmc]]
-.Hybrid Multicloud (HMC)
-[%collapsible%open]
-====
-[underline]#*Videos for AWS/VMC*#
 
-video::0d03e040-634f-4086-8cb5-b01200fb8515[panopto, title="Windows Guest Connected Storage with FSx ONTAP using iSCSI", width=360]
-
-video::c3befe1b-4f32-4839-a031-b01200fb6d60[panopto, title="Linux Guest Connected Storage with FSx ONTAP using NFS", width=360]
-
-video::f0fedec5-dc17-47af-8821-b01200f00e08[panopto, title=" VMware Cloud on AWS TCO savings with Amazon FSx ONTAP", width=360]
- 
-video::2065dcc1-f31a-4e71-a7d5-b01200f01171[panopto, title="VMware Cloud on AWS supplemental datastore w/ Amazon FSx ONTAP", width=360]
- 
-video::6132c921-a44c-4c81-aab7-b01200fb5d29[panopto, title="VMware HCX Deployment and Configuration Setup for VMC", width=360]
- 
-video::52661f10-3f90-4f3d-865a-b01200f06d31[panopto, title="vMotion Migration Demonstration with VMware HCX for VMC and FSx ONTAP", width=360]
-
-video::685c0dc2-9d8a-42ff-b46d-b01200f056b0[panopto, title="Cold Migration Demonstration with VMware HCX for VMC and FSx ONTAP", width=360]
-
-[underline]#*Videos for Azure/AVS*#
-
-video::8c5ddb30-6c31-4cde-86e2-b01200effbd6[panopto, title="Azure VMware Solution supplemental datastore overview with Azure NetApp Files", width=360]
-
-video::5cd19888-8314-4cfc-ba30-b01200efff4f[panopto, title=" Azure VMware Solution DR with Cloud Volumes ONTAP, SnapCenter and JetStream", width=360]
- 
-video::b7ffa5ad-5559-4e56-a166-b01200f025bc[panopto, title="Cold Migration Demonstration with VMware HCX for AVS and ANF", width=360]
- 
-video::986bb505-6f3d-4a5a-b016-b01200f03f18[panopto, title="vMotion Demonstration with VMware HCX for AVS and ANF", width=360]
- 
-video::255640f5-4dff-438c-8d50-b01200f017d1[panopto, title="Bulk Migration Demonstration with VMware HCX for AVS and ANF", width=360]
-====
-
-[[rhhc]]
-.Hybrid MultiCloud with Red Hat OpenShift 
-[%collapsible%open]
-====
+== Hybrid MultiCloud with Red Hat OpenShift 
 
 video::36ecf505-5d1d-4e99-a6f8-b11c00341793[panopto, title="Snapshot/Restore for Applications on Red Hat OpenShift Service on AWS (ROSA)clusters with Amazon FSx ONTAP storage",width=360]
 
@@ -117,28 +67,11 @@ video::621ae20d-7567-4bbf-809d-b01200fa7a68[panopto, title="Integration of FSx O
 
 video::e9a07d79-42a1-4480-86be-b01200fa62f5[panopto, title="Failover and Fail-back of apps on ROSA with FSx ONTAP", width=360]
 
-====
-
-[[virtualization]]
-.Virtualization
-[%collapsible%open]
-====
+== Virtualization
 * link:vmware/vmw-demos-videos.html[VMware Video Collection]
-====
 
-[[containers]]
-.Containers / Kubernetes
-[%collapsible%open]
-====
+== Containers / Kubernetes
+
 * link:https://docs.netapp.com/us-en/netapp-solutions-containers/anthos/anthos-videos-and-demos.html[NetApp with Google Anthos Videos^]
 * link:https://docs.netapp.com/us-en/netapp-solutions-containers/tanzu/vtwn-videos-and-demos.html[NetApp with VMware Tanzu Videos^]
 * link:openshift/os-videos-and-demos.html[NetApp with Red Hat OpenShift Videos]
-====
-
-[[automation]]
-.Solution Automation
-[%collapsible%open]
-====
-video::VcQMJIRzhoY[youtube,, title="Automated Oracle 19c RAC Deployment on FlexPod with Ansible", width=360]
-====
-
