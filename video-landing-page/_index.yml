@@ -1,0 +1,32 @@
+indexpage:
+  title: Watch videos and demos on virtualization with NetApp
+  lead: "Discover NetApp's comprehensive video library showcasing virtualization solutions across OpenShift, VMware, and hybrid cloud platforms. Each collection focuses on specific use cases and integration scenarios."
+  summary: "Series of videos and demos discussing the features of many of NetApp's Virtualization solutions"
+  tiles:
+    - title: "OpenShift virtualization"
+      links:
+        - title: "View OpenShift virtualization videos"
+          url: /openshift-videos.html
+      summary: "Explore VM management, data protection, storage integration, and automation with Trident and Ansible. Featured topics: VM creation and migration, disaster recovery, storage classes, and monitoring."
+#
+    - title: "VMware solutions"
+      links:
+        - title: "View VMware solutions videos"
+          url: /vmware-videos.html
+      summary: "Learn about ONTAP tools, SnapCenter, data protection, and cloud integrations for VMware environments. Featured topics: vSphere integration, backup workflows, VMware Cloud Foundation, and Tanzu."
+#
+    - title: "Hybrid cloud solutions"
+      links:
+        - title: "View hybrid cloud videos"
+          url: /hybrid-cloud-videos.html
+      summary: "See how NetApp enables virtualization across cloud platforms with ROSA, FSx ONTAP, and HCI solutions. Featured topics: AWS integration, cloud storage services, and hybrid infrastructure."
+#
+    - title: "Popular videos"
+      links:
+        - title: "ONTAP Tools for VMware - Overview"
+          url: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e8071955-f6f1-45a0-a868-b12a010bba44
+        - title: "Creating a VM in OpenShift Virtualization using iSCSI storage"
+          url: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=497b868d-2917-4824-bbaa-b2d500f92dda
+        - title: "Amazon FSx for NetApp ONTAP with Red Hat OpenShift Service on AWS"
+          url: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=213061d2-53e6-4762-a68f-b21401519023
+      summary: "Featured videos showcasing key NetApp virtualization capabilities across different platforms."
