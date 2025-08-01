@@ -6,50 +6,50 @@ indexpage:
     - title: "OpenShift virtualization"
       links:
         - title: "View all OpenShift virtualization videos"
-          url: /openshift-videos.html
+          url: ../openshift-videos.html
         - title: "VM management and operations"
-          url: /openshift-videos.html#vm-management-and-operations
+          url: ../openshift-videos.html#vm-management-and-operations
         - title: "Data protection and disaster recovery"
-          url: /openshift-videos.html#data-protection-and-disaster-recovery
+          url: ../openshift-videos.html#data-protection-and-disaster-recovery
         - title: "Storage integration and management"
-          url: /openshift-videos.html#storage-integration-and-management
+          url: ../openshift-videos.html#storage-integration-and-management
         - title: "Automation and monitoring"
-          url: /openshift-videos.html#automation-and-monitoring
+          url: ../openshift-videos.html#automation-and-monitoring
       summary: "Explore VM management, data protection, storage integration, and automation with Trident and Ansible. Featured topics: VM creation and migration, disaster recovery, storage classes, and monitoring."
 #
     - title: "VMware solutions"
       links:
         - title: "View all VMware solutions videos"
-          url: /vmware-videos.html
+          url: ../vmware-videos.html
         - title: "VMware datastore provisioning with ONTAP"
-          url: /vmware-videos.html#vmware-datastore-provisioning-with-ontap
-        - title: "SnapCenter plug-in for VMware vSphere"
-          url: /vmware-videos.html#snapcenter-plug-in-for-vmware-vsphere
+          url: ../vmware-videos.html#vmware-datastore-provisioning-with-ontap
+        - title: "SnapCenter Plug-in for VMware vSphere"
+          url: ../vmware-videos.html#snapcenter-plug-in-for-vmware-vsphere
         - title: "3-2-1 data protection solutions"
-          url: /vmware-videos.html#3-2-1-data-protection-solutions
+          url: ../vmware-videos.html#3-2-1-data-protection-solutions
         - title: "VMware Cloud on AWS with AWS FSx ONTAP"
-          url: /vmware-videos.html#vmware-cloud-on-aws-with-aws-fsx-ontap
+          url: ../vmware-videos.html#vmware-cloud-on-aws-with-aws-fsx-ontap
         - title: "Azure VMware solutions"
-          url: /vmware-videos.html#azure-vmware-solutions
+          url: ../vmware-videos.html#azure-vmware-solutions
         - title: "VMware Cloud Foundation with NetApp ONTAP"
-          url: /vmware-videos.html#vmware-cloud-foundation-with-netapp-ontap
+          url: ../vmware-videos.html#vmware-cloud-foundation-with-netapp-ontap
         - title: "NetApp with VMware Tanzu"
-          url: /vmware-videos.html#netapp-with-vmware-tanzu
+          url: ../vmware-videos.html#netapp-with-vmware-tanzu
         - title: "NetApp Cloud Insights"
-          url: /vmware-videos.html#netapp-cloud-insights
+          url: ../vmware-videos.html#netapp-cloud-insights
       summary: "Learn about ONTAP tools, SnapCenter, data protection, and cloud integrations for VMware environments. Featured topics: vSphere integration, backup workflows, VMware Cloud Foundation, and Tanzu."
 #
     - title: "Hybrid cloud solutions"
       links:
         - title: "View all hybrid cloud videos"
-          url: /hybrid-cloud-videos.html
+          url: ../hybrid-cloud-videos.html
         - title: "Red Hat OpenShift Service on AWS (ROSA) with FSx ONTAP"
-          url: /hybrid-cloud-videos.html#red-hat-openshift-service-on-aws-rosa-with-fsx-ontap
+          url: ../hybrid-cloud-videos.html#red-hat-openshift-service-on-aws-rosa-with-fsx-ontap
         - title: "NetApp HCI solutions"
-          url: /hybrid-cloud-videos.html#netapp-hci-solutions
+          url: ../hybrid-cloud-videos.html#netapp-hci-solutions
       summary: "See how NetApp enables virtualization across cloud platforms with ROSA, FSx ONTAP, and HCI solutions. Featured topics: AWS integration, cloud storage services, and hybrid infrastructure."
 #
-    - title: "Popular videos"
+    - title: "Featured videos"
       links:
         - title: "ONTAP Tools for VMware - Overview"
           url: https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e8071955-f6f1-45a0-a868-b12a010bba44
