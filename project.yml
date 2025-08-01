@@ -24,8 +24,15 @@ sidebar:
     - section: virtualization
     - section: containers
 #
-    - title: "Video Collection"
+    - title: "Videos"
       url: /videos.html
+      entries:
+        - title: "OpenShift virtualization"
+          url: /openshift-videos.html
+        - title: "VMware solutions"
+          url: /vmware-videos.html
+        - title: "Hybrid cloud"
+          url: /hybrid-cloud-videos.html
     - title: "Blogs"
       url: /blogs.html
     - title: "Change Log"
