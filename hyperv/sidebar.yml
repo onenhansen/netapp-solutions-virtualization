@@ -2,25 +2,25 @@ section: hyperv
 title: "Hyper-V Virtualization"
 url: /hyperv/index.html
 entries:
-  - title: "Deploying Microsoft Hyper-V on NetApp Storage"
+  - title: "Deploy Microsoft Hyper-V on NetApp storage"
     pdf-filename: "Deploying Hyper-V on NetApp Storage"
     entries:
-      - title: "Overview"
+      - title: "About Hyper-V deployment with ONTAP"
         url: /hyperv/hyperv-deploy.html
-      - title: "Pre-requisites for deployment"
+      - title: "Prepare to deploy"
         url: /hyperv/hyperv-deploy-prereqs.html
-      - title: "Considerations for deployment"
+      - title: "Deployment guidelines"
         url: /hyperv/hyperv-deploy-considerations.html
-      - title: "Data Protection"
+      - title: "Backup and restore Hyper-V VMs"
         url: /hyperv/hyperv-deploy-data-protection.html
-      - title: "Conclusion"
+      - title: "Do we need this topic?"
         url: /hyperv/hyperv-deploy-conclusion.html
-      - title: "Migration using FlexClone and Powershell"
+      - title: "Migrate VMs to Hyper-V"
         url: /hyperv/hyperv-deploy-script.html
 #
   - title: "Solutions for Hyper-V with NetApp"
     entries:
-      - title: "SnapMirror Active Sync with Stretch Clusters"
-        pdf-filename: "SnapMirror Active Sync with Stretch Clusters"
+      - title: "SnapMirror Active Sync with stretch clusters"
+        pdf-filename: "Set up replication with SnapMirror Active Sync"
         url: /hyperv/hyperv-smas.html
 #
