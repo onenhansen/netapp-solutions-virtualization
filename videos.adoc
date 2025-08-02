@@ -12,25 +12,23 @@ keywords: netapp, virtualization solutions, videos, demos
 :imagesdir: ./media/
 
 [.lead]
-Discover NetApp's comprehensive video library showcasing Virtualization solutions across OpenShift, VMware, and hybrid cloud platforms. Each collection focuses on specific use cases and integration scenarios.
+Discover NetApp's comprehensive video library showcasing Virtualization solutions across OpenShift, VMware, and hybrid multicloud platforms. Each collection focuses on specific use cases and integration scenarios.
 
-== Video collections by platform
-
-=== OpenShift virtualization
+== Red Hat OpenShift virtualization videos
 link:openshift-videos.html[OpenShift Virtualization with NetApp videos →]
 
 Explore VM management, data protection, storage integration, and automation with Trident and Ansible.
 
 *Featured topics:* VM creation and migration, disaster recovery, storage classes, and monitoring.
 
-=== VMware solutions  
+== VMware virtualization videos
 link:vmware-videos.html[VMware Solutions with NetApp videos →]
 
 Learn about ONTAP tools, SnapCenter, data protection, and cloud integrations for VMware environments.
 
 *Featured topics:* vSphere integration, backup workflows, VMware Cloud Foundation, and Tanzu.
 
-=== Hybrid cloud solutions
+== Hybrid multicloud virtualization videos
 link:hybrid-cloud-videos.html[Hybrid Cloud Virtualization videos →]
 
 See how NetApp enables virtualization across cloud platforms with ROSA, FSx ONTAP, and HCI solutions.

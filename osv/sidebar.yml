@@ -7,7 +7,7 @@ entries:
     entries:
       - title: "About OpenShift Virtualization"
         url: /openshift/osv-overview.html
-      - title: "NetApp storage for OpenShift"
+      - title: "Storage provisioning for OpenShift"
         url: /openshift/os-netapp-overview.html
       - title: "NetApp Trident storage integration"
         url: /openshift/os-storint-overview.html
@@ -20,7 +20,7 @@ entries:
     entries:
       - title: "Deployment requirements"
         url: /openshift/osv-deployment-prerequisites.html
-      - title: "Install OpenShift Virtualization"
+      - title: "Deploy OpenShift Virtualization"
         url: /openshift/osv-deployment.html
       - title: "Create VMs"
         url: /openshift/osv-workflow-create-vm.html
@@ -51,13 +51,13 @@ entries:
   - title: "Protect data using third-party tools"
     pdf-filename: "Red Hat OpenShift Virtualization Data Protection"
     entries:
-      - title: "About OADP and Velero"
+      - title: "Protect VMs using OADP and Velero"
         url: /openshift/osv-vm-dp-using-velero-overview.html
       - title: "Install OADP"
         url: /openshift/osv-oadp-installation.html
-      - title: "Backup using Velero"
+      - title: "Backup VMs using Velero"
         url: /openshift/osv-vm-dp-using-velero.html
-      - title: "Restore using Velero"
+      - title: "Restore VMs using Velero"
         url: /openshift/osv-vm-restore-using-velero.html
       - title: "Delete backups and restores"
         url: /openshift/osv-vm-dp-delete-using-velero.html
