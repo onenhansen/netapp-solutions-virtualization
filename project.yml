@@ -1,7 +1,8 @@
 settings:
   name: "NetApp Virtualization solutions"
+  rss_page: "/whats-new.html"
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
     lipi_enabled: true
   prod:
     pdf_enabled: true
@@ -20,6 +21,8 @@ sidebar:
   entries:
     - title: "Virtualization solutions"
       url: /index.html
+    - title: "What's new"
+      url: /whats-new.html
     - section: vmw-sc
     - section: virtualization
     - section: containers
@@ -29,9 +32,9 @@ sidebar:
       entries:
         - title: "OpenShift virtualization"
           url: /openshift-videos.html
-        - title: "VMware solutions"
+        - title: "VMware virtualization"
           url: /vmware-videos.html
-        - title: "Hybrid cloud"
+        - title: "Hybrid multicloud virtualization"
           url: /hybrid-cloud-videos.html
     - title: "Blogs"
       url: /blogs.html

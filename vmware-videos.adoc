@@ -4,7 +4,7 @@ permalink: vmware-videos.html
 summary: Videos and demos showcasing VMware solutions integration with NetApp storage technologies
 keywords: vmware, vsphere, vcf, tanzu, snapcenter, ontap tools, videos, demos
 ---
-= VMware virtualization solution videos
+= Watch videos on VMware virtualization with NetApp
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ keywords: vmware, vsphere, vcf, tanzu, snapcenter, ontap tools, videos, demos
 :imagesdir: ./media/
 
 [.lead]
-Watch videos and demos featuring VMware integration with NetApp storage solutions. See how to use NetApp ONTAP Tools for VMware vSphere, the SnapCenter plug-in for VMware vSphere, 3-2-1 data protection, and how NetApp works with VMware Cloud Foundation and Tanzu.
+Watch videos and demos featuring VMware integration with NetApp storage solutions. See how to use NetApp ONTAP Tools for VMware vSphere, the SnapCenter Plug-in for VMware vSphere, 3-2-1 data protection, and how NetApp works with VMware Cloud Foundation and Tanzu.
 
 == VMware datastore provisioning with ONTAP
 
@@ -22,21 +22,21 @@ video::5c047271-aecc-437c-a444-b01200f9671a[panopto, title="VMware iSCSI datasto
 
 video::a34bcd1c-3aaa-4917-9a5d-b01200f97f08[panopto, title="VMware NFS datastore provisioning with ONTAP"]
 
-== SnapCenter plug-in for VMware vSphere
+== SnapCenter Plug-in for VMware vSphere
 
-video::38881de9-9ab5-4a8e-a17d-b01200fade6a[panopto, title="SnapCenter plug-in for VMware vSphere - solution pre-requisites", width=360]
+video::38881de9-9ab5-4a8e-a17d-b01200fade6a[panopto, title="SnapCenter Plug-in for VMware vSphere - solution pre-requisites", width=360]
 
-video::10cbcf2c-9964-41aa-ad7f-b01200faca01[panopto, title="SnapCenter plug-in for VMware vSphere - Deployment", width=360]
+video::10cbcf2c-9964-41aa-ad7f-b01200faca01[panopto, title="SnapCenter Plug-in for VMware vSphere - Deployment", width=360]
 
-video::b7272f18-c424-4cc3-bc0d-b01200faaf25[panopto, title="SnapCenter plug-in for VMware vSphere - Backup Workflow", width=360]
+video::b7272f18-c424-4cc3-bc0d-b01200faaf25[panopto, title="SnapCenter Plug-in for VMware vSphere - Backup Workflow", width=360]
 
-video::ed41002e-585c-445d-a60c-b01200fb1188[panopto, title="SnapCenter plug-in for VMware vSphere - Restore Workflow", width=360]
+video::ed41002e-585c-445d-a60c-b01200fb1188[panopto, title="SnapCenter Plug-in for VMware vSphere - Restore Workflow", width=360]
 
 video::8df4ad1f-83ad-448b-9405-b01200fb2567[panopto, title="SnapCenter - SQL Restore Workflow", width=360]
 
 == 3-2-1 Data protection solutions
 
-video::7c21f3fc-4025-4d8f-b54c-b0e001504c76[panopto, title="3-2-1 Data Protection for VMFS Datastores with SnapCenter plug-in for VMware vSphere and BlueXP backup and recovery for Virtual Machines", width=360]
+video::7c21f3fc-4025-4d8f-b54c-b0e001504c76[panopto, title="3-2-1 Data Protection for VMFS Datastores with SnapCenter Plug-in for VMware vSphere and BlueXP backup and recovery for Virtual Machines", width=360]
 
 == VMware Cloud on AWS with AWS FSx ONTAP
 
@@ -56,7 +56,7 @@ video::685c0dc2-9d8a-42ff-b46d-b01200f056b0[panopto, title="Cold migration demon
 
 == Azure VMware solutions
 
-video::8c5ddb30-6c31-4cde-86e2-b01200effbd6[panopto, title="Azure VMware Solution supplemental datastore overview with Azure NetApp Files", width=360]
+video::8c5ddb30-6c31-4cde-86e2-b01200effbd6[panopto, title="Azure VMware solution supplemental datastore overview with Azure NetApp Files", width=360]
 
 video::5cd19888-8314-4cfc-ba30-b01200efff4f[panopto, title="Azure VMware solution DR with Cloud Volumes ONTAP, SnapCenter and JetStream", width=360]
 

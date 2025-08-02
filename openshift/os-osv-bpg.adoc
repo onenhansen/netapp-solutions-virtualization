@@ -4,7 +4,6 @@ permalink: openshift/os-osv-bpg.html
 keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization
 summary: Best practices recommendations for VMs in Red Hat OpenShift Virtualization 
 ---
-
 = Best practices to deploy VMs in Red Hat OpenShift Virtualization
 :hardbreaks:
 :nofooter:

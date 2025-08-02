@@ -4,7 +4,7 @@ permalink: hybrid-cloud-videos.html
 summary: Videos and demos showcasing hybrid cloud virtualization solutions with NetApp
 keywords: hybrid cloud, rosa, fsx ontap, azure vmware, netapp hci, videos, demos
 ---
-= Hybrid Cloud virtualization videos
+= Watch videos on hybrid multiCloud virtualization with NetApp 
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -12,7 +12,7 @@ keywords: hybrid cloud, rosa, fsx ontap, azure vmware, netapp hci, videos, demos
 :imagesdir: ./media/
 
 [.lead]
-Discover how NetApp enables hybrid cloud virtualization across major cloud platforms. Watch videos demonstrating Red Hat OpenShift Service on AWS (ROSA) with FSx ONTAP and NetApp HCI solutions for virtualized workloads.
+Discover how NetApp enables hybrid cloud virtualization across major hybrid multicloud platforms. Watch videos demonstrating Red Hat OpenShift Service on AWS (ROSA) with FSx ONTAP and NetApp HCI solutions for virtualized workloads.
 
 == Red Hat OpenShift Service on AWS (ROSA) with FSx ONTAP
 

@@ -4,7 +4,6 @@ permalink: openshift/osv-deployment-prerequisites.html
 keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization
 summary: Red Hat OpenShift Virtualization with NetApp ONTAP
 ---
-
 = Requirements to deploy Red Hat OpenShift Virtualization with ONTAP
 :hardbreaks:
 :nofooter:

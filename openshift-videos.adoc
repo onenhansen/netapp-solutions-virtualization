@@ -4,7 +4,7 @@ permalink: openshift-videos.html
 summary: Videos and demos showcasing OpenShift Virtualization integration with NetApp storage solutions
 keywords: openshift, virtualization, netapp, trident, videos, demos
 ---
-= OpenShift virtualization videos
+= Watch videos on Red Hat OpenShift virtualization with NetApp
 :hardbreaks:
 :nofooter:
 :icons: font
