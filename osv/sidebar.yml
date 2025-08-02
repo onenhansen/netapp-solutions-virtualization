@@ -36,16 +36,16 @@ entries:
   - title: "Deploy on ROSA with FSxN"
     pdf-filename: "Deploy Red Hat OpenShift Virtuzluation on ROSA with Amazon FSx for ONTAP"
     entries:
-      - title: "Configure ROSA with FSx for ONTAP"
+      - title: "Deploy OpenShift on ROSA"
         url: /openshift/osv-rosa-overview.html
-      - title: "Restart and live migrate VMs"
+      - title: "Restart or live migrate VMs"
         url: /openshift/osv-rosa-vm-workflows.html
 #
   - title: "Protect data using Trident Protect"
     entries:
-      - title: "Create snapshots and backups for VMs"
+      - title: "Protect VMs with snapshots and backups"
         url: /openshift/osv-vm-dp-using-tp.html
-      - title: "Configure VM disaster recovery "
+      - title: "Set up failover and failback"
         url: /openshift/osv-vm-dr-using-tp.html
 #
   - title: "Protect data using third-party tools"
@@ -72,11 +72,9 @@ entries:
       - title: "Monitoring use cases and examples"
         url: /openshift/os-ci-samples.html  
 #
-  - title: "Best practices"
+  - title: "Best practices for deployment"
     pdf-filename: "Best Practices for Red Hat OpenShift Virtualization on NetApp"
-    entries:
-      - title: "Best practices guide"
-        url: /openshift/os-osv-bpg.html
+    url: /openshift/os-osv-bpg.html
 #
   - title: "Additional resources"
     url: /openshift/os-additional-information.html

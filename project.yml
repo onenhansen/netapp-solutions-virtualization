@@ -20,7 +20,6 @@ sidebar:
   entries:
     - title: "Virtualization solutions"
       url: /index.html
-    - section: vmw-sc
     - section: virtualization
     - section: osv
     - section: vmware
@@ -28,6 +27,7 @@ sidebar:
     - section: proxmox
     - section: kvm
     - section: migration
+    - section: vmw-sc
     - section: containers
 #
     - title: "Videos"
