@@ -2,7 +2,7 @@ section: hyperv
 title: "Hyper-V Virtualization"
 url: /hyperv/index.html
 entries:
-  - title: "Deploy Microsoft Hyper-V on NetApp storage"
+  - title: "Deploy Hyper-V on NetApp storage"
     pdf-filename: "Deploying Hyper-V on NetApp Storage"
     entries:
       - title: "About Hyper-V deployment with ONTAP"
