@@ -31,7 +31,7 @@ sidebar:
     - section: containers
 #
     - title: "Videos"
-      url: /video-landing-page/index.html
+      url: /videos/index.html
       entries:
         - title: "OpenShift virtualization"
           url: /openshift-videos.html
