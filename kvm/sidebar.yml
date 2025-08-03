@@ -2,7 +2,7 @@ section: kvm
 title: "KVM Virtualization"
 url: /kvm/index.html
 entries:
-  - title: "Learn about KVM virtualization"
+  - title: "About KVM virtualization"
     pdf-filename: "Overview of KVM Virtualization on NetApp"
     url: /kvm/kvm-overview.html
   - title: "ONTAP storage with KVM and Libvirt"
