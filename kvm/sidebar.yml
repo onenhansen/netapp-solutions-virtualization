@@ -5,6 +5,6 @@ entries:
   - title: "Learn about KVM virtualization"
     pdf-filename: "Overview of KVM Virtualization on NetApp"
     url: /kvm/kvm-overview.html
-  - title: "NetApp storage for KVM virtualization with libvirt"
+  - title: "NetApp storage for KVM virtualization"
     pdf-filename: "NetApp storage for KVM Virtualization"
     url: /kvm/kvm-ontap.html
