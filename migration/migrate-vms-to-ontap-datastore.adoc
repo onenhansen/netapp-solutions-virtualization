@@ -4,8 +4,7 @@ permalink: migration/migrate-vms-to-ontap-datastore.html
 keywords: netapp, vmware, ontap, datastore, migration, svmotion, hcx, xvmotion, vmotion, vvol, iscsi, nfs, nvme, fc, sso
 summary:
 ---
-
-= Migrate VMs to ONTAP Datastores
+= Migrate VMs to ONTAP datastores
 :hardbreaks:
 :nofooter:
 :icons: font

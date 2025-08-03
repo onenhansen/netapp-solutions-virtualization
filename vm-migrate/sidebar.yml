@@ -7,19 +7,19 @@ entries:
     entries:
       - title: "Overview"
         url: /migration/shift-toolkit-overview.html
-      - title: "Installing the Shift Toolkit"
+      - title: "Install Shift Toolkit"
         url: /migration/shift-toolkit-install.html
-      - title: "Using the Shift Toolkit User Interface"
+      - title: "Use the Shift Toolkit UI"
         url: /migration/shift-toolkit-ui.html
-      - title: "VM Migration using the Shift Toolkit"
+      - title: "Migrate VMs using Shift Toolkit"
         url: /migration/shift-toolkit-migration.html
-      - title: "VM Conversion using the Shift Toolkit"
+      - title: "Convert VMs using Shift Toolkit"
         url: /migration/shift-toolkit-conversion.html
       - title: "Conclusion and Additional Information"
         url: /migration/shift-toolkit-summary.html
-  - title: "Migrate VMs to ONTAP datastore"
+  - title: "Migrate VMs to ONTAP datastores"
     url: /migration/migrate-vms-to-ontap-datastore.html
-  - title: "Migrate VMs to Amazon EC2 using Amazon FSx for ONTAP"
+  - title: "Migrate VMs to Amazon EC2"
     entries:
       - title: "Overview"
         url: /migration/migrate-vms-to-ec2-fsxn-overview.html
