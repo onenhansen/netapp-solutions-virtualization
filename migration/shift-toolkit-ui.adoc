@@ -4,7 +4,6 @@ permalink: migration/shift-toolkit-ui.html
 keywords: netapp, vmware, esxi, vm, migration, openshift, virtualization, hyper-v, proxmox
 summary: 
 ---
-
 = Configure the Shift Toolkit
 :hardbreaks:
 :nofooter:
