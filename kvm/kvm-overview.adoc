@@ -4,16 +4,15 @@ permalink: kvm/kvm-overview.html
 keywords: libvirt, kvm, qemu, lxc, vm
 summary:
 ---
-
-= Overview of KVM Virtualization
+= Learn about KVM virtualization with QEMU and Libvirt
 :hardbreaks:
 :nofooter:
 :icons: font
-:linkattrs:
+:linkattrs: 
 :imagesdir: ../media/
 
 [.lead]
-KVM, QEMU, and Libvirt are key components in the Linux virtualization stack, each playing a distinct role in enabling and managing virtual machines. 
+Learn about KVM virtualization and how it works with QEMU and Libvirt to create a comprehensive Linux virtualization platform. Discover how these components enable near-native performance virtual machines while providing flexible management capabilities for compute, storage, and networking resources in enterprise environments. 
 
 
 == Overview of components

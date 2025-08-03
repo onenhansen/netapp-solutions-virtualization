@@ -11,11 +11,11 @@ summary: Log of recent changes to the NetApp Virtualization Solutions collateral
 [.lead]
 Learn what's new in Virtualization solutions.
 
-== 17 September 2025
-*Hyper-V Solutions:* Add solutions for Hyper-V: SnapMirror Active Sync with stretch clusters
+== 17 September 2025--is this a typo maybe it meant to be 2024?
+*Hyper-V Solutions:* Added solutions for Hyper-V: SnapMirror Active Sync with stretch clusters
 
 == 8 May 2025
-*VMware Solutions:* Publish GA version of the Shift Toolkit
+*VMware Solutions:* Published GA version of the Shift Toolkit
 
 == 12 December 2024
 *VMware Solutions:* Added new Shift Toolkit content
@@ -54,7 +54,7 @@ Learn what's new in Virtualization solutions.
 *VMware Solutions:* Added parts 1-4 of NetApp with VMware VCF blog series
 
 == 21 September 2021
-*VMware Solutions:* New content or ONTAP for VMware vSphere Administrators, VMware vSphere automation
+*VMware Solutions:* New content for ONTAP for VMware vSphere Administrators, VMware vSphere automation
 
 == 10 May 2021
 *VMware Solutions:* New video: How to use vVols with NetApp and VMware Tanzu Basic, part 3

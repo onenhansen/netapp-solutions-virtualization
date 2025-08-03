@@ -20,6 +20,8 @@ sidebar:
   entries:
     - title: "Virtualization solutions"
       url: /index.html
+    - title: "What's new"
+      url: /whats-new.html
     - section: virtualization
     - section: vmware
     - section: hyperv
