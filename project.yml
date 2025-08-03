@@ -30,7 +30,6 @@ sidebar:
     - section: kvm
     - section: migration
     - section: vmw-sc
-    - section: containers
 #
     - title: "Videos"
       url: /videos/index.html
