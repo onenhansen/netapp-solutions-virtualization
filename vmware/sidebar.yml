@@ -101,7 +101,7 @@ entries:
             url: /vmware/vmw-vcf-vmsc-viwld-mcc.html
 # 
       - title: "Migrate VMs"
-        url: /migration/migrate-vms-to-ontap-datastore.html
+        url: /vmware/migrate-vms-to-ontap-datastore.html
       - title: "Disaster Recovery with BlueXP DRaaS"
         entries: 
           - title: "DR using BlueXP DRaaS for VMFS Datastores"
