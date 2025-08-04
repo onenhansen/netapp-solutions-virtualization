@@ -2,28 +2,28 @@ section: vmware
 title: "VMware Virtualization"
 url: /vmware/index.html
 entries:
-  - title: "Getting Started with NetApp and VMware"
+  - title: "Get started"
     pdf-filename: "Getting Started with NetApp and VMware"
     entries: 
-      - title: "Overview"
+      - title: "About ONTAP for VMware vSphere"
         url: /vmware/vmw-getting-started-overview.html
-      - title: "NetApp Storage Options"
+      - title: "NetApp platforms for VMware"
         url: /vmware/vmw-getting-started-ntap-options.html
-      - title: "vSphere Metro Storage Cluster"
+      - title: "About protecting VMware environments"
         url: /vmware/vmw-getting-started-vmsc.html        
-      - title: "ONTAP Tools for VMware (OTV)"
+      - title: "ONTAP tools for VMware vSphere"
         url: /vmware/vmw-getting-started-otv.html
-      - title: "VMware Automation with ONTAP"
+      - title: "VMware automation with ONTAP"
         url: /vmware/vmw-getting-started-automation.html
-      - title: "SnapCenter"
+      - title: "SnapCenter Plug-in for VMware vSphere"
         url: /vmware/vmw-getting-started-snapcenter.html
-      - title: "Hybrid Multi-Cloud"
+      - title: "About hybrid multicloud environements"
         url: /vmware/vmw-getting-started-hmc.html
-      - title: "Addressing Security and Ransomware for VMware Workloads"
+      - title: "About security and ransomware protection"
         url: /vmware/vmw-getting-started-security.html
-      - title: "Migrating VM workloads to ONTAP"
+      - title: "About migrating VM workloads to ONTAP"
         url: /vmware/vmw-getting-started-migration.html
-      - title: "BlueXP Disaster Recovery (DRaaS)"
+      - title: "About BlueXP disaster recovery"
         url: /vmware/vmw-dr-gs.html      
       - title: "Data Infrastructure Insights (DII)"
         url: /vmware/vmw-getting-started-dii.html
