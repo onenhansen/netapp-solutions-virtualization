@@ -12,5 +12,5 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-include::../_include/migrate-vms-ontap-datastores.adoc
+include::../_include/migrate-vms-ontap-datastores.adoc[]
 
