@@ -69,7 +69,7 @@ entries:
         url: /openshift/os-ci-overview.html
       - title: "Configure DII"
         url: /openshift/os-ci-integration.html
-      - title: "Monitoring use cases and examples"
+      - title: "Monitor VMs using DII"
         url: /openshift/os-ci-samples.html  
 #
   - title: "Best practices for deployment"

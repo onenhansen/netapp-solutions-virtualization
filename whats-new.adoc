@@ -9,70 +9,16 @@ summary: Log of recent changes to the NetApp Virtualization Solutions collateral
 :imagesdir: ../media/
 
 [.lead]
-Learn what's new in Virtualization solutions.
+Learn what's new in virtualization solutions.
 
-== 17 September 2025--is this a typo maybe it meant to be 2024?
-*Hyper-V Solutions:* Added solutions for Hyper-V: SnapMirror Active Sync with stretch clusters
+== 18 August 2025
+The NetApp Solutions site is now the NetApp Solutions Family, which includes the following sites:
 
-== 8 May 2025
-*VMware Solutions:* Published GA version of the Shift Toolkit
+* https://docs.netapp.com/us-en/netapp-solutions-ai/index.html[NetApp Artificial Intelligence solutions]
+* https://docs.netapp.com/us-en/netapp-solutions-cloud/index.html[NetApp Public and Hybrid Cloud solutions]
+* https://docs.netapp.com/us-en/netapp-solutions-containers/index.html[NetApp Container solutions]
+* https://docs.netapp.com/us-en/netapp-solutions-dataops/index.html[NetApp Data Management solutions]
+* https://docs.netapp.com/us-en/netapp-solutions-databases/index.html[NetApp Database solutions]
+* https://docs.netapp.com/us-en/netapp-solutions-sap/index.html[NetApp SAP Business Application and SAP HANA Database solutions]
+* https://docs.netapp.com/us-en/netapp-solutions-virtualization/index.html[NetApp Virtualization solutions]
 
-== 12 December 2024
-*VMware Solutions:* Added new Shift Toolkit content
-
-== 3 December 2024
-*VMware Solutions:* Added new VM Data Collector (VMDC) content
-
-== 23 August 2024
-*VMware Solutions:* Added VMFS Deployment Guide
-
-== 14 May 2024
-*VMware Solutions:* Added migration of VMs to Amazon EC2 using FSx ONTAP content
-
-== 10 May 2024
-*Hyper-V Solutions:* Added deployment of Hyper-V on NetApp content
-
-== 15 August 2023
-*VMware Solutions:* Redesigned the virtualization (VMware) landing page
-
-== 23 May 2023
-*VMware Solutions:* Added TR-4400: VMware vSphere Virtual Volumes (vVols) with NetApp ONTAP
-
-== 4 May 2023
-*VMware Solutions:* Added "What's New with VMware vSphere 8" content
-
-== 5 August 2022
-*VMware Solutions:* Added "Reboot Required" information for recommended ESXi and ONTAP settings
-
-== 1 April 2022
-*Hybrid Cloud:* Organized content of Hybrid Multicloud with VMware solutions: landing pages for each hyperscaler and inclusion of available solution (use case) content
-
-== 21 December 2021
-*General:* Created landing pages to better organize content for Virtualization and Hybrid Multicloud with VMware
-
-== 14 October 2021
-*VMware Solutions:* Added parts 1-4 of NetApp with VMware VCF blog series
-
-== 21 September 2021
-*VMware Solutions:* New content for ONTAP for VMware vSphere Administrators, VMware vSphere automation
-
-== 10 May 2021
-*VMware Solutions:* New video: How to use vVols with NetApp and VMware Tanzu Basic, part 3
-
-== 3 May 2021
-*Desktop Virtualization:* Added link to FlexPod Desktop Virtualization solutions
-
-== 30 April 2021
-*VMware Solutions:* Video: How to use vVols with NetApp and VMware Tanzu Basic, part 2
-
-== 26 April 2021
-*VMware Solutions:* Added blog: Using VMware Tanzu with ONTAP to accelerate your Kubernetes journey
-
-== 23 March 2021
-*VMware Solutions:* Video: How to use vVols with NetApp and VMware Tanzu Basic, part 1
-
-== 18 February 2021
-*VMware Solutions:* Added TR-4597 - VMware vSphere for ONTAP
-
-== 1 February 2021
-*Desktop Virtualization:* VDI with NetApp VDS, Added content for GPU nodes

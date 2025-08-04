@@ -1,5 +1,5 @@
 settings:
-  name: "NetApp Virtualization solutions"
+  name: "NetApp virtualization solutions"
   internal:
     pdf_enabled: true
     lipi_enabled: true
