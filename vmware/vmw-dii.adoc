@@ -4,7 +4,6 @@ permalink: vmware/vmw-dii.html
 keywords: vsphere, ontap, data infrastructure insights, asa, all-flash san array, 
 summary:
 ---
-
 = Monitor on-premises storage with Data Infrastructure Insights
 :hardbreaks:
 :nofooter:

@@ -4,8 +4,7 @@ permalink: vmware/vmw-getting-started-hmc.html
 keywords: vmware, getting, started, overview, netapp, hybrid, multicloud, multi, cloud
 summary: 
 ---
-
-= Learn about hybrid multi-cloud environments with NetApp and VMware
+= Learn about hybrid multicloud environments with NetApp and VMware
 :hardbreaks:
 :nofooter:
 :icons: font

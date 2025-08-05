@@ -4,7 +4,6 @@ permalink: vmware/vmw-getting-started-vmsc.html
 keywords: vmware, getting, started, overview, netapp, storage, metro, cluster
 summary: 
 ---
-
 = Learn about protecting VMware environments with MetroCluster and SnapMirror active sync
 :hardbreaks:
 :nofooter:

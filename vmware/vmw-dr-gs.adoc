@@ -4,7 +4,6 @@ permalink: vmware/vmw-dr-gs.html
 keywords: vmware, getting, started, overview, netapp, bluexp, disaster, recovery, draas
 summary: 
 ---
-
 = Learn about disaster recovery of virtual machines using BlueXP disaster recovery
 :hardbreaks:
 :nofooter:

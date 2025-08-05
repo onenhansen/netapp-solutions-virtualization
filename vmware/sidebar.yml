@@ -5,30 +5,39 @@ entries:
   - title: "Get started"
     pdf-filename: "Getting Started with NetApp and VMware"
     entries: 
-      - title: "About ONTAP for VMware vSphere"
-        url: /vmware/vmw-getting-started-overview.html
-      - title: "NetApp platforms for VMware"
-        url: /vmware/vmw-getting-started-ntap-options.html
-      - title: "About protecting VMware environments"
-        url: /vmware/vmw-getting-started-vmsc.html        
-      - title: "ONTAP tools for VMware vSphere"
-        url: /vmware/vmw-getting-started-otv.html
-      - title: "VMware automation with ONTAP"
-        url: /vmware/vmw-getting-started-automation.html
-      - title: "SnapCenter Plug-in for VMware vSphere"
-        url: /vmware/vmw-getting-started-snapcenter.html
-      - title: "About hybrid multicloud environements"
-        url: /vmware/vmw-getting-started-hmc.html
-      - title: "About security and ransomware protection"
-        url: /vmware/vmw-getting-started-security.html
-      - title: "About migrating VM workloads to ONTAP"
+      - title: Core concepts
+        entries:
+        - title: "About ONTAP for VMware vSphere"
+          url: /vmware/vmw-getting-started-overview.html
+        - title: "About NetApp platforms for VMware"
+          url: /vmware/vmw-getting-started-ntap-options.html
+        - title: "About hybrid multicloud environements"
+          url: /vmware/vmw-getting-started-hmc.html
+      - title: Management tools
+        entries:
+        - title: "ONTAP tools for VMware vSphere"
+          url: /vmware/vmw-getting-started-otv.html
+        - title: "ONTAP and VMware APIs for administration"
+          url: /vmware/vmw-getting-started-automation.html
+        - title: "SnapCenter Plug-in for VMware vSphere"
+          url: /vmware/vmw-getting-started-snapcenter.html
+        - title: "VM Data Collector for VMware"
+          url: /vmware/vmw-getting-started-vmdc.html
+      - title: Data protection solutions
+        entries:
+        - title: "Protection with MetroCluster and SnapMirror active sync"
+          url: /vmware/vmw-getting-started-vmsc.html 
+        - title: "Security and ransomware protection with ONTAP"
+          url: /vmware/vmw-getting-started-security.html
+        - title: "BlueXP disaster recovery"
+          url: /vmware/vmw-dr-gs.html     
+      - title: "VM workload migration to ONTAP"
         url: /vmware/vmw-getting-started-migration.html
-      - title: "About BlueXP disaster recovery"
-        url: /vmware/vmw-dr-gs.html      
-      - title: "Data Infrastructure Insights (DII)"
-        url: /vmware/vmw-getting-started-dii.html
-      - title: "VM Data Collector (VMDC)"
-        url: /vmware/vmw-getting-started-vmdc.html
+      - title: Monitoring solutions
+        entries: 
+        - title: "About Data Infrastructure Insights (DII)"
+          url: /vmware/vmw-getting-started-dii.html
+
 # # # #
   - title: "VMware Cloud Foundation (VCF) on NetApp"
     pdf-filename: "VMware Cloud Foundation (VCF) on NetApp"

@@ -4,7 +4,6 @@ permalink: vmware/vmw-getting-started-security.html
 keywords:
 summary:
 ---
-
 = Learn about mitigating security and ransomware risks for VMware workloads
 :hardbreaks:
 :nofooter:

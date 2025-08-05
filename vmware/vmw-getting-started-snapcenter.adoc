@@ -4,7 +4,6 @@ permalink: vmware/vmw-getting-started-snapcenter.html
 keywords: netapp, vmware, getting, started
 summary:
 ---
-
 = Learn about backup and restore of virtual machines using SnapCenter plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:

@@ -4,7 +4,6 @@ permalink: vmware/vmw-disaster-recovery-vmfs.html
 keywords: dr, draas, bluexp, disaster recovery, vmfs datastore
 summary: This section of the document describes the configuration of BlueXP DRaaS to set up disaster recovery for on-premises VMware VMs to another designated site.
 ---
-
 = Set up disaster recovery for VMFS datastores using BlueXP disaster recovery
 :hardbreaks:
 :nofooter:
