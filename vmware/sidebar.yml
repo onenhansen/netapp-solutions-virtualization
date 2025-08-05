@@ -13,7 +13,7 @@ entries:
           url: /vmware/vmw-getting-started-ntap-options.html
         - title: "About hybrid multicloud environements"
           url: /vmware/vmw-getting-started-hmc.html
-      - title: Management tools
+      - title: Management tools and solutions
         entries:
         - title: "ONTAP tools for VMware vSphere"
           url: /vmware/vmw-getting-started-otv.html
@@ -31,7 +31,7 @@ entries:
           url: /vmware/vmw-getting-started-vmsc.html 
         - title: "Security and ransomware protection with ONTAP"
           url: /vmware/vmw-getting-started-security.html
-      - title: Backup and disaster recovery
+      - title: Backup and disaster recovery solutions
         entries:
         - title: "SnapCenter Plug-in for VMware vSphere"
           url: /vmware/vmw-getting-started-snapcenter.html
@@ -39,19 +39,19 @@ entries:
           url: /vmware/vmw-dr-gs.html     
 
 # # # #
-  - title: "VMware Cloud Foundation (VCF) on NetApp"
+  - title: "VMware Cloud Foundation on NetApp"
     pdf-filename: "VMware Cloud Foundation (VCF) on NetApp"
     entries:
-      - title: "Overview"
+      - title: "About VMware Cloud Foundation and ONTAP"
         url: /vmware/vmw-vcf-overview.html
-      - title: "Migrate Existing Infrastructure to VCF"
+      - title: "Convert existing vSphere clusters to VCF"
         entries:
-          - title: "Convert Existing vCenter Instance to VCF Management Domain (NFS)"
+          - title: "Convert existing vSphere cluster with NFS datastores"
             url: /vmware/vmw-vcf-mgmt-nfs.html
-          - title: "Convert vCenter Instance (FC datastore) to VCF Management Domain"
+          - title: "Convert existing vSphere cluster with FC datastores"
             url: /vmware/vmw-vcf-mgmt-fc.html
 #
-      - title: "Provision VCF Environment with Principal Storage"
+      - title: "Provision VCF environment with principal storage"
         entries:
           - title: "Overview"
             url: /vmware/vmw-vcf-provision.html
@@ -64,7 +64,7 @@ entries:
           - title: "Virtual Infrastructure Workload Domain with NFS"
             url: /vmware/vmw-vcf-viwld-principal-nfs.html      
 #
-      - title: "Expand VCF Environment with Supplemental Storage"
+      - title: "Expand VCF environment with supplemental storage"
         entries:
           - title: "Overview"
             url: /vmware/vmw-vcf-expand.html

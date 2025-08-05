@@ -4,7 +4,6 @@ permalink: vmware/vmw-vcf-mgmt-fc.html
 keywords: netapp, vmware, cloud, foundation, vcf, asa, aff, all-flash, fc, array, ontap tools, otv, sddc, sddc manager, ontap tools, ontap tools 10
 summary:
 ---
-
 = Convert vCenter server instance to VCF management domain (FC datastore)
 :hardbreaks:
 :nofooter:
@@ -13,8 +12,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-
-With the 5.2 release of VMware Virtual Cloud Foundation (VCF) comes the capability to convert existing vSphere 8 environment to VCF management domain or import as VCF VI workload domains. 
+Convert a vSphere 8 cluster using ONTAP Fibre Channel datastores into a VMware Cloud Foundation management domain. This procedure includes provisioning FC storage, deploying ONTAP tools for VMware, and using the VCF import tool to migrate and manage the cluster within the VCF environment. 
 
 == Introduction
 
