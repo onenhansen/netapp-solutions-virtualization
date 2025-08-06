@@ -1,9 +1,9 @@
 section: osv
-title: "OpenShift Virtualization"
+title: "OpenShift virtualization"
 url: /openshift/index.html
 entries:
   - title: "Get started"
-    pdf-filename: "Red Hat OpenShift Virtualization Overview"
+    pdf-filename: "Red Hat OpenShift Virtualization overview"
     entries:
       - title: "About OpenShift Virtualization"
         url: /openshift/osv-overview.html
