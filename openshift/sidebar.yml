@@ -1,6 +1,6 @@
 section: osv
 title: "OpenShift Virtualization"
-url: /osv/index.html
+url: /openshift/index.html
 entries:
   - title: "Get started"
     pdf-filename: "Red Hat OpenShift Virtualization Overview"
@@ -11,10 +11,15 @@ entries:
         url: /openshift/os-netapp-overview.html
       - title: "NetApp Trident storage integration"
         url: /openshift/os-storint-overview.html
+  
+  - title: "Best practices for deployment"
+    pdf-filename: "Best Practices for Red Hat OpenShift Virtualization on NetApp"
+    url: /openshift/os-osv-bpg.html
 #
   - title: "Install Trident"
     pdf-filename: "Install Trident"
     url: /openshift/osv-trident-install.html
+    
   - title: "Deploy on premises"
     pdf-filename: "Deploy Red Hat OpenShift Virtualization on premises"
     entries:
@@ -67,14 +72,10 @@ entries:
     entries:
       - title: "About DII"
         url: /openshift/os-ci-overview.html
-      - title: "Configure DII"
+      - title: "Configure D    II"
         url: /openshift/os-ci-integration.html
       - title: "Monitor VMs using DII"
-        url: /openshift/os-ci-samples.html  
-#
-  - title: "Best practices for deployment"
-    pdf-filename: "Best Practices for Red Hat OpenShift Virtualization on NetApp"
-    url: /openshift/os-osv-bpg.html
+        url: /openshift/os-ci-samples.html 
 #
   - title: "Additional resources"
     url: /openshift/os-additional-information.html

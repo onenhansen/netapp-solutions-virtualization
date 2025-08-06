@@ -5,8 +5,6 @@ indexpage:
   tiles:
     - title: "Red Hat OpenShift Virtualization"
       links:
-        - title: "View all"
-          url: /openshift-videos.html
         - title: "VM management and operations"
           url: /openshift-videos.html#vm-management-and-operations
         - title: "Data protection and disaster recovery"
@@ -18,8 +16,6 @@ indexpage:
 #
     - title: "VMware virtualization"
       links:
-        - title: "View all"
-          url: /vmware-videos.html
         - title: "VMware datastore provisioning with ONTAP"
           url: /vmware-videos.html#vmware-datastore-provisioning-with-ontap
         - title: "SnapCenter Plug-in for VMware vSphere"
@@ -40,8 +36,6 @@ indexpage:
 #
     - title: "Hybrid multicloud virtualization"
       links:
-        - title: "View all"
-          url: /hybrid-cloud-videos.html
         - title: "Red Hat OpenShift Service on AWS (ROSA) with FSx ONTAP"
           url: /hybrid-cloud-videos.html#red-hat-openshift-service-on-aws-rosa-with-fsx-ontap
         - title: "NetApp HCI solutions"
