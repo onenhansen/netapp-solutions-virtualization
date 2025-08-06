@@ -104,16 +104,16 @@ entries:
           - title: "Set up disaster recovery for NFS datastores"
             url: /vmware/vmw-disaster-recovery-nfs.html
 # 
-      - title: "Integrate ONTAP high availability using MetroCluster" 
+      - title: "Integrate ONTAP HA with Metro Storage Cluster" 
         entries: 
-          - title: "About integrating ONTAP HA with MetroCluster"
+          - title: "About integrating ONTAP HA with vMSC"
             url: /vmware/vmw-vcf-protect-vmsc.html
           - title: "Configure stretch cluster for management domains"
             url: /vmware/vmw-vcf-vmsc-mgmt-mcc.html
           - title: "Configure stretch cluster for VI workload domains"
             url: /vmware/vmw-vcf-vmsc-viwld-mcc.html
 
-      - title: "Integrate ONTAP high availability using SnapMirror"
+      - title: "Integrate ONTAP HA using SnapMirror Active Sync "
         entries:
           - title: "Configure stretch cluster for management domains"
             url: /vmware/vmw-vcf-vmsc-mgmt-smas.html
@@ -147,10 +147,10 @@ entries:
       - title: "Configure NFS datastores"
         url: /vmware/vmw-nfs-otv10.html
       - title: "Configure disaster recovery for NFS datastores"
-        url: /vmware/vmw-nfs-vlsr.html    
-      - title: "VMware vSphere Metro Storage Cluster with SnapMirror active sync"
-        url: /vmware/vmw-vmsc-with-smas.html
-      - title: "Convert SnapMirror active sync asymmetric active/active to symmetric active/active with VMSC"
+        url: /vmware/vmw-nfs-vlsr.html
+      - title: "Set up vMSC with SnapMirror Active Sync--does this topic belong here or in the VCF SnapMirror Active Sync section?"
+        url: /vmware/vmw-vmsc-with-smas.html    
+      - title: "Convert SnapMirror Active Sync with VMSC -does this topic belong here or in the VCF SnapMirror Active Sync section?"
         url: /vmware/vmware-smbc-cvt-smas.html
 
 # # # #
