@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar
 permalink: blogs.html
-summary: Read the blogs that offer practical guidance and best practices for integrating ONTAP storage with NetApp Virtualization solutions.
+summary: Read the blogs that offer practical guidance and best practices for integrating ONTAP storage with NetApp virtualization solutions.
 keywords: netapp, solutions, blogs
 ---
 = Read Virtualization solution blogs from NetApp experts
@@ -12,7 +12,7 @@ keywords: netapp, solutions, blogs
 :imagesdir: ./media/
 
 [.lead]
-Read the blogs that offer practical guidance and best practices for integrating ONTAP storage with NetApp Virtualization solutions.
+Read the blogs that offer practical guidance and best practices for integrating ONTAP storage with NetApp virtualization solutions.
  
 
 * NetApp and VMware Cloud Foundation (VCF)

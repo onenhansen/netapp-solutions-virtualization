@@ -1,5 +1,5 @@
 indexpage:
-  title: NetApp Virtualization solutions
+  title: NetApp virtualization solutions
   lead: "NetApp Solutions are a set of strategic and technology capabilities that emphasize the NetApp portfolio of products and services to support our customers' most critical business needs."
   summary: "NetApp Solutions are a set of strategic and technology capabilities that emphasize the NetApp portfolio of products and services to support our customers' most critical business needs."
   tiles:
@@ -16,7 +16,7 @@ indexpage:
         - title: "Legal Notices"
           url: legal-notices.html
 #
-    - title: "Virtualization Solutions"
+    - title: "virtualization solutions"
       links:
         - title: "VMware Virtualization"
           url: vmware/index.html

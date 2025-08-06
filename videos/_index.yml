@@ -1,7 +1,7 @@
 indexpage:
   title: Watch videos and demos on virtualization with NetApp
   lead: "Discover NetApp's comprehensive video library showcasing virtualization solutions across OpenShift, VMware, and hybrid multicloud platforms. Each collection focuses on specific use cases and integration scenarios."
-  summary: "Series of videos and demos discussing the features of many of NetApp's Virtualization solutions"
+  summary: "Series of videos and demos discussing the features of many of NetApp's virtualization solutions"
   tiles:
     - title: "Red Hat OpenShift Virtualization"
       links:
