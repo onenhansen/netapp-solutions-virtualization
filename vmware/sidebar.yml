@@ -53,44 +53,44 @@ entries:
 #
       - title: "Provision VCF environments with principal storage"
         entries:
-          - title: "About provisioning  principal storage for VCF environments"
+          - title: "About provisioning principal storage for VCF environments"
             url: /vmware/vmw-vcf-provision.html
-          - title: "Provision management domain with FC-based VMFS"
+          - title: "Provision management domains with FC-based VMFS"
             url: /vmware/vmw-vcf-mgmt-principal-fc.html
           - title: "Provision management domain with NFS"
             url: /vmware/vmw-vcf-mgmt-principal-nfs.html
-          - title: "Provision VI workload domain with FC-based VMFS"
+          - title: "Provision VI workload domains with FC-based VMFS"
             url: /vmware/vmw-vcf-viwld-principal-fc.html     
-          - title: "Provision VI workload domain with NFS"
+          - title: "Provision VI workload domains with NFS"
             url: /vmware/vmw-vcf-viwld-principal-nfs.html      
 #
       - title: "Expand VCF environments with supplemental storage"
         entries:
           - title: "About expanding storage for VCF environments"
             url: /vmware/vmw-vcf-expand.html
-          - title: "Expand management domain with iSCSI"
+          - title: "Expand management domains with iSCSI"
             url: /vmware/vmw-vcf-mgmt-supplemental-iscsi.html
-          - title: "Expand management domain with FC"
+          - title: "Expand management domains with FC"
             url: /vmware/vmw-vcf-mgmt-supplemental-fc.html
-          - title: "Expand VI workload domain with vVols (iSCSI)"
+          - title: "Expand VI workload domains with vVols iSCSI"
             url: /vmware/vmw-vcf-viwld-supp-iscsi-vvols.html
-          - title: "Expand VI workload domain with vVols (NFS)"
+          - title: "Expand VI workload domains with vVols NFS"
             url: /vmware/vmw-vcf-viwld-supp-nfs-vvols.html
-          - title: "Expand VI workload domain with NVMe/TCP"
+          - title: "Expand VI workload domains with NVMe/TCP"
             url: /vmware/vmw-vcf-viwld-supp-nvme.html
-          - title: "Expand VI workload domain with FC"
+          - title: "Expand VI workload domains with FC"
             url: /vmware/vmw-vcf-viwld-supp-fc.html
 #      
-      - title: "Protect Workloads with NetApp SnapCenter"      
+      - title: "Protect VCF workloads with SnapCenter"      
         entries:
-          - title: "Protect VCF Workload Domain"
-            url: /vmware/vmw-vcf-scv-viwld.html
-          - title: "Protect VCF Multiple Workload Domains"
-            url: /vmware/vmw-vcf-scv-multiwkld-protection.html
-          - title: "Protect VCF Workload Domain with NVMe"
-            url: /vmware/vmw-vcf-scv-nvme.html
-          - title: "Protecting VCF Workloads with SnapCenter"
+          - title: "About protecting VCF workloads with SnapCenter"
             url: /vmware/vmw-vcf-protect-sc.html
+          - title: "Protect a single VCF workload domain"
+            url: /vmware/vmw-vcf-scv-viwld.html
+          - title: "Protect multiple VCF workload domains"
+            url: /vmware/vmw-vcf-scv-multiwkld-protection.html
+          - title: "Protect VCF workload domains with NVMe"
+            url: /vmware/vmw-vcf-scv-nvme.html
           - title: "Protecting VCF Workloads with VMware vSphere Metro Storage Cluster (vMSC)"
             url: /vmware/vmw-vcf-protect-vmsc.html
           - title: "Disaster Recovery using BlueXP DRaaS"
