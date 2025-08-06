@@ -1,17 +1,23 @@
 indexpage:
-  title: NetApp Solutions for Proxmox Virtualization
-  lead: "NetApp Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Proxmox."
-  summary: "NetApp Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Proxmox."
+  title: Proxmox virtualization
+  lead: "NetApp Proxmox VE solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Proxmox."
+  summary: "NetApp Proxmox VE solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Proxmox."
   tiles:
-    - title: "Solutions"
+    - title: "Proxmox virtual environments"
       links:
-        - title: "Overview"
+        - title: "About Proxmox VE"
           url: proxmox-overview.html
-        - title: "NetApp storage for Proxmox VE"
+        - title: "Provision ONTAP storage for Proxmox VE"
           url: proxmox-ontap.html
 #
-    - title: "Additional Resources"
+    - title: "Additional resources"
       links:
         - title: "NetApp Storage and NVMe-oF for Breakthrough Performance in Proxmox Virtualization Environments"
           url: https://www.credativ.de/en/blog/credativ-inside/netapp-storage-and-nvme-of-for-breakthrough-performance-in-proxmox-virtualization-environments/
+        - title: "Proxmox VE documentation"
+          url: https://pve.proxmox.com/pve-docs/chapter-sysadmin.html#external_metric_server
+        - title: Back up and restore Proxmox VE
+          url: https://pve.proxmox.com/pve-docs/chapter-vzdump.html
+        - title: Storage for Proxmox VE
+          url: https://pve.proxmox.com/pve-docs/chapter-storage.html
 #

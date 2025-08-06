@@ -1,7 +1,7 @@
 indexpage:
   title: NetApp Solutions for KVM/libvirt Virtualization
-  lead: "NetApp Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using libvirt with KVM."
-  summary: "NetApp Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using libvirt with KVM."
+  lead: "NetApp KVM solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using libvirt with KVM."
+  summary: "NetApp KVM solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using libvirt with KVM."
   tiles:
     - title: "Solutions"
       links:
