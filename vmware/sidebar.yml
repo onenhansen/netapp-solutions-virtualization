@@ -51,34 +51,34 @@ entries:
           - title: "Convert existing vSphere cluster with FC datastores"
             url: /vmware/vmw-vcf-mgmt-fc.html
 #
-      - title: "Provision VCF environment with principal storage"
+      - title: "Provision VCF environments with principal storage"
         entries:
-          - title: "Overview"
+          - title: "About provisioning  principal storage for VCF environments"
             url: /vmware/vmw-vcf-provision.html
-          - title: "Management Domain with FC"
+          - title: "Provision management domain with FC-based VMFS"
             url: /vmware/vmw-vcf-mgmt-principal-fc.html
-          - title: "Management Domain with NFS"
+          - title: "Provision management domain with NFS"
             url: /vmware/vmw-vcf-mgmt-principal-nfs.html
-          - title: "Virtual Infrastructure Workload Domain with FC"
+          - title: "Provision VI workload domain with FC-based VMFS"
             url: /vmware/vmw-vcf-viwld-principal-fc.html     
-          - title: "Virtual Infrastructure Workload Domain with NFS"
+          - title: "Provision VI workload domain with NFS"
             url: /vmware/vmw-vcf-viwld-principal-nfs.html      
 #
-      - title: "Expand VCF environment with supplemental storage"
+      - title: "Expand VCF environments with supplemental storage"
         entries:
-          - title: "Overview"
+          - title: "About expanding storage for VCF environments"
             url: /vmware/vmw-vcf-expand.html
-          - title: "Management Domain with iSCSI"
+          - title: "Expand management domain with iSCSI"
             url: /vmware/vmw-vcf-mgmt-supplemental-iscsi.html
-          - title: "Management Domain with FC"
+          - title: "Expand management domain with FC"
             url: /vmware/vmw-vcf-mgmt-supplemental-fc.html
-          - title: "Virtual Infrastructure Workload Domain with vVols (iSCSI)"
+          - title: "Expand VI workload domain with vVols (iSCSI)"
             url: /vmware/vmw-vcf-viwld-supp-iscsi-vvols.html
-          - title: "Virtual Infrastructure Workload Domain with vVols (NFS)"
+          - title: "Expand VI workload domain with vVols (NFS)"
             url: /vmware/vmw-vcf-viwld-supp-nfs-vvols.html
-          - title: "Virtual Infrastructure Workload Domain with NVMe/TCP"
+          - title: "Expand VI workload domain with NVMe/TCP"
             url: /vmware/vmw-vcf-viwld-supp-nvme.html
-          - title: "Virtual Infrastructure Workload Domain with FC"
+          - title: "Expand VI workload domain with FC"
             url: /vmware/vmw-vcf-viwld-supp-fc.html
 #      
       - title: "Protect Workloads with NetApp SnapCenter"      
@@ -123,10 +123,10 @@ entries:
       - title: "Monitor Workloads with Data Infrastructure Insights (DII)"
         url: /vmware/vmw-dii.html
 # # # #
-  - title: "VMware vSphere Foundation (VVF) on NetApp"
+  - title: "VMware vSphere Foundation on NetApp"
     pdf-filename: "VMware vSphere Foundation (VVF) on NetApp"
     entries:
-      - title: "Overview"
+      - title: "About VVF on NetApp"
         url: /vmware/vmw-vvf-overview.html
       - title: "VMware Virtualization for ONTAP: Best Practices"
         url: /vmware/vmw-vsphere-with-ontap.html
@@ -148,10 +148,10 @@ entries:
         url: /vmware/vmware-smbc-cvt-smas.html
 
 # # # #
-  - title: "VMware Virtual Volumes (vVols) on NetApp"
+  - title: "vVols on NetApp"
     pdf-filename: "VMware Virtual Volumes (vVols) on NetApp"
     entries:
-      - title: "Using vVols with ONTAP"
+      - title: "About vVols with ONTAP"
         url: /vmware/vmw-vvol-overview.html
 # # # #
   - title: "Additional Information"

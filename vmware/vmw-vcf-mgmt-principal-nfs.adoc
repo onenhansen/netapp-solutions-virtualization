@@ -4,7 +4,6 @@ permalink: vmware/vmw-vcf-mgmt-principal-nfs.html
 keywords: netapp, vmware, cloud, foundation, vcf, asa, all-flash, array, ontap tools, otv, sddc, nfs
 summary:
 ---
-
 = Use an NFS datastore on ONTAP as principal storage for VCF management domain
 :hardbreaks:
 :nofooter:

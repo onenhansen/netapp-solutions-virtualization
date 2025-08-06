@@ -4,7 +4,6 @@ permalink: vmware/vmw-getting-started-migration.html
 keywords: vmware, getting, started, overview, netapp
 summary: 
 ---
-
 = Learn about migrating VM workloads to ONTAP
 :hardbreaks:
 :nofooter:

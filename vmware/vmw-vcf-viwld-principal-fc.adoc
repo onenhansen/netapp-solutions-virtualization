@@ -4,8 +4,7 @@ permalink: vmware/vmw-vcf-viwld-principal-fc.html
 keywords: netapp, vmware, cloud, foundation, vcf, asa, all-flash, array, ontap tools, otv, sddc, fc
 summary:
 ---
-
-= Use an FC-based VMFS datastore on ONTAP as principal storage for VI workload domain
+= Use an FC-based VMFS datastore on ONTAP as principal storage for a VI workload domain
 :hardbreaks:
 :nofooter:
 :icons: font
