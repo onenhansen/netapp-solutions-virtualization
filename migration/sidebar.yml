@@ -1,6 +1,6 @@
 section: migration
 title: "VM migration utilities"
-#url: /vm-migrate/index.html
+url: /migration/index.html
 entries:
   - title: "Use Shift Toolkit to migrate or convert VMs"
     pdf-filename: "Virtual Machine Migration (Shift Toolkit)"
@@ -17,13 +17,15 @@ entries:
         url: /migration/shift-toolkit-conversion.html
       - title: "Next steps"
         url: /migration/shift-toolkit-summary.html
+        
   - title: "Migrate VMs to ONTAP datastores"
     url: /migration/migrate-vms-to-ontap-datastore.html
+
   - title: "Migrate VMs to Amazon EC2"
     entries:
       - title: "About migrating VMs to Amazon EC2"
         url: /migration/migrate-vms-to-ec2-fsxn-overview.html
-      - title: "Deployment requirements"
+      - title: "Migration requirements"
         url: /migration/migrate-vms-to-ec2-fsxn-arch.html
       - title: "Migrate VMs to Amazon EC2 using FSx ONTAP"
         url: /migration/migrate-vms-to-ec2-fsxn-deploy.html
