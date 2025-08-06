@@ -23,7 +23,7 @@ entries:
           url: /vmware/vmw-getting-started-dii.html
         - title: "VM workload migration for improved efficiency"
           url: /vmware/vmw-getting-started-migration.html
-        - title: "VM Data Collector for capacity planning"
+        - title: "VMDC for capacity planning"
           url: /vmware/vmw-getting-started-vmdc.html
       - title: Data protection solutions
         entries:
@@ -57,7 +57,7 @@ entries:
             url: /vmware/vmw-vcf-provision.html
           - title: "Provision management domains with FC"
             url: /vmware/vmw-vcf-mgmt-principal-fc.html
-          - title: "Provision management domain with NFS"
+          - title: "Provision management domains with NFS"
             url: /vmware/vmw-vcf-mgmt-principal-nfs.html
           - title: "Provision VI workload domains with FC"
             url: /vmware/vmw-vcf-viwld-principal-fc.html     
