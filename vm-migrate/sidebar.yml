@@ -1,5 +1,5 @@
 section: migration
-title: "Virtual Machine Migration Utilities"
+title: "VM migration utilities"
 #url: /vm-migrate/index.html
 entries:
   - title: "Use Shift Toolkit to migrate or convert VMs"

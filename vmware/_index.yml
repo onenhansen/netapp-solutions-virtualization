@@ -1,9 +1,9 @@
 indexpage:
-  title: NetApp Solutions for Virtualization with VMware by Broadcom
+  title: NetApp virtualization solutions
   lead: "NetApp provides many best practices and solutions for a robust virtualization environment both on-premises and in the cloud."
   summary: "NetApp provides many best practices and solutions for a robust virtualization environment both on-premises and in the cloud."
   tiles:
-    - title: "Getting Started with NetApp and VMware"
+    - title: "Get started"
       links:
         - title: "Overview"
           url: vmw-getting-started-overview.html
@@ -14,33 +14,33 @@ indexpage:
         - title: "Blogs"
           url: /../blogs.html
 #
-    - title: "Setting Up VMware Cloud Foundation (VCF) on NetApp"
+    - title: "Set Up VMware VCF on NetApp"
       links: 
         - title: "Overview"
           url: vmw-vcf-overview.html
-        - title: "Migrate Existing Infrastructure to VCF"
+        - title: "Migrate existing infrastructure to VCF"
           url: vmw-vcf-migrate.html
-        - title: "Provision VCF Environment with Principal Storage"
+        - title: "Provision VCF environment with principal storage"
           url: vmw-vcf-provision.html
-        - title: "Expand VCF Environment with Supplemental Storage"
+        - title: "Expand VCF environment with supplemental storage"
           url: vmw-vcf-expand.html
 #
-    - title: "Managing VCF on NetApp" 
+    - title: "Manage VMware VCF on NetApp" 
       links: 
         - title: "Migrate VMs"
           url: ../migration/migrate-vms-to-ontap-datastore.html
-        - title: "Protect Workloads with SnapCenter"
+        - title: "Protect workloads with SnapCenter"
           url: vmw-vcf-protect-sc.html
-        - title: "Protect Workloads with VMware vSphere Metro Storage Cluster (vMSC)" 
+        - title: "Protect workloads with VMware vMSC" 
           url: vmw-vcf-protect-vmsc.html
-        - title: "Disaster Recovery using BlueXP DRaaS"
+        - title: "Disaster recovery using BlueXP"
           url: vmw-vcf-disaster-recovery.html
         - title: "Ransomware Protection"
           url: vmw-nfs-arp.html
-        - title: "Monitor Workloads with Data Infrastructure Insights (DII)"
+        - title: "Monitor workloads with Data Infrastructure Insights"
           url: vmw-dii.html
 #
-    - title: "VMware vSphere Foundation (VVF)"
+    - title: "VMware vSphere Foundation on NetApp"
       links:
         - title: "VMware vSphere with ONTAP Best Practices"
           url: https://docs.netapp.com/us-en/ontap-apps-dbs/vmware/vmware-vsphere-overview.html
@@ -55,7 +55,7 @@ indexpage:
         - title: "VMware vSphere Metro Storage Cluster with SnapMirror active sync"
           url: vmw-vmsc-with-smas.html
 #
-    - title: "Tools and Utilities"
+    - title: "Tools and utilities"
       links:
         - title: "Virtual Machine Data Collector"
           url: ../assess/vmw-vmdc.html
