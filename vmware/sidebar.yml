@@ -55,11 +55,11 @@ entries:
         entries:
           - title: "About provisioning principal storage for VCF environments"
             url: /vmware/vmw-vcf-provision.html
-          - title: "Provision management domains with FC-based VMFS"
+          - title: "Provision management domains with FC"
             url: /vmware/vmw-vcf-mgmt-principal-fc.html
           - title: "Provision management domain with NFS"
             url: /vmware/vmw-vcf-mgmt-principal-nfs.html
-          - title: "Provision VI workload domains with FC-based VMFS"
+          - title: "Provision VI workload domains with FC"
             url: /vmware/vmw-vcf-viwld-principal-fc.html     
           - title: "Provision VI workload domains with NFS"
             url: /vmware/vmw-vcf-viwld-principal-nfs.html      
@@ -104,43 +104,43 @@ entries:
           - title: "Set up disaster recovery for NFS datastores"
             url: /vmware/vmw-disaster-recovery-nfs.html
 # 
-      - title: "Integrate ONTAP High Availability using MetroCluster" 
+      - title: "Integrate ONTAP high availability using MetroCluster" 
         entries: 
-          - title: "About integrating ONTAP HA with vMSC"
+          - title: "About integrating ONTAP HA with MetroCluster"
             url: /vmware/vmw-vcf-protect-vmsc.html
           - title: "Configure stretch cluster for management domains"
             url: /vmware/vmw-vcf-vmsc-mgmt-mcc.html
           - title: "Configure stretch cluster for VI workload domains"
             url: /vmware/vmw-vcf-vmsc-viwld-mcc.html
 
-      - title: "Integrate ONTAP High Availability using SnapMirror active sync"
+      - title: "Integrate ONTAP high availability using SnapMirror"
         entries:
           - title: "Configure stretch cluster for management domains"
-            url: /vmware/vmw-vcf-scv-mgmt-smas.html
+            url: /vmware/vmw-vcf-vmsc-mgmt-smas.html
           - title: "Configure stretch cluster for VI workload domains"
-            url: /vmware/vmw-vcf-scv-viwld-smas.html 
+            url: /vmware/vmw-vcf-vmsc-viwld-smas.html
 
-      - title: "Migrate VMs to ONTAP datastores"
+      - title: "Migrate VMs to ONTAP datastores--can we remove from this sidebar?"
         url: /vmware/migrate-vms-to-ontap-datastore.html
 #
       - title: "Protect and recover data against ransomware"
         url: /vmware/vmw-nfs-arp.html
 
-      - title: "Monitor workloads with DII"
+      - title: "Monitor on-premises storage with DII"
         url: /vmware/vmw-dii.html
 # # # #
   - title: "VMware vSphere Foundation on NetApp"
     pdf-filename: "VMware vSphere Foundation on NetApp"
     entries:
-      - title: "About VVF on NetApp"
+      - title: "About using NFS v3 datastores on ONTAP storage"
         url: /vmware/vmw-vvf-overview.html
-      - title: "VMware Virtualization for ONTAP: Best Practices"
+      - title: "About using VMware vSphere 8 with ONTAP storage--can we remove topic?"
         url: /vmware/vmw-vsphere-with-ontap.html
       - title: "What's New with VMware vSphere 8"
         url: /vmware/vmw-vsphere8-overview.html
-      - title: "VMFS Deployment Guide for vSphere 8"
+      - title: "Deploy VMFS for vSphere 8"
         url: /vmware/vmw-vmfs-deploy.html    
-      - title: "Modern & Cloud-Connected All-Flash For vSphere 8"
+      - title: "About NetApp support for VMware vSphere 8"
         url: /vmware/vmw-vsphere8.html
       - title: "NFS nConnect Feature with NetApp and VMware"
         url: /vmware/vmw-vsphere8-nfs-nconnect.html

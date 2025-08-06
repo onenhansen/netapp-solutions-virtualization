@@ -4,7 +4,7 @@ permalink: vmware/vmw-vcf-viwld-principal-nfs.html
 keywords: netapp, vmware, cloud, foundation, vcf, aff, all-flash, nfs, vvol, vvols, array, ontap tools, otv, sddc
 summary:
 ---
-= Use an NFS datastore on ONTAP as principal storage for VI a workload domain
+= Use an NFS datastore on ONTAP as principal storage for a VI workload domain
 :hardbreaks:
 :nofooter:
 :icons: font
