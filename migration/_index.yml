@@ -16,17 +16,10 @@ indexpage:
         - title: "Convert VMs using Shift Toolkit"
           url: shift-toolkit-conversion.html
 #
-    - title: "VM migration to ONTAP"
+    - title: "Migrate VMs"
       links:
         - title: "Migrate VMs to ONTAP datastores"
           url: migrate-vms-to-ontap-datastore.html
-#
-    - title: "VM migration to the cloud"
-      links:
-        - title: "About migrating VMs to Amazon EC2"
-          url: migrate-vms-to-ec2-fsxn-overview.html
-        - title: "Migration requirements"
-          url: migrate-vms-to-ec2-fsxn-arch.html
         - title: "Migrate VMs to Amazon EC2 using FSx ONTAP"
           url: migrate-vms-to-ec2-fsxn-deploy.html
 

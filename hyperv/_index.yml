@@ -1,16 +1,16 @@
 indexpage:
-  title: NetApp Solutions for Hyper-V Virtualization
+  title: NetApp Hyper-V virtualization solutions
   lead: "NetApp Hyper-V Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Hyper-V."
-  summary: "NetApp Hyper-V Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Hyper-V."
+  summary: "NetApp Hyper-V virtualization solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Hyper-V."
   tiles:
     - title: "Get started"
       links:
         - title: "Introduction to Hyper-V on Windows Server"
           url: https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
-        - title: "Hyper-V Technology Overview"
+        - title: "Learn about Hyper-V technology"
           url: https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-technology-overview       
 #
-    - title: "Deploy Microsoft Hyper-V on NetApp storage"
+    - title: "Deploy Microsoft Hyper-V"
       links:
         - title: "Overview"
           url: hyperv-deploy.html

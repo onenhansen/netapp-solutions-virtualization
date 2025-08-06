@@ -1,9 +1,9 @@
 section: hyperv
-title: "Hyper-V Virtualization"
+title: "Hyper-V virtualization"
 url: /hyperv/index.html
 entries:
   - title: "Deploy Hyper-V on NetApp storage"
-    pdf-filename: "Deploying Hyper-V on NetApp Storage"
+    pdf-filename: "Deploy Hyper-V on NetApp Storage"
     entries:
       - title: "About Hyper-V deployment with ONTAP"
         url: /hyperv/hyperv-deploy.html
@@ -18,9 +18,7 @@ entries:
       - title: "Migrate VMs to Hyper-V"
         url: /hyperv/hyperv-deploy-script.html
 #
-  - title: "Solutions for Hyper-V with NetApp"
-    entries:
-      - title: "SnapMirror Active Sync with stretch clusters"
-        pdf-filename: "Set up replication with SnapMirror Active Sync"
-        url: /hyperv/hyperv-smas.html
+  - title: "Set up replication with SnapMirror Active Sync"
+    pdf-filename: "Set up replication with SnapMirror Active Sync"
+    url: /hyperv/hyperv-smas.html
 #

@@ -1,5 +1,5 @@
 section: kvm
-title: "KVM Virtualization"
+title: "KVM virtualization"
 url: /kvm/index.html
 entries:
   - title: "About KVM virtualization"
