@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: whats-new.html
-keywords: netapp, solutions, virtualization, what's new, updates
-summary: Log of recent changes to the NetApp Virtualization Solutions collateral. 
+keywords: netapp, solutions, virtualization, what's new, updates, change log
+summary: Log of recent changes to the NetApp virtualization solutions collateral. 
 ---
-= What's new in NetApp Virtualization solutions 
+= What's new in NetApp virtualization solutions 
 :icons: font
 :imagesdir: ../media/
 
@@ -12,13 +12,12 @@ summary: Log of recent changes to the NetApp Virtualization Solutions collateral
 Learn what's new in virtualization solutions.
 
 == 18 August 2025
-The NetApp Solutions site is now the NetApp Solutions Family, which includes the following sites:
+The NetApp Solutions site is now the link:https://docs.netapp.com/us-en/netapp-solutions-family/index.html[NetApp solutions family^], which includes the following sites:
 
-* https://docs.netapp.com/us-en/netapp-solutions-ai/index.html[NetApp Artificial Intelligence solutions]
-* https://docs.netapp.com/us-en/netapp-solutions-cloud/index.html[NetApp Public and Hybrid Cloud solutions]
-* https://docs.netapp.com/us-en/netapp-solutions-containers/index.html[NetApp Container solutions]
-* https://docs.netapp.com/us-en/netapp-solutions-dataops/index.html[NetApp Data Management solutions]
-* https://docs.netapp.com/us-en/netapp-solutions-databases/index.html[NetApp Database solutions]
-* https://docs.netapp.com/us-en/netapp-solutions-sap/index.html[NetApp SAP Business Application and SAP HANA Database solutions]
-* https://docs.netapp.com/us-en/netapp-solutions-virtualization/index.html[NetApp Virtualization solutions]
-
+* link:https://docs.netapp.com/us-en/netapp-solutions-ai/index.html[NetApp artificial intelligence solutions^]
+* link:https://docs.netapp.com/us-en/netapp-solutions-containers/index.html[NetApp container solutions^]
+* link:https://docs.netapp.com/us-en/netapp-solutions-dataops/index.html[NetApp data management solutions^]
+* link:https://docs.netapp.com/us-en/netapp-solutions-databases/index.html[NetApp database solutions^]
+* link:https://docs.netapp.com/us-en/netapp-solutions-cloud/index.html[NetApp public and hybrid cloud solutions^] 
+* link:https://docs.netapp.com/us-en/netapp-solutions-sap/index.html[NetApp solutions for SAP^]
+* NetApp virtualization solutions
