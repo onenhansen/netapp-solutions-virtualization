@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: videos/vmware-videos.html
+permalink: vmware-videos.html
 summary: Videos and demos showcasing VMware solutions integration with NetApp storage technologies
 keywords: vmware, vsphere, vcf, tanzu, snapcenter, ontap tools, videos, demos
 ---

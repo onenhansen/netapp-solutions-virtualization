@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: videos/openshift-videos.html
+permalink: openshift-videos.html
 summary: Videos and demos showcasing OpenShift Virtualization integration with NetApp storage solutions
 keywords: openshift, virtualization, netapp, trident, videos, demos
 ---

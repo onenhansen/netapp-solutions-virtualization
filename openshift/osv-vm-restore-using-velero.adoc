@@ -4,7 +4,6 @@ permalink: openshift/osv-vm-restore-using-velero.html
 keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization, OADP operator, Openshift Data Protection Application operator, velero
 summary: Red Hat OpenShift Virtualization with NetApp ONTAP
 ---
-
 = Restore a VM from backup in Red Hat OpenShift Virtualization using Velero
 :hardbreaks:
 :nofooter:

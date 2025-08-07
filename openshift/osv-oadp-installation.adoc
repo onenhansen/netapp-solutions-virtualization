@@ -4,7 +4,6 @@ permalink: openshift/osv-oadp-installation.html
 keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization, OADP operator, Openshift Data Protection Application operator, velero
 summary: Red Hat OpenShift Virtualization Data Protection with NetApp ONTAP
 ---
-
 = Install the Red Hat OpenShift API for Data Protection (OADP) operator
 :hardbreaks:
 :nofooter:
