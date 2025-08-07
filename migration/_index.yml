@@ -11,6 +11,7 @@ indexpage:
           url: /vmware/vmw-getting-started-migration.html
         - title: "About migrating VMs to Amazon EC2"
           url: /migration/migrate-vms-to-ec2-fsxn-overview.html
+#
     - title: "Use Shift Toolkit"
       links:
         - title: "Install Shift Toolkit"
@@ -21,7 +22,7 @@ indexpage:
           url: shift-toolkit-migration.html
         - title: "Convert VMs using Shift Toolkit"
           url: shift-toolkit-conversion.html
-#
+
     - title: "Migrate VMs on-premises and in the cloud"
       links:
         - title: "Migrate VMs to ONTAP datastores"

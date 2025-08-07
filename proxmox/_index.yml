@@ -3,7 +3,7 @@ indexpage:
   lead: "NetApp Proxmox VE solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Proxmox."
   summary: "NetApp Proxmox VE solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Proxmox."
   tiles:
-    - title: "Proxmox virtual environments"
+    - title: "Get started"
       links:
         - title: "About Proxmox VE"
           url: proxmox-overview.html
