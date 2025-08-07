@@ -16,9 +16,9 @@ indexpage:
         - title: "Videos and demos"
           url: /videos/index.html
 #
-    - title: "Virtualization solutions"
+    - title: "NetApp solutions for virtualization"
       links:
-        - title: "VMware vSphere and Cloud Foundation"
+        - title: "VMware on-premises and cloud"
           url: /vmware/index.html
         - title: "Microsoft Hyper-V"
           url: hyperv/index.html
@@ -44,15 +44,30 @@ indexpage:
         - title: "Migrate VMs to Amazon EC2"
           url: /migration/migrate-vms-to-ec2-fsxn-overview.html
 #
-    - title: "Assessment and planning"
+    - title: "Management tools and integrations"
       links:
-        - title: "Virtual Machine Data Collector"
-          url: /assess/vmw-vmdc.html
+        - title: "ONTAP tools for VMware vSphere"
+          url: /vmware/vmw-getting-started-otv.html
+        - title: "ONTAP and VMware APIs for administration"
+          url: /vmware/vmw-getting-started-automation.html
+        - title: "Data Infrastructure Insights for monitoring"
+          url: /vmware/vmw-getting-started-dii.html
+        - title: "VM workload migration for improved efficiency"
+          url: /vmware/vmw-getting-started-migration.html
 #
-    - title: "Cloud and hybrid cloud solutions"
+    - title: "Data protection"
       links:
-        - title: "VMware Sovereign Cloud"
-          url: /vmw-sc/index.html
+        - title: "Protection with MetroCluster and SnapMirror active sync"
+          url: /vmware/vmw-getting-started-vmsc.html
+        - title: "Security and ransomware protection with ONTAP"
+          url: /vmware/vmw-getting-started-security.html
+#
+    - title: "Backup and disaster recovery"
+      links:
+        - title: "SnapCenter Plug-in for VMware vSphere"
+          url: /vmware/vmw-getting-started-snapcenter.html
+        - title: "BlueXP disaster recovery"
+          url: /vmware/vmw-dr-gs.html
 #
     - title: "Solution automation"
       links:

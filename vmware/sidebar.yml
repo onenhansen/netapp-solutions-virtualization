@@ -23,8 +23,7 @@ entries:
           url: /vmware/vmw-getting-started-dii.html
         - title: "VM workload migration for improved efficiency"
           url: /vmware/vmw-getting-started-migration.html
-        - title: "VMDC for capacity planning"
-          url: /vmware/vmw-getting-started-vmdc.html
+#
       - title: Data protection solutions
         entries:
         - title: "Protection with MetroCluster and SnapMirror active sync"
@@ -165,8 +164,12 @@ entries:
       - title: "Use vVols with ONTAP"
         url: /vmware/vmw-vvol-overview.html
 #
-      - title: "Use the Virtual Machine Data Collector"
-        url: /assess/vmw-vmdc.html
+      - title: "Virtual Machine Data Collector"
+        entries:
+          - title: "About VMDM"
+            url: /vmware/vmw-getting-started-vmdc.html
+          - title: "Use VMDM"
+            url: /assess/vmw-vmdc.html
 #
   - title: "NetApp and VMware Sovereign Cloud"
     pdf-filename: "NetApp and VMware Sovereign Cloud"
