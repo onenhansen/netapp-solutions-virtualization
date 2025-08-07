@@ -167,11 +167,11 @@ entries:
 #
       - title: "Use the Virtual Machine Data Collector"
         url: /assess/vmw-vmdc.html
-
+#
   - title: "NetApp and VMware Sovereign Cloud"
     pdf-filename: "NetApp and VMware Sovereign Cloud"
     entries:
         - title: "About Sovereign Cloud"
           url: /vmware/vmw-sovereign-cloud.html
-        - title: "Uses Cases with NetApp"
+        - title: "Uses cases with NetApp and Sovereign Cloud"
           url: /vmware/vmw-sovereign-cloud-use-cases.html

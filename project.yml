@@ -29,7 +29,6 @@ sidebar:
     - section: proxmox
     - section: kvm
     - section: migration
-    - section: vmw-sc
 #
     - title: "Videos"
       url: /videos/index.html
