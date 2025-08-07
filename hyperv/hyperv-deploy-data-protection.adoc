@@ -4,8 +4,7 @@ permalink: hyperv/hyperv-deploy-data-protection.html
 keywords: hyperv, hyper-v, deploy, netapp, virtualization, data, protection
 summary: "The solution provides the steps required to deploy Hyper-V on NetApp storage"   
 ---
-
-= Deploying Microsoft Hyper-V on NetApp Storage: Data Protection
+= Deploy Microsoft Hyper-V on NetApp storage
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +12,9 @@ summary: "The solution provides the steps required to deploy Hyper-V on NetApp s
 :imagesdir: ../media/
 
 [.lead]
-Data protection is a key tenant for any production workload.  This section describes how to backup and restore Hyper-V virtual machines.
+Deploy Microsoft Hyper-V virtual machines using ONTAP storage-based solutions and third-party backup integration. This process includes using ONTAP Snapshot copies and FlexClone technology for rapid backup and restore operations, configuring CommVault IntelliSnap for enterprise backup management, and implementing SnapMirror replication for backup and disaster recovery across sites. 
+
+Learn to address unique Hyper-V backup considerations like disk ID conflicts in clustered environments and optimize data protection for standalone hosts and Hyper-V clusters.
 
 == Restore using NetApp Storage snapshot 
 
@@ -24,7 +25,7 @@ Keep in mind, Hyper-V nodes assign each disk a unique ID and taking a snapshot o
 While it is straightforward with standalone Hyper-V hosts, the procedure is different for Hyper-V clusters. The recovery process involves mapping the FlexClone volume to a standalone Hyper-V host or using diskpart to manually change the signature by mapping FlexClone volume to a standalone Hyper-V host (it is important because a disk ID conflict results in inability to bring the disk online) and once done, map the FlexClone volume to the cluster.
 
 
-== Backup and Restore using Third party solution
+== Backup and Restore using third-party solutions
 
 *Note*: This section uses Commvault, however this is applicable to other third-party solutions.
 
@@ -132,8 +133,7 @@ For detailed steps for all supported restore options, see link:https://documenta
 
 == Advanced NetApp ONTAP options
 
-NetApp SnapMirror enables efficient site-to-site storage replication, making disaster
-recovery rapid, reliable, and manageable to suit today's global enterprises. Replicating data at high speeds over LANs and WANs, SnapMirror provides high data availability and fast recovery for mission-critical applications, as well as outstanding storage deduplication and network compression capabilities. With NetApp SnapMirror technology, disaster recovery can protect the entire data center. Volumes can back up to an off-site location incrementally. SnapMirror performs incremental, block-based replication as frequently as the required RPO. The block-level updates reduce bandwidth and time requirements, and data consistency is maintained at the DR site. 
+NetApp SnapMirror enables efficient site-to-site storage replication, making disaster recovery rapid, reliable, and manageable to suit today's global enterprises. Replicating data at high speeds over LANs and WANs, SnapMirror provides high data availability and fast recovery for mission-critical applications, as well as outstanding storage deduplication and network compression capabilities. With NetApp SnapMirror technology, disaster recovery can protect the entire data center. Volumes can back up to an off-site location incrementally. SnapMirror performs incremental, block-based replication as frequently as the required RPO. The block-level updates reduce bandwidth and time requirements, and data consistency is maintained at the DR site. 
 
 An important step is to create a one-time baseline transfer of the entire dataset. This is required before incremental updates can be performed. This operation includes the creation of a Snapshot copy at the source and the transfer of all the data blocks referenced by it to the destination file system. After the initialization is complete, scheduled or manually triggered updates can occur. Each update transfers only the new and changed blocks from the source to the destination file system. This operation includes creating a Snapshot copy at the source volume, comparing it with the baseline copy, and transferring only the changed blocks to the destination volume. The new copy becomes the baseline copy for the next update. Because the replication is periodic, SnapMirror can consolidate the changed blocks and conserve network bandwidth. The impact on write throughput and write latency is minimal.
 

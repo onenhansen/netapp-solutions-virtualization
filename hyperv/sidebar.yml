@@ -11,7 +11,7 @@ entries:
         url: /hyperv/hyperv-deploy-prereqs.html
       - title: "Deployment guidelines"
         url: /hyperv/hyperv-deploy-considerations.html
-      - title: "Backup and restore Hyper-V VMs"
+      - title: "Deploy Hyper-V"
         url: /hyperv/hyperv-deploy-data-protection.html
       - title: "Do we need this topic?"
         url: /hyperv/hyperv-deploy-conclusion.html
@@ -22,3 +22,6 @@ entries:
     pdf-filename: "Set up replication with SnapMirror Active Sync"
     url: /hyperv/hyperv-smas.html
 #
+  - title: "Use SMI-S Provider for Hyper-V"
+    pdf-filename: "Use SMI-S Provider for Microsoft Hyper-V"
+    url: /hyperv/hyperv-smis.html

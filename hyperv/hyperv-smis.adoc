@@ -4,7 +4,6 @@ permalink: hyperv/hyperv-smis.html
 keywords: hyperv, hyper-v, SMI-S, SCVMM, netapp, virtualization
 summary: "This paper documents how to install and manage NetApp SMI-S Provider, and provision storage with Microsoft SCVMM. "   
 ---
-
 = NetApp SMI-S Provider for Microsoft Hyper-V
 :hardbreaks:
 :nofooter:
@@ -13,7 +12,9 @@ summary: "This paper documents how to install and manage NetApp SMI-S Provider, 
 :imagesdir: ../media/
 
 [.lead]
-This paper documents how to install and manage NetApp SMI-S Provider, and provision storage with Microsoft System Center Virtual Machine Manager (SCVMM) . 
+The NetApp SMI-S Provider enables seamless integration between NetApp ONTAP storage systems and Microsoft System Center Virtual Machine Manager (SCVMM) in Hyper-V virtualized environments. 
+
+This comprehensive solution provides a standardized interface for storage management, allowing administrators to detect, provision, and monitor NetApp storage resources directly from SCVMM. With support for both iSCSI and SMB storage protocols, the SMI-S Provider simplifies storage administration while offering robust monitoring and reporting capabilities for virtualized data centers running Windows Server and Hyper-V. 
 
 == Introduction 
 
@@ -113,7 +114,7 @@ image:hyperv-smis-014.png["Add SMB file share to the Hyper-V host clusters"]
 == Logs and Traces
 You can configure how SMI-S Provider manages logs and trace files, such as specifying the levels of messages to be logged and the directory to which logs are saved. You also specify the components to be traced, the target to which trace messages are written, the level of tracing, and the trace file location.
 
-==== Logs setting
+=== Logs setting
 By default, all system messages are logged and the system message logs are located in the logs directory in the directory in which NetApp SMI-S Provider is installed. You can change the location and the level of system messages that are written to the CIM server log.
 
 * You can choose log level from Trace, Information, Warning, Severe, Fatal.

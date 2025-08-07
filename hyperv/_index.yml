@@ -5,6 +5,8 @@ indexpage:
   tiles:
     - title: "Get started"
       links:
+        - title: "Learn about Hyper-V deployment with ONTAP"
+          url: /hyperv/hyperv-deploy.html
         - title: "Introduction to Hyper-V on Windows Server"
           url: https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
         - title: "Learn about Hyper-V technology"
@@ -12,24 +14,20 @@ indexpage:
 #
     - title: "Deploy Microsoft Hyper-V"
       links:
-        - title: "Overview"
-          url: hyperv-deploy.html
-        - title: "Pre-requisites for deployment"
+        - title: "Prepare to deploy"
           url: hyperv-deploy-prereqs.html
-        - title: "Considerations for deployment"
+        - title: "Deployment guidelines"
           url: hyperv-deploy-considerations.html
-        - title: "Data Protection"
+        - title: "Deploy Microsoft Hyper-V on NetApp storage"
           url: hyperv-deploy-data-protection.html
-        - title: "Conclusion"
-          url: hyperv-deploy-conclusion.html
-        - title: "Migration using FlexClone and PowerShell"
+        - title: "Migrate VMs using FlexClone and PowerShell"
           url: hyperv-deploy-script.html
 #
     - title: "Solutions for Hyper-V with NetApp"
       links:
-        - title: "SnapMirror Active Sync with Stretch Clusters"
+        - title: "SnapMirror Active Sync with stretch clusters"
           url: hyperv-smas.html
-        - title: "NetApp SMI-S Provider support for Microsoft Hyper-V"
+        - title: "NetApp SMI-S Provider for Hyper-V"
           url: hyperv-smis.html
 #
     - title: "Additional resources"
