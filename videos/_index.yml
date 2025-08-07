@@ -6,40 +6,40 @@ indexpage:
     - title: "Red Hat OpenShift Virtualization"
       links:
         - title: "VM management and operations"
-          url: openshift-videos.html#vm-management-and-operations
+          url: openshift-videos.html#_vm_management_and_operations
         - title: "Data protection and disaster recovery"
-          url: openshift-videos.html#data-protection-and-disaster-recovery
+          url: openshift-videos.html#_data_protection_and_disaster_recovery
         - title: "Storage integration and management"
-          url: openshift-videos.html#storage-integration-and-management
+          url: openshift-videos.html#_storage_integration_and_management
         - title: "Automation and monitoring"
-          url: openshift-videos.html#automation-and-monitoring
+          url: openshift-videos.html#_automation_and_monitoring
 #
     - title: "VMware virtualization"
       links:
         - title: "VMware datastore provisioning with ONTAP"
-          url: vmware-videos.html#vmware-datastore-provisioning-with-ontap
+          url: vmware-videos.html#_vmware_datastore_provisioning_with_ontap
         - title: "SnapCenter Plug-in for VMware vSphere"
-          url: vmware-videos.html#snapcenter-plug-in-for-vmware-vsphere
+          url: vmware-videos.html#_snapcenter_plug_in_for_vmware_vsphere
         - title: "3-2-1 data protection solutions"
-          url: vmware-videos.html#3-2-1-data-protection-solutions
+          url: vmware-videos.html#_3_2_1_data_protection_solutions
         - title: "VMware Cloud on AWS with AWS FSx ONTAP"
-          url: vmware-videos.html#vmware-cloud-on-aws-with-aws-fsx-ontap
+          url: vmware-videos.html#_vmware_cloud_on_aws_with_aws_fsx_ontap
         - title: "Azure VMware solutions"
-          url: vmware-videos.html#azure-vmware-solutions
+          url: vmware-videos.html#_azure_vmware_solutions
         - title: "VMware Cloud Foundation with NetApp ONTAP"
-          url: vmware-videos.html#vmware-cloud-foundation-with-netapp-ontap
+          url: vmware-videos.html#_vmware_cloud_foundation_with_netapp_ontap
         - title: "NetApp with VMware Tanzu"
-          url: vmware-videos.html#netapp-with-vmware-tanzu
+          url: vmware-videos.html#_netapp_with_vmware_tanzu
         - title: "NetApp Cloud Insights"
-          url: vmware-videos.html#netapp-cloud-insights
+          url: vmware-videos.html#_netapp_cloud_insights
       summary: "Learn about ONTAP tools, SnapCenter, data protection, and cloud integrations for VMware environments. Featured topics: vSphere integration, backup workflows, VMware Cloud Foundation, and Tanzu."
 #
     - title: "Hybrid multicloud virtualization"
       links:
         - title: "Red Hat OpenShift Service on AWS (ROSA) with FSx ONTAP"
-          url: hybrid-cloud-videos.html#red-hat-openshift-service-on-aws-rosa-with-fsx-ontap
+          url: hybrid-cloud-videos.html#_red_hat_openshift_service_on_aws_rosa_with_fsx_ontap
         - title: "NetApp HCI solutions"
-          url: hybrid-cloud-videos.html#netapp-hci-solutions
+          url: hybrid-cloud-videos.html#_netapp_hci_solutions
 #
     - title: "Featured videos"
       links:
