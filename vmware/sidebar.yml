@@ -3,7 +3,7 @@ title: "VMware virtualization"
 url: /vmware/index.html
 entries:
   - title: "Get started"
-    pdf-filename: "Getting Started with NetApp and VMware"
+    pdf-filename: "Getting started with NetApp and VMware"
     entries: 
       - title: Core concepts
         entries:
@@ -23,7 +23,6 @@ entries:
           url: /vmware/vmw-getting-started-dii.html
         - title: "VM workload migration for improved efficiency"
           url: /vmware/vmw-getting-started-migration.html
-#
       - title: Data protection solutions
         entries:
         - title: "Protection with MetroCluster and SnapMirror active sync"
@@ -36,8 +35,7 @@ entries:
           url: /vmware/vmw-getting-started-snapcenter.html
         - title: "BlueXP disaster recovery"
           url: /vmware/vmw-dr-gs.html     
-
-# # # #
+#
   - title: "VMware Cloud Foundation on NetApp"
     pdf-filename: "VMware Cloud Foundation on NetApp"
     entries:
@@ -54,7 +52,7 @@ entries:
 #
       - title: "Provision VCF with principal storage"
         entries:
-          - title: "About provisioning principal storage for VCF environments"
+          - title: "About provisioning principal storage"
             url: /vmware/vmw-vcf-provision.html
           - title: "Provision management domains with FC"
             url: /vmware/vmw-vcf-mgmt-principal-fc.html
@@ -67,7 +65,7 @@ entries:
 #
       - title: "Expand VCF with supplemental storage"
         entries:
-          - title: "About expanding storage for VCF environments"
+          - title: "About expanding storage"
             url: /vmware/vmw-vcf-expand.html
           - title: "Expand management domains with iSCSI"
             url: /vmware/vmw-vcf-mgmt-supplemental-iscsi.html
@@ -165,6 +163,7 @@ entries:
         url: /vmware/vmw-vvol-overview.html
 #
       - title: "Collect data with the Virtual Machine Data Collector"
+        pdf-filename: "Virtual Machine Data Collector"
         entries:
           - title: "About VMDC"
             url: /vmware/vmw-getting-started-vmdc.html
