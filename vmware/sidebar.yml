@@ -53,7 +53,7 @@ entries:
           - title: "Convert existing vSphere cluster with FC datastores"
             url: /vmware/vmw-vcf-mgmt-fc.html
 #
-      - title: "Provision VCF environments with principal storage"
+      - title: "Provision VCF with principal storage"
         entries:
           - title: "About provisioning principal storage for VCF environments"
             url: /vmware/vmw-vcf-provision.html
@@ -66,7 +66,7 @@ entries:
           - title: "Provision VI workload domains with NFS"
             url: /vmware/vmw-vcf-viwld-principal-nfs.html      
 #
-      - title: "Expand VCF environments with supplemental storage"
+      - title: "Expand VCF with supplemental storage"
         entries:
           - title: "About expanding storage for VCF environments"
             url: /vmware/vmw-vcf-expand.html
@@ -83,7 +83,7 @@ entries:
           - title: "Expand VI workload domains with FC"
             url: /vmware/vmw-vcf-viwld-supp-fc.html
 #      
-      - title: "Protect VCF workloads with SnapCenter"      
+      - title: "Protect VCF with SnapCenter"      
         entries:
           - title: "About protecting VCF workloads with SnapCenter"
             url: /vmware/vmw-vcf-protect-sc.html
@@ -94,7 +94,7 @@ entries:
           - title: "Protect VCF workload domains with NVMe"
             url: /vmware/vmw-vcf-scv-nvme.html
 #
-      - title: "Backup and disaster recovery with SnapCenter and BlueXP"
+      - title: "Set up disaster recovery with SnapCenter and BlueXP"
         entries:
           - title: "About protecting VMware datastores with BlueXP"
             url: /vmware/vmw-vcf-disaster-recovery.html
@@ -145,18 +145,25 @@ entries:
             url: /vmware/vmw-vsphere8-overview.html
 #
       - title: "Deploy VMFS for vSphere 8"
-        url: /vmware/vmw-vmfs-deploy.html    
+        url: /vmware/vmw-vmfs-deploy.html
+#    
       - title: "Use the NFS nConnect feature"
         url: /vmware/vmw-vsphere8-nfs-nconnect.html
+ #       
       - title: "Configure NFS datastores"
         url: /vmware/vmw-nfs-otv10.html
-      - title: "Configure disaster recovery for NFS datastores"
+
+      - title: "Configure disaster recovery"
         url: /vmware/vmw-nfs-vlsr.html
+
       - title: "Set up vMSC with SnapMirror Active Sync"
-        url: /vmware/vmw-vmsc-with-smas.html    
+        url: /vmware/vmw-vmsc-with-smas.html
+
       - title: "Convert SnapMirror Active Sync with VMSC"
         url: /vmware/vmware-smbc-cvt-smas.html
+
       - title: "Use vVols with ONTAP"
         url: /vmware/vmw-vvol-overview.html
 #
-
+      - title: "Use the Virtual Machine Data Collector"
+        url: ../assess/vmw-vmdc.html

@@ -22,7 +22,7 @@ indexpage:
       links:
         - title: "Deployment requirements"
           url: osv-deployment-prerequisites.html
-        - title: "Deploy OpenShift"
+        - title: "Deploy Red Hat OpenShift Virtualization with ONTAP"
           url: osv-deployment.html
         - title: "Create VMs"
           url: osv-workflow-create-vm.html
@@ -33,9 +33,9 @@ indexpage:
 #
     - title: "Migrate virtual machines"
       links:
-        - title: "Migrate VMs from VMware"
+        - title: "Migrate VMs from VMware to an OpenShift cluster"
           url: osv-workflow-vm-migration-mtv.html
-        - title: "Live migrate VMs"
+        - title: "Migrate VMs between two cluster nodes"
           url: osv-workflow-vm-live-migration.html
 #
     - title: "Protect data using Trident Protect"

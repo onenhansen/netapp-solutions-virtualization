@@ -31,7 +31,7 @@ entries:
         url: /openshift/osv-workflow-create-vm.html
       - title: "Migrate VMs from VMware"
         url: /openshift/osv-workflow-vm-migration-mtv.html
-      - title: "Live migrate VMs"
+      - title: "Migrate VMs between two cluster nodes"
         url: /openshift/osv-workflow-vm-live-migration.html
       - title: "Clone VMs"
         url: /openshift/osv-workflow-clone-vm.html

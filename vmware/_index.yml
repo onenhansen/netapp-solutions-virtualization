@@ -49,7 +49,7 @@ indexpage:
         - title: "Use vVols with ONTAP"
           url: vmw-vvol-overview.html
 #
-    - title: "Tools and utilities"
+    - title: "VMware tools and utilities"
       links:
         - title: "Virtual Machine Data Collector"
           url: ../assess/vmw-vmdc.html
