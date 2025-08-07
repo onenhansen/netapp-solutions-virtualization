@@ -13,7 +13,6 @@ indexpage:
           url: ../blogs.html
         - title: "Videos"
           url: ../videos/vmware-videos.html
-
 #
     - title: "VMware Cloud Foundation on NetApp"
       links: 
