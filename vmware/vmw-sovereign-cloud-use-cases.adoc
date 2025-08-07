@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar
 permalink: vmware/vmw-sovereign-cloud-use-cases.html
-keywords: NetApp Solutions, vmware, sovereign cloud, netapp, use case
+keywords: NetApp solutions, vmware, sovereign cloud, netapp, use case
 summary:
 ---
-= Use cases for NetApp with VMware Sovereign Cloud
+= NetApp technology integrations with VMware Sovereign Cloud
 :hardbreaks:
 :nofooter:
 :icons: font

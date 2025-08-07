@@ -5,12 +5,12 @@ indexpage:
   tiles:
     - title: "Get started"
       links:
+        - title: "What's new"
+          url: /whats-new.html
         - title: "Learn about virtualization with NetApp"
           url: /virtualization/virt-overview.html
         - title: "Use NetApp for any virtualization solution"
           url: /virtualization/virt-options-on-netapp.html
-        - title: "What's new"
-          url: /whats-new.html
         - title: "Blogs"
           url: /blogs.html
         - title: "Videos and demos"
@@ -23,7 +23,7 @@ indexpage:
         - title: "Microsoft Hyper-V"
           url: hyperv/index.html
         - title: "Red Hat OpenShift Virtualization"
-          url: /osv/index.html
+          url: /openshift/index.html
         - title: "Proxmox Virtual Environment"
           url: /proxmox/index.html
         - title: "KVM and libvirt"

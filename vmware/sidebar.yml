@@ -176,5 +176,5 @@ entries:
     entries:
         - title: "About Sovereign Cloud"
           url: /vmware/vmw-sovereign-cloud.html
-        - title: "Uses cases with NetApp and Sovereign Cloud"
+        - title: "NetApp integrations with Sovereign Cloud"
           url: /vmware/vmw-sovereign-cloud-use-cases.html
