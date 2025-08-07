@@ -91,7 +91,7 @@ entries:
           - title: "Protect VCF workload domains with NVMe"
             url: /vmware/vmw-vcf-scv-nvme.html
 #
-      - title: "Set up disaster recovery with SnapCenter and BlueXP"
+      - title: "Set up disaster recovery"
         entries:
           - title: "About protecting VMware datastores with BlueXP"
             url: /vmware/vmw-vcf-disaster-recovery.html
@@ -101,21 +101,18 @@ entries:
             url: /vmware/vmw-disaster-recovery-vmfs.html
           - title: "Set up disaster recovery for NFS datastores"
             url: /vmware/vmw-disaster-recovery-nfs.html
-# 
-      - title: "Integrate ONTAP HA with Metro Storage Cluster" 
-        entries: 
-          - title: "About integrating ONTAP HA with vMSC"
-            url: /vmware/vmw-vcf-protect-vmsc.html
-          - title: "Configure stretch cluster for management domains"
-            url: /vmware/vmw-vcf-vmsc-mgmt-mcc.html
-          - title: "Configure stretch cluster for VI workload domains"
-            url: /vmware/vmw-vcf-vmsc-viwld-mcc.html
-
-      - title: "Integrate ONTAP HA using SnapMirror Active Sync "
+#
+      - title: "Configure stretch clusters"
         entries:
-          - title: "Configure stretch cluster for management domains"
+          - title: "About configuring stretch clusters"
+            url: /vmware/vmw-vcf-protect-vmsc.html
+          - title: "Configure management domains with MetroCluster"
+            url: /vmware/vmw-vcf-vmsc-mgmt-mcc.html
+          - title: "Configure VI workload domains with MetroCluster"
+            url: /vmware/vmw-vcf-vmsc-viwld-mcc.html
+          - title: "Configure management domains with SnapMirror Active Sync"
             url: /vmware/vmw-vcf-vmsc-mgmt-smas.html
-          - title: "Configure stretch cluster for VI workload domains"
+          - title: "Configure VI workload domains with SnapMirror Active Sync"
             url: /vmware/vmw-vcf-vmsc-viwld-smas.html
 
       - title: "Migrate VMs to ONTAP datastores--can we remove from this sidebar?"
