@@ -1,69 +1,68 @@
 indexpage:
   title: NetApp virtualization solutions
-  lead: "NetApp Solutions are a set of strategic and technology capabilities that emphasize the NetApp portfolio of products and services to support our customers' most critical business needs."
-  summary: "NetApp Solutions are a set of strategic and technology capabilities that emphasize the NetApp portfolio of products and services to support our customers' most critical business needs."
+  lead: "NetApp provides comprehensive virtualization solutions that enable organizations to optimize their IT infrastructure across multiple hypervisors and platforms. Discover strategies to modernize VMware environments, migrate to alternative hypervisors, and leverage NetApp's advanced data management and cloud integration features."
+  summary: "NetApp provides comprehensive virtualization solutions that enable organizations to optimize their IT infrastructure across multiple hypervisors and platforms. Discover strategies to modernize VMware environments, migrate to alternative hypervisors, and leverage NetApp's advanced data management and cloud integration features."
   tiles:
-    - title: "Introduction"
+    - title: "Get started"
       links:
-        - title: "Learn about NetApp Solutions"
-          url: https://docs.netapp.com/us-en/netapp-solutions-family/intro-family.html
-        - title: "Change History"
+        - title: "Learn about virtualization with NetApp"
+          url: /virtualization/virt-overview.html
+        - title: "Use NetApp for any virtualization solution"
+          url: /virtualization/virt-options-on-netapp.html
+        - title: "What's new"
           url: /whats-new.html
         - title: "Blogs"
           url: /blogs.html
-        - title: "Videos & Demos"
-          url: /videos.html
-        - title: "Legal Notices"
-          url: legal-notices.html
+        - title: "Videos and demos"
+          url: /videos/index.html
 #
-    - title: "virtualization solutions"
+    - title: "Virtualization solutions"
       links:
-        - title: "VMware Virtualization"
-          url: vmware/index.html
-        - title: "Hyper-V Virtualization"
+        - title: "VMware vSphere and Cloud Foundation"
+          url: /vmware/index.html
+        - title: "Microsoft Hyper-V"
           url: hyperv/index.html
-        - title: "OpenShift Virtualization"
-          url: osv/index.html
-        - title: "Proxmox Virtualization"
-          url: proxmox/index.html
-        - title: "KVM/libvirt Virtualization"
-          url: kvm/index.html
-        - title: "Virtual Machine Migration (Shift Toolkit)"
-          url: /migration/shift-toolkit-overview.html
+        - title: "Red Hat OpenShift Virtualization"
+          url: /osv/index.html
+        - title: "Proxmox Virtual Environment"
+          url: /proxmox/index.html
+        - title: "KVM and libvirt"
+          url: /kvm/index.html
 #        - title: "Disk-level Conversion of Virtual Disks"
 #          url: vm-migrate/disk-convert-overview.html
 #
-    - title: "Cloud and Hybrid Cloud Solutions"
+    - title: "VM migration and conversion"
+      links:
+        - title: "VM migration utilities overview"
+          url: /migration/index.html
+        - title: "Migrate VMs using Shift Toolkit"
+          url: /migration/shift-toolkit-migration.html
+        - title: "Convert VMs using Shift Toolkit"
+          url: /migration/shift-toolkit-conversion.html
+        - title: "Migrate VMs to ONTAP datastores"
+          url: /migration/migrate-vms-to-ontap-datastore.html
+        - title: "Migrate VMs to Amazon EC2"
+          url: /migration/migrate-vms-to-ec2-fsxn-overview.html
+#
+    - title: "Assessment and planning"
+      links:
+        - title: "Virtual Machine Data Collector"
+          url: /assess/vmw-vmdc.html
+#
+    - title: "Cloud and hybrid cloud solutions"
       links:
         - title: "VMware Sovereign Cloud"
-          url: vmw-sc/index.html
+          url: /vmw-sc/index.html
 #
-    - title: "AI and Core Infrastructure Solutions"
+    - title: "Solution automation"
       links:
-        - title: "Containers"
-          url: containers/index.html
-        - title: "SAP and SAP HANA"
-          url: https://docs.netapp.com/us-en/netapp-solutions-sap/index.html
-#
-    - title: "Solution Automation"
-      links:
-        - title: "Request Automation"
+        - title: "Request automation"
           url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Request%20Automation]%0d%0a%0d%0aSolution%20Name:%20%0d%0aRequest%20Title:%20%0d%0aDescription:%0d%0aSuggestions:&title=Request%20Automation%20-%20%3Crequest_title%3E
-#
-    - title: "FlexPod - A NetApp & Cisco Solution"
-      links:
-        - title: "FlexPod Solutions Technical Content"
-          url: https://docs.netapp.com/us-en/flexpod/
-        - title: "FlexPod Sales Page"
-          url: https://flexpod.com
-#        - title: "Videos and Demos"
-#          url: https://tv.netapp.com/search?q=flexpod
-        - title: "Blogs"
-          url: https://blog.netapp.com/tag/FlexPod/
 #
     - title: "Feedback"
       links:
-        - title: "Propose a New Solution"
+        - title: "Propose a new solution"
           url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Request%20Solution]%0d%0a%0d%0aSolution%20Use%20Case:%20%0d%0aSolution%20Description:%20%0d%0aAdditional%20Comments:&title=Request%20Solution%20-%20%3Csolution%3E
-        - title: "Provide Solution Feedback"
+        - title: "Provide solution feedback"
           url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Solution%20Feedback]%0d%0a%0d%0aSolution%20Name:%20%0d%0aSolution%20Feedback:%20%0d%0aAdditional%20Comments:&title=Solution%20Feedback%20-%20%3Csolution%3E
+#
