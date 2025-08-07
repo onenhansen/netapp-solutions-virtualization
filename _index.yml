@@ -33,8 +33,6 @@ indexpage:
 #
     - title: "VM migration and conversion"
       links:
-        - title: "VM migration utilities overview"
-          url: /migration/index.html
         - title: "Migrate VMs using Shift Toolkit"
           url: /migration/shift-toolkit-migration.html
         - title: "Convert VMs using Shift Toolkit"
