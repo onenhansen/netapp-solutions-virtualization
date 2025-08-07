@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar
-permalink: hybrid-cloud-videos.html
+permalink: /videos/hybrid-cloud-videos.html
 summary: Videos and demos showcasing hybrid cloud virtualization solutions with NetApp
 keywords: hybrid cloud, rosa, fsx ontap, azure vmware, netapp hci, videos, demos
 ---
