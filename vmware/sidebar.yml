@@ -166,4 +166,4 @@ entries:
         url: /vmware/vmw-vvol-overview.html
 #
       - title: "Use the Virtual Machine Data Collector"
-        url: ./assess/vmw-vmdc.html
+        url: /assess/vmw-vmdc.html

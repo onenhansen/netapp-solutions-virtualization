@@ -42,12 +42,6 @@ indexpage:
           url: vmw-nfs-otv10.html
         - title: "Configure disaster recovery"
           url: vmw-nfs-vlsr.html
-        - title: "Set up vMSC with SnapMirror Active Sync"
-          url: vmw-vmsc-with-smas.html
-        - title: "Convert SnapMirror Active Sync with VMSC"
-          url: vmware-smbc-cvt-smas.html
-        - title: "Use vVols with ONTAP"
-          url: vmw-vvol-overview.html
 #
     - title: "VMware tools and utilities"
       links:
