@@ -46,6 +46,8 @@ entries:
         url: /vmware/vmw-vcf-overview.html
       - title: "Convert existing vSphere clusters to VCF"
         entries:
+          - title: "About converting existing vSphere clusters to VCF"
+            url: /vmware/vmw-vcf-migrate.html
           - title: "Convert existing vSphere cluster with NFS datastores"
             url: /vmware/vmw-vcf-mgmt-nfs.html
           - title: "Convert existing vSphere cluster with FC datastores"
@@ -91,8 +93,7 @@ entries:
             url: /vmware/vmw-vcf-scv-multiwkld-protection.html
           - title: "Protect VCF workload domains with NVMe"
             url: /vmware/vmw-vcf-scv-nvme.html
-
-
+#
       - title: "Backup and disaster recovery with SnapCenter and BlueXP"
         entries:
           - title: "About protecting VMware datastores with BlueXP"
@@ -132,32 +133,30 @@ entries:
   - title: "VMware vSphere Foundation on NetApp"
     pdf-filename: "VMware vSphere Foundation on NetApp"
     entries:
-      - title: "About using NFS v3 datastores on ONTAP storage"
-        url: /vmware/vmw-vvf-overview.html
-      - title: "About using VMware vSphere 8 with ONTAP storage--can we remove topic?"
-        url: /vmware/vmw-vsphere-with-ontap.html
-      - title: "What's new with VMware vSphere 8"
-        url: /vmware/vmw-vsphere8-overview.html
+      - title: "Get started"
+        entries:
+          - title: "About VMware vSphere Foundation on NetApp"
+            url: /vmware/vmw-vvf-overview.html
+          - title: "About NetApp support for VMware vSphere 8"
+            url: /vmware/vmw-vsphere8.html
+          - title: "About using VMware vSphere 8 with ONTAP storage--can we remove topic?"
+            url: /vmware/vmw-vsphere-with-ontap.html
+          - title: "What's new with VMware vSphere 8"
+            url: /vmware/vmw-vsphere8-overview.html
+#
       - title: "Deploy VMFS for vSphere 8"
         url: /vmware/vmw-vmfs-deploy.html    
-      - title: "About NetApp support for VMware vSphere 8"
-        url: /vmware/vmw-vsphere8.html
       - title: "Use the NFS nConnect feature"
         url: /vmware/vmw-vsphere8-nfs-nconnect.html
       - title: "Configure NFS datastores"
         url: /vmware/vmw-nfs-otv10.html
       - title: "Configure disaster recovery for NFS datastores"
         url: /vmware/vmw-nfs-vlsr.html
-      - title: "Set up vMSC with SnapMirror Active Sync--does this topic belong here or in the VCF SnapMirror Active Sync section?"
+      - title: "Set up vMSC with SnapMirror Active Sync"
         url: /vmware/vmw-vmsc-with-smas.html    
-      - title: "Convert SnapMirror Active Sync with VMSC -does this topic belong here or in the VCF SnapMirror Active Sync section?"
+      - title: "Convert SnapMirror Active Sync with VMSC"
         url: /vmware/vmware-smbc-cvt-smas.html
-
-# # # #
-  - title: "vVols on NetApp"
-    pdf-filename: "VMware Virtual Volumes (vVols) on NetApp"
-    entries:
-      - title: "About vVols with ONTAP"
+      - title: "Use vVols with ONTAP"
         url: /vmware/vmw-vvol-overview.html
-# # # #
+#
 

@@ -4,8 +4,7 @@ permalink: vmware/vmw-vcf-migrate.html
 keywords: vmware, vcf, migrate, import
 summary: 
 ---
-
-= Migrate Existing Infrastructure to VCF
+= Learn about converting a vSphere environment with existing datastores to VCF
 :hardbreaks:
 :nofooter:
 :icons: font
