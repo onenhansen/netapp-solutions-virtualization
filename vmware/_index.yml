@@ -1,7 +1,7 @@
 indexpage:
   title: NetApp VMware virtualization solutions
-  lead: "NetApp provides many best practices and solutions for a robust virtualization environment both on-premises and in the cloud."
-  summary: "NetApp provides many best practices and solutions for a robust virtualization environment both on-premises and in the cloud."
+  lead: "NetApp VMware virtualization solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using VMware on-premises and in the cloud."
+  summary: "NetApp VMware virtualization solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using VMware on-premises and in the cloud."
   tiles:
     - title: "Get started"
       links:

@@ -1,7 +1,7 @@
 indexpage:
   title: NetApp Hyper-V virtualization solutions
-  lead: "NetApp Hyper-V virtualization solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Hyper-V."
-  summary: "NetApp Hyper-V virtualization solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Hyper-V."
+  lead: "NetApp Hyper-V virtualization solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Microsoft Hyper-V."
+  summary: "NetApp Hyper-V virtualization solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using Microsoft Hyper-V."
   tiles:
     - title: "Get started"
       links:
@@ -23,7 +23,7 @@ indexpage:
         - title: "Migrate VMs using FlexClone and PowerShell"
           url: hyperv-deploy-script.html
 #
-    - title: "Solutions for Hyper-V with NetApp"
+    - title: "Solutions for Microsoft Hyper-V with NetApp"
       links:
         - title: "SnapMirror Active Sync with stretch clusters"
           url: hyperv-smas.html
