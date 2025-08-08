@@ -6,7 +6,7 @@ indexpage:
     - title: "Get started"
       links:
         - title: "Learn about Hyper-V deployment with ONTAP"
-          url: /hyperv/hyperv-deploy.html
+          url: hyperv-deploy.html
         - title: "Introduction to Hyper-V on Windows Server"
           url: https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/
         - title: "Learn about Hyper-V technology"
