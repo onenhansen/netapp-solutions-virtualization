@@ -4,7 +4,6 @@ permalink: hyperv/hyperv-deploy-conclusion.html
 keywords: hyperv, hyper-v, deploy, netapp, virtualization
 summary: "The solution provides the steps required to deploy Hyper-V on NetApp storage"   
 ---
-
 = Summary of Microsoft Hyper-V deployment on  ONTAP storage systems
 :hardbreaks:
 :nofooter:
