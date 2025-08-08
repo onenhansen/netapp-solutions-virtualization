@@ -34,11 +34,11 @@ sidebar:
       url: /videos/index.html
       entries:
         - title: "OpenShift virtualization"
-          url: /openshift-videos.html
+          url: /videos/openshift-videos.html
         - title: "VMware virtualization"
-          url: /vmware-videos.html
+          url: /videos/vmware-videos.html
         - title: "Hybrid multicloud virtualization"
-          url: /hybrid-cloud-videos.html
+          url: /videos/hybrid-cloud-videos.html
     - title: "Blogs"
       url: /blogs.html
     - title: "Legal notices"
