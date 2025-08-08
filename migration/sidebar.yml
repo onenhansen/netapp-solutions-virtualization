@@ -33,7 +33,7 @@ entries:
         url: /migration/migrate-vms-to-ec2-fsxn-overview.html
       - title: "Migration requirements"
         url: /migration/migrate-vms-to-ec2-fsxn-arch.html
-      - title: "Migrate VMs to Amazon EC2 using FSx ONTAP"
+      - title: "Migrate VMs to Amazon EC2"
         url: /migration/migrate-vms-to-ec2-fsxn-deploy.html
       - title: "More migration options"
         url: /migration/migrate-vms-to-ec2-fsxn-summary.html

@@ -115,7 +115,7 @@ entries:
           - title: "Configure VI workload domains with SnapMirror Active Sync"
             url: /vmware/vmw-vcf-vmsc-viwld-smas.html
 
-      - title: "Migrate VMs to ONTAP datastores--can we remove from this sidebar?"
+      - title: "Migrate VMs to vSphere"
         url: /vmware/migrate-vms-to-ontap-datastore.html
 #
       - title: "Protect and recover data against ransomware"
