@@ -12,4 +12,6 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
+Organizations looking to modernize their virtualization infrastructure often need to migrate virtual machines to more efficient storage platforms. Discover how to migrate VMs from various storage systems to NetApp ONTAP datastores, allowing you to leverage ONTAP's advanced data management capabilities, space-efficient snapshots, and integrated data protection features.
+
 include::../_include/migrate-vms-ontap-datastores.adoc[]
