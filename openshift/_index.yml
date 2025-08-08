@@ -64,11 +64,11 @@ indexpage:
     - title: "Monitor VMs with Data Infrastructure Insights"
       links:
         - title: "About Data Infrastructure Insights"
-          url: /openshift/os-ci-overview.html
+          url: os-ci-overview.html
         - title: "Configure Data Infrastructure Insights"
-          url: /openshift/os-ci-integration.html
+          url: os-ci-integration.html
         - title: "Monitor VMs using Data Infrastructure Insights"
-          url: /openshift/os-ci-samples.html
+          url: os-ci-samples.html
 #
     - title: "Additional Resources"
       links:
