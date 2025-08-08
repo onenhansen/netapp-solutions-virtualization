@@ -8,9 +8,9 @@ indexpage:
         - title: "About Shift Toolkit"
           url: shift-toolkit-overview.html
         - title: "About migrating VMs to ONTAP datastores"
-          url: /vmware/vmw-getting-started-migration.html
+          url: vmware/vmw-getting-started-migration.html
         - title: "About migrating VMs to Amazon EC2"
-          url: /migration/migrate-vms-to-ec2-fsxn-overview.html
+          url: migration/migrate-vms-to-ec2-fsxn-overview.html
 #
     - title: "Use Shift Toolkit"
       links:
