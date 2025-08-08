@@ -19,12 +19,7 @@ entries:
         url: /migration/shift-toolkit-summary.html
 #
   - title: "Migrate VMs to ONTAP" 
-    pdf-filename: "Migrate VMs to ONTAP datastores"
-    entries:
-      - title: "About migrating VMs to ONTAP datastores-can we move this topic to migration folder?"
-        url: /vmware/vmw-getting-started-migration.html
-      - title: "Migrate VMs to ONTAP datastores"
-        url: /migration/migrate-vms-to-ontap-datastore.html
+    url: /migration/migrate-vms-to-ontap-datastore.html
 #
   - title: "Migrate VMs to Amazon EC2"
     pdf-filename: "Migrate VMs to Amazon EC2 using FSx ONTAP"
