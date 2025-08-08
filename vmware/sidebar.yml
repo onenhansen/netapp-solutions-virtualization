@@ -91,7 +91,7 @@ entries:
           - title: "Protect VCF workload domains with NVMe"
             url: /vmware/vmw-vcf-scv-nvme.html
 #
-      - title: "Set up disaster recovery"
+      - title: "Protect VMware datastores with BlueXP"
         entries:
           - title: "About protecting VMware datastores with BlueXP"
             url: /vmware/vmw-vcf-disaster-recovery.html
@@ -102,7 +102,7 @@ entries:
           - title: "Set up disaster recovery for NFS datastores"
             url: /vmware/vmw-disaster-recovery-nfs.html
 #
-      - title: "High Availability with vSphere Metro Storage Cluster"
+      - title: "Protect workloads with vSphere Metro Storage Cluster"
         entries:
           - title: "About integrating ONTAP high availability"
             url: /vmware/vmw-vcf-protect-vmsc.html
