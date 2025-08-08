@@ -53,27 +53,21 @@ indexpage:
         - title: "VM workload migration for improved efficiency"
           url: /vmware/vmw-getting-started-migration.html
 #
-    - title: "Data protection"
+    - title: "Data protection and disaster recovery"
       links:
-        - title: "Protection with MetroCluster and SnapMirror active sync"
+        - title: "Protect with MetroCluster and SnapMirror Active Sync"
           url: /vmware/vmw-getting-started-vmsc.html
         - title: "Security and ransomware protection with ONTAP"
           url: /vmware/vmw-getting-started-security.html
-#
-    - title: "Backup and disaster recovery"
-      links:
         - title: "SnapCenter Plug-in for VMware vSphere"
           url: /vmware/vmw-getting-started-snapcenter.html
         - title: "BlueXP disaster recovery"
           url: /vmware/vmw-dr-gs.html
 #
-    - title: "Solution automation"
+    - title: "Solution requests and feedback"
       links:
         - title: "Request automation"
           url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Request%20Automation]%0d%0a%0d%0aSolution%20Name:%20%0d%0aRequest%20Title:%20%0d%0aDescription:%0d%0aSuggestions:&title=Request%20Automation%20-%20%3Crequest_title%3E
-#
-    - title: "Feedback"
-      links:
         - title: "Propose a new solution"
           url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Request%20Solution]%0d%0a%0d%0aSolution%20Use%20Case:%20%0d%0aSolution%20Description:%20%0d%0aAdditional%20Comments:&title=Request%20Solution%20-%20%3Csolution%3E
         - title: "Provide solution feedback"
