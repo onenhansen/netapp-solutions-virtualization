@@ -32,7 +32,6 @@ indexpage:
           url: vmware-videos.html#netapp-with-vmware-tanzu
         - title: "NetApp Cloud Insights"
           url: vmware-videos.html#netapp-cloud-insights
-      summary: "Learn about ONTAP tools, SnapCenter, data protection, and cloud integrations for VMware environments. Featured topics: vSphere integration, backup workflows, VMware Cloud Foundation, and Tanzu."
 #
     - title: "Hybrid multicloud virtualization"
       links:
