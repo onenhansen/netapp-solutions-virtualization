@@ -16,7 +16,7 @@ indexpage:
         - title: "Blogs"
           url: ../blogs.html
         - title: "Videos"
-          url: ../videos/os-videos-and-demos.html
+          url: ../videos/openshift-videos.html  
 #
     - title: "Deploy on premises"
       links:
