@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: migration/migrate-get-start-ontap.html
+keywords: migration, getting, started, ontap datastores, netapp
+summary: 
+---
+= Learn about migrating VMs to ONTAP datastores
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Migrating VMware workloads to ONTAP improves data management and performance with features like deduplication, compression, and snapshots. 
+
+include::../_include/migrate-get-start-ontap.adoc[]
+
+For more information on migrating VMware workloads to ONTAP backed datastores, see the link:migrate-vms-to-ontap-datastore.html[Migrate VMs to ONTAP datastores].

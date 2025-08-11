@@ -9,7 +9,7 @@ keywords: openshift, virtualization, netapp, trident, videos, demos
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Explore the integration of OpenShift Virtualization with NetApp through a series of videos demonstrating key capabilities such as disaster recovery, VM protection, storage management, and automation using Trident and Ansible.

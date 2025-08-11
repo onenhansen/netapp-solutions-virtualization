@@ -9,7 +9,7 @@ keywords: vmware, vsphere, vcf, tanzu, snapcenter, ontap tools, videos, demos
 :nofooter:
 :icons: font
 :linkattrs:
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Watch videos and demos featuring VMware integration with NetApp storage solutions. See how to use NetApp ONTAP Tools for VMware vSphere, the SnapCenter Plug-in for VMware vSphere, 3-2-1 data protection, and how NetApp works with VMware Cloud Foundation and Tanzu.
