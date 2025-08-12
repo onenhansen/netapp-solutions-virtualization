@@ -4,8 +4,7 @@ permalink: vmware/vmw-getting-started-migration.html
 keywords: vmware, getting, started, overview, netapp
 summary: 
 ---
-
-= Learn about migrating VM workloads to ONTAP
+= Learn about VMs from VMware vSphere to ONTAP datastores
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,23 +12,8 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Migrating VMware workloads to ONTAP improves data management and performance with features like deduplication, compression, and snapshots. 
+VMware vSphere administrators can enhance their infrastructure by migrating workloads to NetApp ONTAP datastores. ONTAP delivers VM-aware snapshots, storage-efficient clones, and seamless vMotion operations while supporting Storage Policy-Based Management (SPBM). Whether migrating from vSAN, legacy storage, or implementing hybrid cloud deployments, ONTAP provides improved performance and simplified storage operations for VMware environments. 
 
-== Introduction
+include::../_include/migrate-get-start-ontap.adoc[]
 
-This migration enables seamless integration, improved data protection, and greater flexibility in managing virtualized environments, ensuring a smooth transition with minimal downtime. 
-
-For more information on migrating VMware workloads to ONTAP backed datastores, see the link:../migration/migrate-vms-to-ontap-datastore.html[Migrate VMs to ONTAP Datastores].
-
-== Use Cases
-
-There are many options with migration in terms of the source and destination when considering moving to ONTAP backed datastores. 
-
-* Migration from third party storage systems (including vSAN) to ONTAP datastores. 
-* Migration of VMs in the same vSphere cluster
-* Migration of VMs across multiple vSphere clusters
-* Migration of VMs across vCenter servers in same SSO domain  
-* Migration of VMs across vCenter servers in different SSO domains  
-* Migration of VMs across datacenter locations 
-* Migration from third party storage systems (including vSAN) to ONTAP datastores. 
-* Migration of VMs in a hybrid cloud environment 
+For more information on migrating VMware workloads to ONTAP backed datastores, see the link:migrate-vms-to-ontap-datastore.html[Migrate VMs to ONTAP datastores].

@@ -4,7 +4,6 @@ permalink: openshift/osv-workflow-vm-migration-mtv.html
 keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization
 summary: Red Hat OpenShift Virtualization with NetApp ONTAP
 ---
-
 = Migrate a VM from VMware to Red Hat OpenShift cluster
 :hardbreaks:
 :nofooter:

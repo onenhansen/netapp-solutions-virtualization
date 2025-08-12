@@ -4,7 +4,6 @@ permalink: openshift/osv-trident-install.html
 keywords: OpenShift, OCP, Trident, Trident protect, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, Red Hat OpenShift Virtualization
 summary: Red Hat OpenShift Virtualization with NetApp ONTAP
 ---
-
 = Install Trident on Red Hat OpenShift cluster and create storage objects
 :hardbreaks:
 :nofooter:

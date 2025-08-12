@@ -4,7 +4,6 @@ permalink: openshift/osv-vm-dp-delete-using-velero.html
 keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization, OADP operator, Openshift Data Protection Application operator, velero
 summary: Red Hat OpenShift Virtualization with NetApp ONTAP
 ---
-
 = Delete a backup CR or restore CR in Red Hat OpenShift Virtualization using Velero
 :hardbreaks:
 :nofooter:

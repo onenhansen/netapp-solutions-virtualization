@@ -4,7 +4,6 @@ permalink: vmware/vmw-getting-started-automation.html
 keywords: 
 summary:
 ---
-
 = Learn about using ONTAP and VMware APIs for administration
 :hardbreaks:
 :nofooter:

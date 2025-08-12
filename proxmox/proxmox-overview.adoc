@@ -4,8 +4,7 @@ permalink: proxmox/proxmox-overview.html
 keywords: proxmox ve, kvm, qemu, lxc, vm
 summary:
 ---
-
-= Learn about Proxmox Virtual Environment
+= Learn about the Proxmox Virtual Environment
 :hardbreaks:
 :nofooter:
 :icons: font

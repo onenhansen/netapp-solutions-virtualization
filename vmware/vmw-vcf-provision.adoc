@@ -4,7 +4,6 @@ permalink: vmware/vmw-vcf-provision.html
 keywords: vmware, vcf, provision, principal, storage
 summary: 
 ---
-
 = Provision a VCF environment with ONTAP as the principal storage solution
 :hardbreaks:
 :nofooter:

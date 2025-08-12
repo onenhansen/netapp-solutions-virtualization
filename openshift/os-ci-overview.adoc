@@ -4,7 +4,6 @@ permalink: openshift/os-ci-overview.html
 keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization, cloud Insights
 summary: Monitoring using Cloud Insights for VMs in Red Hat OpenShift Virtualization 
 ---
-
 = Learn about monitoring VMs with Data Infrastructure Insights in Red Hat OpenShift Virtualization
 :hardbreaks:
 :nofooter:

@@ -4,7 +4,6 @@ permalink: openshift/osv-vm-dp-using-tp.html
 keywords: OpenShift, OCP, Trident, Trident protect, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization,Data Protection, Data Management for VMs, VM protection
 summary: Red Hat OpenShift Virtualization Data Protection with NetApp ONTAP
 ---
-
 = Protect VMs in Red Hat OpenShift Virtualization using Trident protect
 :hardbreaks:
 :nofooter:

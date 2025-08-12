@@ -4,8 +4,7 @@ permalink: hyperv/hyperv-deploy-script.html
 keywords: hyperv, hyper-v, deploy, netapp, virtualization, powershell, script
 summary: "The solution provides the steps required to deploy Hyper-V on NetApp storage"   
 ---
-
-= Migrate VMs to Microsoft Hyper-V using PowerShell script
+= Migrate VMs to Microsoft Hyper-V using the PowerShell script
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,7 +12,7 @@ summary: "The solution provides the steps required to deploy Hyper-V on NetApp s
 :imagesdir: ../media/
 
 [.lead]
-Use the PowerShell script to migrate VMs from VMware vSphere to Microsoft Hyper-V  using FlexClone technology. The script streamlines the migration process  by connecting to vCenter and ONTAP clusters, creating snapshots, converting VMDKs to VHDXs, and configuring VMs on Hyper-V.
+Use the PowerShell script to migrate VMs from VMware vSphere to Microsoft Hyper-V using FlexClone technology. The script streamlines the migration process  by connecting to vCenter and ONTAP clusters, creating snapshots, converting VMDKs to VHDXs, and configuring VMs on Hyper-V.
 
 == Powershell script
 

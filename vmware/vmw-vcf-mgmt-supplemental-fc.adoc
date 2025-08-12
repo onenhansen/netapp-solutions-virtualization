@@ -4,8 +4,7 @@ permalink: vmware/vmw-vcf-mgmt-supplemental-fc.html
 keywords: netapp, vmware, cloud, foundation, vcf, asa, all-flash, array, ontap tools, otv, sddc, fc
 summary:
 ---
-
-= Add an FC-based VMFS datastore as supplemental storage for management domain using ONTAP tools for VMware vSphere
+= Add an FC-based VMFS datastore as supplemental storage for a management domain using ONTAP tools for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

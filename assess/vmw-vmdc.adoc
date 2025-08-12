@@ -4,8 +4,7 @@ permalink: assess/vmw-vmdc.html
 keywords: vmware, vm, data, collector, vmdc 
 summary: The Virtual machine Data Collector (VMDC) is a free, lightweight, simple GUI based toolkit for VMware environments that allows users to collect detailed inventory information about their virtual machines (VMs), hosts, storage, and networks. 
 ---
-
-= Virtual Machine Data Collector (VMDC) 
+= Virtual Machine Data Collector (VMDC)
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -4,7 +4,6 @@ permalink: hyperv/hyperv-smas.html
 keywords: hyperv, hyper-v, snapmirror, active, sync, stretch, cluster, netapp, virtualization
 summary: "This paper documents SnapMirror active sync technology synchronous bidirectional replication between Microsoft stretch clusters, allowing multisite application data for example MSSQL and Oracle to be actively accessible and in sync across both sites."   
 ---
-
 = Set up synchronous replication with NetApp SnapMirror Active Sync and Microsoft stretch clusters
 :hardbreaks:
 :nofooter:

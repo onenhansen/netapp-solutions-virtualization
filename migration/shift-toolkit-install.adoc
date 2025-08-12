@@ -4,7 +4,6 @@ permalink: migration/shift-toolkit-install.html
 keywords: netapp, vmware, esxi, vm, migration, openshift, virtualization, hyper-v, proxmox
 summary: 
 ---
-
 = Install and set up Shift Toolkit for ONTAP storage
 :nofooter:
 :icons: font

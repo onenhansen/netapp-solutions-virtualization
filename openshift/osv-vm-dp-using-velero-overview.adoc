@@ -4,7 +4,6 @@ permalink: openshift/osv-vm-dp-using-velero-overview.html
 keywords: OpenShift, OCP, Trident, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, CNV, Container Native Virtualization, Red Hat OpenShift Virtualization, OADP operator, Openshift Data Protection Application operator, velero
 summary: Red Hat OpenShift Virtualization Data Protection with NetApp ONTAP
 ---
-
 = Learn about data protection for VMs in Red Hat OpenShift Virtualization using OpenShift API for Data Protection (OADP)
 :hardbreaks:
 :nofooter:

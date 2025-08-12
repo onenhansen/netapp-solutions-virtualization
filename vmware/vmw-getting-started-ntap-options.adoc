@@ -4,8 +4,7 @@ permalink: vmware/vmw-getting-started-ntap-options.html
 keywords: vmware, getting, started, overview, netapp, storage
 summary: 
 ---
-
-= Learn about NetApp platforms for Vmware
+= Learn about NetApp platforms for VMware
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -4,8 +4,7 @@ permalink: vmware/vmw-vcf-mgmt-supplemental-iscsi.html
 keywords: netapp, vmware, cloud, foundation, vcf, aff, all-flash, array, ontap tools, otv, sddc, iscsi
 summary:
 ---
-
-= Add an iSCSI datastore as supplemental storage for management domain using ONTAP tools for VMware vSphere
+= Add an iSCSI datastore as supplemental storage for a management domain using ONTAP tools for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

@@ -4,7 +4,6 @@ permalink: vmware/vmw-getting-started-vmdc.html
 keywords: vmware, getting, started, overview, netapp, vm, data, collector, vmdc
 summary: 
 ---
-
 = Learn about assessing your VMware infrastructure using the Virtual Machine Data Collector
 :hardbreaks:
 :nofooter:

@@ -4,7 +4,6 @@ permalink: migration/migrate-vms-to-ec2-fsxn-summary.html
 keywords: netapp, vmware, amazon, ec2, fsxn, migration, iscsi, 
 summary: "This technical report covers how to migrate on-premises VMware vSphere VMs to an Amazon EC2 instance with data disks placed on FSx ONTAP iSCSI LUNs using the MigrateOps 'data-mobility-as-code' functionality of Cirrus Migrate Cloud (CMC)."
 ---
-
 = More options to migrate VMs to Amazon EC2 using Amazon FSx for ONTAP
 :hardbreaks:
 :nofooter:

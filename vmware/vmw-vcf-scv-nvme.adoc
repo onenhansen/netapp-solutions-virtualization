@@ -4,8 +4,7 @@ permalink: vmware/vmw-vcf-scv-nvme.html
 keywords: netapp, vmware, nvme, cloud, foundation, vcf, aff, all-flash, nfs, vvol, vvols, array, ontap tools, otv, sddc, scv, workload, domain, backup
 summary:
 ---
-
-= Protect VCF workload domains with NVMe over TCP storage and SnapCenter plug-in for VMware  vSphere
+= Protect VCF workload domains with NVMe over TCP storage and SnapCenter plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:
 :icons: font

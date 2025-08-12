@@ -1,0 +1,18 @@
+---
+sidebar: sidebar
+permalink: vmware/migrate-vms-to-ontap-datastore.html
+keywords: netapp, vmware, ontap, datastore, migration, svmotion, hcx, xvmotion, vmotion, vvol, iscsi, nfs, nvme, fc, sso
+summary:
+---
+= Migrate VMs from VMware vSphere to ONTAP datastores
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+VMware vSphere environments can significantly benefit from migrating virtual machines to NetApp ONTAP-backed datastores. Whether you're moving from vSAN, third-party storage systems, or upgrading your existing infrastructure, explore various vMotion scenarios and migration strategies to seamlessly transition your VMs to ONTAP datastores. This ensures business continuity while leveraging ONTAP's enterprise-class storage features.
+
+include::../_include/migrate-vms-ontap-datastores.adoc[]
+

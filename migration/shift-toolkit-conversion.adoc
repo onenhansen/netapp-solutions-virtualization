@@ -4,7 +4,6 @@ permalink: migration/shift-toolkit-conversion.html
 keywords: netapp, vmware, esxi, vm, migration, openshift, virtualization, hyper-v, proxmox
 summary: 
 ---
-
 = Convert VMs using the Shift Toolkit
 :hardbreaks:
 :nofooter:

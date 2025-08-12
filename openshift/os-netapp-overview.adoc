@@ -4,7 +4,6 @@ permalink: openshift/os-netapp-overview.html
 keywords: NetApp, ONTAP, Element, Storage
 summary: NetApp has several storage platforms that are qualified with our Trident Storage Orchestrator to provision storage for applications deployed on Red Hat OpenShift.
 ---
-
 = Learn about provisioning storage for applications deployed on Red Hat OpenShift
 :hardbreaks:
 :nofooter:

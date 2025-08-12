@@ -4,7 +4,6 @@ permalink: vmware/vmw-vcf-scv-viwld.html
 keywords: netapp, vmware, cloud, foundation, vcf, aff, all-flash, vvol, vvols, array, ontap tools, otv, sddc, scv, snapcenter, plug-in
 summary:
 ---
-
 =  Protect a VCF workload domain with SnapCenter plug-in for VMware vSphere
 :hardbreaks:
 :nofooter:

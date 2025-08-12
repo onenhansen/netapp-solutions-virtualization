@@ -4,7 +4,6 @@ permalink: vmware/vmw-vcf-mgmt-principal-fc.html
 keywords: netapp, vmware, cloud, foundation, vcf, asa, all-flash, array, ontap tools, otv, sddc, fc
 summary:
 ---
-
 = Use an FC-based VMFS datastore on ONTAP as principal storage for VCF management domain
 :hardbreaks:
 :nofooter:
@@ -13,7 +12,7 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
-Convert a vSphere 8 cluster using ONTAP Fibre Channel datastores into a VMware Cloud Foundation management domain. This procedure includes provisioning FC storage, deploying ONTAP tools for VMware, and using the VCF import tool to migrate and manage the cluster within the VCF environment.
+In this use case we outline the procedure to use an existing FC-based VMFS datastore on ONTAP as the primary storage for VMware Cloud Foundation (VCF) management domains. This procedure summarizes the required components, configurations, and deployment steps.
 
 == Introduction
 

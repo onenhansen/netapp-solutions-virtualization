@@ -4,7 +4,6 @@ permalink: migration/shift-toolkit-overview.html
 keywords: netapp, vmware, esxi, vm, migration, openshift, virtualization, hyper-v, proxmox
 summary: 
 ---
-
 = Learn about migrating VMs between virtualization environments using NetApp Shift Toolkit
 :hardbreaks:
 :nofooter:
@@ -15,7 +14,7 @@ summary:
 [.lead]
 The NetApp Shift Toolkit is a standalone product designed to simplify and accelerate VM migrations across hypervisors, such as VMware ESXi and Microsoft Hyper-V.  It also supports disk-level conversions between various virtual disk formats.
 
-== Usecase
+== Use case
 
 Every organization is now seeing the benefit of having multi-hypervisor environment. With recent changes in the market, every organization is deciding on the best course(s) of action by weighing technical and commercial risks including migrating workload VMs to alternate hypervisors and focus on achieving business-defined objectives, and controlling vendor lock-in. This enables them to operate in an optimized fashion wrt licensing cost and extend IT budget on the right areas than spending for those unused cores on a specific hypervisor. However, the challenge has always been around migration time and the associated downtime. 
 

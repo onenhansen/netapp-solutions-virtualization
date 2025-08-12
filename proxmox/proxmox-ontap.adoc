@@ -4,7 +4,6 @@ permalink: proxmox/proxmox-ontap.html
 keywords: netapp, proxmox, proxmox ve, all-flash, nfs, iscsi, ontap, storage, aff
 summary: Shared storage in Proxmox Virtual Environment(VE) reduces the time for VM live migration, and makes for a better target for backups and consistent templates across the environment. ONTAP storage can serve the needs of Proxmox VE host environments as well as for guest file, block and object storage demands.
 ---
-
 = Provision ONTAP storage for Proxmox Virtual Environment
 :hardbreaks:
 :nofooter:
@@ -15,8 +14,7 @@ summary: Shared storage in Proxmox Virtual Environment(VE) reduces the time for 
 [.lead]
 Configure ONTAP storage with Proxmox Virtual Environment (VE) using NAS, SAN, and SMB/CIFS protocols. Shared storage in Proxmox VE reduces the time for live VM migration and provides a better target for backup and consistent templates across the environment. 
 
-Proxmox VE hosts need to have FC, Ethernet, or other supported interfaces cabled to switches and have communication to ONTAP logical interfaces.
-Always check https://mysupport.netapp.com/matrix/#welcome[Interoperability Matrix Tool] for supported configurations.
+Proxmox VE hosts need to have FC, Ethernet, or other supported interfaces cabled to switches and have communication to ONTAP logical interfaces. Always check https://mysupport.netapp.com/matrix/#welcome[Interoperability Matrix Tool] for supported configurations.
 
 == High-level ONTAP Features
 

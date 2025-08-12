@@ -4,7 +4,6 @@ permalink: openshift/osv-vm-dr-using-tp.html
 keywords: OpenShift, OCP, Trident, Trident protect, NetApp ONTAP, Red Hat OpenShift, OpenShift Virtualization, ROSA, Red Hat OpenShift Virtualization
 summary: Red Hat OpenShift Virtualization on ROSA
 ---
-
 = Set up failover and failback for VMs in Red Hat OpenShift Virtualization using Trident protect
 :hardbreaks:
 :nofooter:

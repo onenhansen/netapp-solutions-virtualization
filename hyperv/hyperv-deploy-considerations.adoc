@@ -4,7 +4,6 @@ permalink: hyperv/hyperv-deploy-considerations.html
 keywords: hyperv, hyper-v, deploy, netapp, virtualization, consideration
 summary: "The solution provides the steps required to deploy Hyper-V on NetApp storage"   
 ---
-
 = Deployment guidelines for Microsoft Hyper-V with ONTAP storage systems
 :hardbreaks:
 :nofooter:

@@ -4,7 +4,6 @@ permalink: hyperv/hyperv-deploy-prereqs.html
 keywords: hyperv, hyper-v, deploy, netapp, virtualization, prereqs, pre-requisites
 summary: "The solution provides the steps required to deploy Hyper-V on NetApp storage"   
 ---
-
 = Prepare to deploy Microsoft Hyper-V leveraging ONTAP storage systems
 :hardbreaks:
 :nofooter:
