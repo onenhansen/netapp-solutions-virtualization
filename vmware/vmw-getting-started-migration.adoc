@@ -1,0 +1,19 @@
+---
+sidebar: sidebar
+permalink: vmware/vmw-getting-started-migration.html
+keywords: vmware, getting, started, overview, netapp
+summary: 
+---
+= Learn about VMs from VMware vSphere to ONTAP datastores
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+VMware vSphere administrators can enhance their infrastructure by migrating workloads to NetApp ONTAP datastores. ONTAP delivers VM-aware snapshots, storage-efficient clones, and seamless vMotion operations while supporting Storage Policy-Based Management (SPBM). Whether migrating from vSAN, legacy storage, or implementing hybrid cloud deployments, ONTAP provides improved performance and simplified storage operations for VMware environments. 
+
+include::../_include/migrate-get-start-ontap.adoc[]
+
+For more information on migrating VMware workloads to ONTAP backed datastores, see the link:migrate-vms-to-ontap-datastore.html[Migrate VMs to ONTAP datastores].

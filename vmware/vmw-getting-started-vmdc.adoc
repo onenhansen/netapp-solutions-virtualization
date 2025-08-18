@@ -1,0 +1,53 @@
+---
+sidebar: sidebar
+permalink: vmware/vmw-getting-started-vmdc.html
+keywords: vmware, getting, started, overview, netapp, vm, data, collector, vmdc
+summary: 
+---
+= Learn about assessing your VMware infrastructure using the Virtual Machine Data Collector
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+The Virtual Machine Data Collector (VMDC) is a free, lightweight tool with a GUI designed for VMware environments. It gathers inventory and performance data on VMs, hosts, storage, and networks, offering insights for resource optimization and capacity planning. 
+
+== Introduction
+
+Virtual Machine Data Collector (VMDC) is a free, lightweight, simple GUI based toolkit for VMware environments that allows users to collect detailed inventory information about their virtual machines (VMs), hosts, storage, and networks. 
+
+For more information on Virtual Machine Data Collector, see link:../assess/vmw-vmdc.html[Virtual Machine Data Collector Documentation].
+
+== VMDC Capabilities
+
+VMDC is just a stepping stone to collect quick and instant statistics for projecting optimization possibilities for VMWare core licensing along with vCPU and RAM. NetApp Data Infrastructure Insights which requires installation of AUs and data collectors should be the obvious next step for understanding detailed VM topology, grouping of VMs using annotation so as to right size the workloads and future proof the infrastructure.
+
+Sampling of the metrics gathered with VMDC:
+
+* VM information 
+** VM name
+** VM power state
+** VM CPU information
+** VM memory information
+** VM location
+** VM network information
+** and more
+
+* VM performance 
+** Performance data for VMs at selected interval
+** VM read / write information
+** VM IOPS information
+** VM latency
+** and more
+
+* ESXi host information
+** Host datacenter information
+** Host cluster information
+** Host model information
+** Host CPU information
+** Host memory information
+** and more 
+
+// NetApp Solutions restructuring (jul 2025) - renamed from vmware/vmw-getting-started-vm-data-collector.adoc

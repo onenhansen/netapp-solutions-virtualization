@@ -1,14 +1,75 @@
 indexpage:
-  title: # Unquoted string 
-  lead: # Quoted string
-  summary: # Quoted string 
-  keywords: # Unquoted comma-delimited list of keywords 
-  tiles: 
-    # Tile definition 
-    - title: # Quoted or unquoted string
-      links: 
-        # Link definition
-        - title: # Quoted or unquoted string
-          url: # Path to target
-        # Next link on this tile (title/url pair)
-    # Next tile on this page (title/links)
+  title: NetApp virtualization solutions
+  lead: "NetApp provides comprehensive virtualization solutions that enable organizations to optimize their IT infrastructure across multiple hypervisors and platforms. Discover strategies to modernize VMware environments, migrate to alternative hypervisors, and leverage NetApp's advanced data management and cloud integration features."
+  summary: "NetApp provides comprehensive virtualization solutions that enable organizations to optimize their IT infrastructure across multiple hypervisors and platforms. Discover strategies to modernize VMware environments, migrate to alternative hypervisors, and leverage NetApp's advanced data management and cloud integration features."
+  tiles:
+    - title: "Get started"
+      links:
+        - title: "What's new"
+          url: /whats-new.html
+        - title: "Learn about virtualization with NetApp"
+          url: /virtualization/virt-overview.html
+        - title: "Use NetApp for any virtualization solution"
+          url: /virtualization/virt-options-on-netapp.html
+        - title: "Blogs"
+          url: /blogs.html
+        - title: "Videos and demos"
+          url: /videos/index.html
+#
+    - title: "NetApp solutions for virtualization"
+      links:
+        - title: "VMware on-premises and cloud"
+          url: /vmware/index.html
+        - title: "Microsoft Hyper-V"
+          url: hyperv/index.html
+        - title: "Red Hat OpenShift Virtualization"
+          url: /openshift/index.html
+        - title: "Proxmox Virtual Environment"
+          url: /proxmox/index.html
+        - title: "KVM and libvirt"
+          url: /kvm/index.html
+#        - title: "Disk-level Conversion of Virtual Disks"
+#          url: vm-migrate/disk-convert-overview.html
+#
+    - title: "VM migration and conversion"
+      links:
+        - title: "Migrate VMs using Shift Toolkit"
+          url: /migration/shift-toolkit-migration.html
+        - title: "Convert VMs using Shift Toolkit"
+          url: /migration/shift-toolkit-conversion.html
+        - title: "Migrate VMs to ONTAP datastores"
+          url: /migration/migrate-vms-to-ontap-datastore.html
+        - title: "Migrate VMs to Amazon EC2"
+          url: /migration/migrate-vms-to-ec2-fsxn-overview.html
+#
+    - title: "Management tools and integrations"
+      links:
+        - title: "ONTAP tools for VMware vSphere"
+          url: /vmware/vmw-getting-started-otv.html
+        - title: "ONTAP and VMware APIs for administration"
+          url: /vmware/vmw-getting-started-automation.html
+        - title: "Data Infrastructure Insights for monitoring"
+          url: /vmware/vmw-getting-started-dii.html
+        - title: "VM workload migration for improved efficiency"
+          url: /vmware/vmw-getting-started-migration.html
+#
+    - title: "Data protection and disaster recovery"
+      links:
+        - title: "Protect with MetroCluster and SnapMirror Active Sync"
+          url: /vmware/vmw-getting-started-vmsc.html
+        - title: "Protect and recover data against ransomware"
+          url: /vmware/vmw-getting-started-security.html
+        - title: "SnapCenter Plug-in for VMware vSphere"
+          url: /vmware/vmw-getting-started-snapcenter.html
+        - title: "BlueXP disaster recovery"
+          url: /vmware/vmw-dr-gs.html
+#
+    - title: "Solution requests and feedback"
+      links:
+        - title: "Request automation"
+          url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Request%20Automation]%0d%0a%0d%0aSolution%20Name:%20%0d%0aRequest%20Title:%20%0d%0aDescription:%0d%0aSuggestions:&title=Request%20Automation%20-%20%3Crequest_title%3E
+        - title: "Propose a new solution"
+          url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Request%20Solution]%0d%0a%0d%0aSolution%20Use%20Case:%20%0d%0aSolution%20Description:%20%0d%0aAdditional%20Comments:&title=Request%20Solution%20-%20%3Csolution%3E
+        - title: "Provide solution feedback"
+          url: https://github.com/NetAppDocs/netapp-solutions/issues/new?body=[Solution%20Feedback]%0d%0a%0d%0aSolution%20Name:%20%0d%0aSolution%20Feedback:%20%0d%0aAdditional%20Comments:&title=Solution%20Feedback%20-%20%3Csolution%3E
+#

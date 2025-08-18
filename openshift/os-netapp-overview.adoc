@@ -1,0 +1,44 @@
+---
+sidebar: sidebar
+permalink: openshift/os-netapp-overview.html
+keywords: NetApp, ONTAP, Element, Storage
+summary: NetApp has several storage platforms that are qualified with our Trident Storage Orchestrator to provision storage for applications deployed on Red Hat OpenShift.
+---
+= Learn about provisioning storage for applications deployed on Red Hat OpenShift
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+//
+// This file was created with NDAC Version 0.9 (June 4, 2020)
+//
+// 2020-06-25 14:31:33.563897
+//
+
+[.lead]
+NetApp integrates with Red Hat OpenShift using the Trident Storage Orchestrator to provide persistent storage for containerized applications. Supported storage options include ONTAP-based systems such as AFF and FAS, and ONTAP Select and Cloud Volumes ONTAP for virtualized and cloud environments. Cloud-native services like Amazon FSx for NetApp ONTAP, Azure NetApp Files, and Google Cloud NetApp Volumes are also supported.
+
+image:redhat-openshift-043.png["Figure showing input/output dialog or representing written content"]
+
+* AFF and FAS systems run NetApp ONTAP and provide storage for both file-based (NFS) and block-based (iSCSI) use cases.
+
+* Cloud Volumes ONTAP and ONTAP Select provide the same benefits in the cloud and virtual space respectively.
+
+* Amazon FSx for NetApp ONTAP, Azure NetApp Files, and Google Cloud NetApp Volumes provide file-based storage in the cloud.
+
+* NetApp Element storage systems provide for block-based (iSCSI) use cases in a highly scalable environment.
+
+
+NOTE: Each storage system in the NetApp portfolio can ease both data management and movement between on-premises sites and the cloud, ensuring that your data is where your applications are.
+
+
+The following pages have additional information about the NetApp storage systems validated in the Red Hat OpenShift with NetApp solution:
+
+* link:os-netapp-ontap.html[NetApp ONTAP]
+
+* link:https://docs.netapp.com/us-en/netapp-solutions-containers/openshift/os-netapp-element.html[NetApp Element^]
+
+
+// NetApp Solutions restructuring (jul 2025) - renamed from containers/rh-os-n_overview_netapp.adoc

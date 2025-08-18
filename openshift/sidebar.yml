@@ -1,0 +1,82 @@
+section: osv
+title: "OpenShift virtualization"
+url: /openshift/index.html
+entries:
+  - title: "Get started"
+    pdf-filename: "Red Hat OpenShift Virtualization overview"
+    entries:
+      - title: "About OpenShift Virtualization"
+        url: /openshift/osv-overview.html
+      - title: "Storage provisioning for OpenShift"
+        url: /openshift/os-netapp-overview.html
+      - title: "NetApp Trident storage integration"
+        url: /openshift/os-storint-overview.html
+  
+  - title: "Best practices for deployment"
+    pdf-filename: "Best Practices for Red Hat OpenShift Virtualization on NetApp"
+    url: /openshift/os-osv-bpg.html
+#
+  - title: "Install Trident"
+    pdf-filename: "Install Trident"
+    url: /openshift/osv-trident-install.html
+    
+  - title: "Deploy on premises"
+    pdf-filename: "Deploy Red Hat OpenShift Virtualization on premises"
+    entries:
+      - title: "Deployment requirements"
+        url: /openshift/osv-deployment-prerequisites.html
+      - title: "Deploy OpenShift Virtualization"
+        url: /openshift/osv-deployment.html
+      - title: "Create VMs"
+        url: /openshift/osv-workflow-create-vm.html
+      - title: "Migrate VMs from VMware"
+        url: /openshift/osv-workflow-vm-migration-mtv.html
+      - title: "Migrate VMs between two cluster nodes"
+        url: /openshift/osv-workflow-vm-live-migration.html
+      - title: "Clone VMs"
+        url: /openshift/osv-workflow-clone-vm.html
+      - title: "Create VMs from a snapshot"
+        url: /openshift/osv-workflow-vm-from-snapshot.html
+#
+  - title: "Deploy on ROSA with FSxN"
+    pdf-filename: "Deploy Red Hat OpenShift Virtuzluation on ROSA with Amazon FSx for ONTAP"
+    entries:
+      - title: "Deploy OpenShift on ROSA"
+        url: /openshift/osv-rosa-overview.html
+      - title: "Restart or live migrate VMs"
+        url: /openshift/osv-rosa-vm-workflows.html
+#
+  - title: "Protect data using Trident Protect"
+    entries:
+      - title: "Protect VMs with snapshots and backups"
+        url: /openshift/osv-vm-dp-using-tp.html
+      - title: "Set up failover and failback"
+        url: /openshift/osv-vm-dr-using-tp.html
+#
+  - title: "Protect data using third-party tools"
+    pdf-filename: "Red Hat OpenShift Virtualization Data Protection"
+    entries:
+      - title: "Protect VMs using OADP and Velero"
+        url: /openshift/osv-vm-dp-using-velero-overview.html
+      - title: "Install OADP"
+        url: /openshift/osv-oadp-installation.html
+      - title: "Backup VMs using Velero"
+        url: /openshift/osv-vm-dp-using-velero.html
+      - title: "Restore VMs using Velero"
+        url: /openshift/osv-vm-restore-using-velero.html
+      - title: "Delete backups and restores"
+        url: /openshift/osv-vm-dp-delete-using-velero.html
+#
+  - title: "Monitor VMs with DII"
+    pdf-filename: "Red Hat OpenShift Virtualization Monitoring"
+    entries:
+      - title: "About DII"
+        url: /openshift/os-ci-overview.html
+      - title: "Configure D    II"
+        url: /openshift/os-ci-integration.html
+      - title: "Monitor VMs using DII"
+        url: /openshift/os-ci-samples.html 
+#
+  - title: "Additional resources"
+    url: /openshift/os-additional-information.html
+#
