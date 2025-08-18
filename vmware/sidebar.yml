@@ -133,7 +133,7 @@ entries:
             url: /vmware/vmw-vvf-overview.html
           - title: "About NetApp support for VMware vSphere 8"
             url: /vmware/vmw-vsphere8.html
-          - title: "About using VMware vSphere 8 with ONTAP storage--can we remove topic?"
+          - title: "About using VMware vSphere 8 with ONTAP storage"
             url: /vmware/vmw-vsphere-with-ontap.html
           - title: "What's new with VMware vSphere 8"
             url: /vmware/vmw-vsphere8-overview.html

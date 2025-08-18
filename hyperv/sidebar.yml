@@ -13,7 +13,7 @@ entries:
         url: /hyperv/hyperv-deploy-considerations.html
       - title: "Deploy Hyper-V"
         url: /hyperv/hyperv-deploy-data-protection.html
-      - title: "Do we need this topic?"
+      - title: "Summary"
         url: /hyperv/hyperv-deploy-conclusion.html
       - title: "Migrate VMs to Hyper-V"
         url: /hyperv/hyperv-deploy-script.html
