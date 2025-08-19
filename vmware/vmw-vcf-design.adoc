@@ -1,0 +1,15 @@
+---
+sidebar: sidebar
+permalink: vmware/vmw-vcf-design.html
+keywords: netapp, vmware, cloud, foundation, vcf, flexpod
+summary:
+---
+
+= Design options with VMware Cloud Foundation and ONTAP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
