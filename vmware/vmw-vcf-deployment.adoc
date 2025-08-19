@@ -187,7 +187,7 @@ The above steps also valid whenever new workload domain is created.
 === Converging existing components to VCF 9.0
 Customers often have some of the components of VCF fleet already and they prefer to reuse it. Here is the link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/deployment/converging-your-existing-vsphere-infrastructure-to-a-vcf-or-vvf-platform-/supported-scenarios-to-converge-to-vcf.html[supported scenarios to Converge to VCF]
 
-While reusing a vCenter Instance, the Datastores are often provisioned with ONTAP tools and it can be used as Principal Storage for VCF. Refer
+While reusing a vCenter Instance, the Datastores are often provisioned with ONTAP tools and it can be used as Principal Storage for VCF.
 
 Follow link:https://imt.netapp.com/imt/#welcome[Interoperability Matrix Tool] to link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/upgrade/upgrade-ontap-tools.html[upgrade ONTAP tools] and link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[SnapCenter Plugin for VMware vSphere] that is supported for VCF 9.
 
