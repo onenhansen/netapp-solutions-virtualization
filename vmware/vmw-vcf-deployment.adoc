@@ -5,7 +5,7 @@ keywords: netapp, vmware, cloud, foundation, vcf, flexpod
 summary:
 ---
 
-= Deployment of Private Cloud with VMware Cloud Foundation and ONTAP
+== Deployment of Private Cloud with VMware Cloud Foundation and ONTAP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -13,3 +13,104 @@ summary:
 :imagesdir: ../media/
 
 [.lead]
+There are various ways to setup VCF 9 environment with ONTAP depending on their current state. The option includes deployment, converge and upgrade. This document explore those options with specific guidelines for ONTAP.
+
+Principal Storage options available for VCF with ONTAP:
+
+[cols="4,2,2" options="header"]
+|===
+// header row
+| Product Family
+| VMFS on FC
+| NFSv3
+
+
+| ASA A-Series and C-Series
+| Yes
+| No
+
+
+| AFF A-Series and C-Series
+| Yes
+| Yes
+
+| FAS
+| Yes
+| Yes
+
+// table end
+|===
+
+Supplemental Storage options available for VCF with ONTAP:
+
+[cols="4,2,2,2,2,2" options="header"]
+|===
+// header row
+| Product Family
+| VMFS on FC
+| VMFS on iSCSI
+| VMFS on NVMe-oF
+| NFSv3
+| NFSv4.1
+
+
+| ASA A-Series and C-Series
+| Yes
+| Yes
+| Yes
+| No
+| No
+
+
+| AFF A-Series and C-Series
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+| FAS
+| Yes
+| Yes
+| Yes
+| Yes
+| Yes
+
+// table end
+|===
+
+=== Deploying a new VCF Instance with version 9.0
+Customers choose this option to setup a fresh installation of VCF 9 and later they plan to migrate to this environment or start consuming by deploying applications or provide infrastructure services to their clients.
+
+For high level steps, check link:https://techdocs.broadcom.com/content/dam/broadcom/techdocs/us/en/assets/vmware-cis/vcf/vcf-9.0-vcf-deploy-journey.pdf[Build Journey - Install a new VMware Cloud Foundation Deployment]
+
+In Deployment Preparation step, based on the Principal Storage option, complete the following steps
+
+.VMFS on FC
+[%collapsible%]
+====
+. Gather WWPN of all ESX hosts. We used 'esxcli storage san fc list' from host cli. WWPN can also read from ESX web interface or using PowerCLI.
+. Complete Zoning configuration. Refer link:https://docs.netapp.com/us-en/ontap/san-config/fc-fcoe-recommended-zoning-configuration.html#dual-fabric-zoning-configurations[Recommended FC Zoning configurations for ONTAP Systems]. 
++
+NOTE: Need to use WWPN of Logical Interfaces of SVM rather than Physical interface.
+. Create LUN and present that LUN to hosts defined using WWPN using System Manager or ONTAP CLI or API.
+. Rescan the storage adapter on ESX and Create VMFS Datastore.
+====
+
+.NFSv3
+[%collapsible%]
+====
+. Create VMKernel interface on one of the ESX host.
+. Ensure link:https://docs.netapp.com/us-en/ontap/task_nas_enable_linux_nfs.html[SVM is available with NFS protocol] and link:https://docs.netapp.com/us-en/ontap/nfs-admin/enable-disable-vmware-vstorage-over-nfs-task.html[vstorage enabled].
+. Create Volume and Export with policy allowing ESX hosts.
+. Adjust permissions based on requirements.
+. Deploy ONTAP NFS VAAI vib on ESX host to include it as part of vLCM image. We used the command 'esxcli software vib install -d /NetAppNasPlugin2.0.1.zip'. The NFS VAAI zip file can be downloaded from NetApp Support Site.
+. Mount NFS volume on same host where VMKernel interface defined. We used the command 'esxcli storage nfs add -c 4 -H 192.168.122.210  -s /use1_m01_nfs01 -v use1-m01-cl01-nfs01'
++
+NOTE: Currently the nConnect option doesn't apply to other hosts. Need to update the nConnect session number for other hosts on post deployment.
+====
+
+=== Converging existing components to VCF 9.0
+
+
+=== Upgrading existing VCF environment to 9.0
