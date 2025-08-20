@@ -5,7 +5,7 @@ keywords: netapp, vmware, cloud, foundation, vcf, flexpod
 summary:
 ---
 
-== Deployment of Private Cloud with VMware Cloud Foundation and ONTAP
+= Deployment of Private Cloud with VMware Cloud Foundation and ONTAP
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -79,7 +79,7 @@ Supplemental Storage options available for VCF with ONTAP:
 // table end
 |===
 
-=== Deploying a new VCF Instance with version 9.0
+== Deploying a new VCF Instance with version 9.0
 Customers choose this option to setup a fresh installation of VCF 9 and later they plan to migrate to this environment or start consuming by deploying applications or provide infrastructure services to their clients.
 
 For high level steps, check link:https://techdocs.broadcom.com/content/dam/broadcom/techdocs/us/en/assets/vmware-cis/vcf/vcf-9.0-vcf-deploy-journey.pdf[Build Journey - Install a new VMware Cloud Foundation Deployment]
@@ -184,14 +184,14 @@ In Import vCenters phase, at end of import vCenter as workload domain in the VCF
 
 The above steps also valid whenever new workload domain is created.
 
-=== Converging existing components to VCF 9.0
+== Converging existing components to VCF 9.0
 Customers often have some of the components of VCF fleet already and they prefer to reuse it. Here is the link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/deployment/converging-your-existing-vsphere-infrastructure-to-a-vcf-or-vvf-platform-/supported-scenarios-to-converge-to-vcf.html[supported scenarios to Converge to VCF]
 
 While reusing a vCenter Instance, the Datastores are often provisioned with ONTAP tools and it can be used as Principal Storage for VCF.
 
 Follow link:https://imt.netapp.com/imt/#welcome[Interoperability Matrix Tool] to link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/upgrade/upgrade-ontap-tools.html[upgrade ONTAP tools] and link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[SnapCenter Plugin for VMware vSphere] that is supported for VCF 9.
 
-=== Upgrading existing VCF environment to 9.0
+== Upgrading existing VCF environment to 9.0
 Customers already on VCF environment can upgrade to VCF 9.0 using typical upgrade process. Refer link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/deployment/upgrading-cloud-foundation.html[Upgrade VCF Management Domain to VCF 9] and link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/lifecycle-management/lifecycle-management-of-vcf-core-components/upgrade-workload-domains-to-vcf-5-2.html[Upgrade VCF 5.x Workload Domain to VCF 9]
 
 Follow link:https://imt.netapp.com/imt/#welcome[Interoperability Matrix Tool] to link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/upgrade/upgrade-ontap-tools.html[upgrade ONTAP tools] and link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[SnapCenter Plugin for VMware vSphere] that is supported for VCF 9.
