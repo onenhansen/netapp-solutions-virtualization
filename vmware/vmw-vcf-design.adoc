@@ -89,7 +89,7 @@ To minimize resource consumption, an existing ONTAP tools instance can be utiliz
 
 NOTE: If you don't have resources to explore VCF, many Cloud Providers offer VCF as their service offering and ONTAP is also available as First party service directly from the cloud service providers.
 
-For more details, refer link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/design/blueprints/vcf-fleet-basic-management-design.html[Broadcom Technical Documentation on VCF Fleet in a Single Site with Minimal Footprint]
+For more details on this design, refer link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/design/blueprints/vcf-fleet-basic-management-design.html[Broadcom Technical Documentation on VCF Fleet in a Single Site with Minimal Footprint]
 
 === VCF Fleet in a Single Site
 
@@ -104,6 +104,8 @@ CAUTION: Hosting VMs on FlexCache Datastore is not supported.
 image:vmw-vcf-design-2.png[VCF Fleet in a Single Site]
 
 A Single instance of ONTAP tools in HA mode deployed in Management Domain can manage all the vCenters in the VCF Fleet. Refer link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/deploy/prerequisites.html#configuration-limits-to-deploy-ontap-tools-for-vmware-vsphere[Configuration Limits of ONTAP tools] for further info. ONTAP tools works with VCF SSO and VCF OPS smart grouping to provide access to multiple vCenters in same UI.
+
+video::e7cf90b9-2744-404b-9831-b33f00164626[panopto, title="VCF Supplemental Datastore with ONTAP Tools"]
 
 SnapCenter Plug-in needs to be deployed on every instance of vCenter to provide data protection of VMs and Datastores.
 
@@ -137,7 +139,29 @@ This design is used when customers spread across the globe and they like to offe
 
 Disaster Recovery for VMs can be handled with VMware Live Site Recovery or using BlueXP Disaster Recovery as a Service. ONTAP tools provide the SRA (Storage Replication Adapter) to orchestrate the storage operations with ONTAP.
 
-ASA, AFF and FAS supports this design option.
+[cols="4,2,2" options="header"]
+|===
+// header row
+| Product Family
+| SnapMirror active sync
+| MetroCluster
+
+
+| ASA A-Series and C-Series
+| Yes
+| Yes
+
+
+| AFF A-Series and C-Series
+| Yes
+| Yes
+
+| FAS
+| No
+| Yes
+
+// table end
+|===
 
 image:vmw-vcf-design-4.png[VCF Fleet with Multiple Sites across Multiple Regions]
 
