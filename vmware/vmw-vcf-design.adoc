@@ -83,7 +83,7 @@ Supplemental Storage options available for VCF with ONTAP:
 
 This design blueprint is meant for sharing Management and Workload components to be deployed in a Single vSphere Cluster with minimum resources. With VMFS and NFSv3 Prinicipal Datastores and simple deployment option of various components, two node configuration is a good starting point. If planning to use VCF Automation with All Apps Organization model, a second cluster is required to deploy vSphere Supervisor and NSX Edge nodes.
 
-image:vmw-vcf-design-1.png[VCF Fleet in a Single Site with Minimal Footprint]
+image:vmw-vcf-design-001.png[VCF Fleet in a Single Site with Minimal Footprint]
 
 To minimize resource consumption, an existing ONTAP tools instance can be utilized if possible and register vCenter server to deploy the plug-in. When existing ONTAP tools instance is not available, single node with Small profile is well suited for this design. SnapCenter Plug-in for VMware vSphere enables to protect the virtual machines and Datastores using array native snapshots and replication to another ONTAP storage array.
 
@@ -101,7 +101,7 @@ To share VM templates and container registries across VCF Domains, Content Repos
 
 CAUTION: Hosting VMs on FlexCache Datastore is not supported.
 
-image:vmw-vcf-design-2.png[VCF Fleet in a Single Site]
+image:vmw-vcf-design-002.png[VCF Fleet in a Single Site]
 
 A Single instance of ONTAP tools in HA mode deployed in Management Domain can manage all the vCenters in the VCF Fleet. Refer link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/deploy/prerequisites.html#configuration-limits-to-deploy-ontap-tools-for-vmware-vsphere[Configuration Limits of ONTAP tools] for further info. ONTAP tools works with VCF SSO and VCF OPS smart grouping to provide access to multiple vCenters in same UI.
 
@@ -124,7 +124,7 @@ A mediator is often used to avoid split brain scenario and now, it can be hosted
 
 VM placement rules are used to control VMs together on same fault domain for Management Domain components.
 
-image:vmw-vcf-design-3.png[VCF Fleet with Multiple Sites in a Single Region]
+image:vmw-vcf-design-003.png[VCF Fleet with Multiple Sites in a Single Region]
 
 ONTAP tools provides UI to setup SnapMirror active sync relationship. Storage Systems of both fault domains need to be registered in ONTAP tools and SnapCenter Plug-in for VMware vSphere.
 
@@ -163,7 +163,7 @@ Disaster Recovery for VMs can be handled with VMware Live Site Recovery or using
 // table end
 |===
 
-image:vmw-vcf-design-4.png[VCF Fleet with Multiple Sites across Multiple Regions]
+image:vmw-vcf-design-004.png[VCF Fleet with Multiple Sites across Multiple Regions]
 
 ONTAP tools provides UI to setup replication of datastores. BlueXP can also be utilized for replication setup between storage arrays. SnapCenter Plug-in for VMware vSphere utilizes existing SnapMirror relationship to ship the SnapShots.
 
@@ -174,7 +174,7 @@ This design addresses both availability and disaster recovery of VMs and VKS app
 
 ASA, AFF and FAS supports this design option.
 
-image:vmw-vcf-design-5.png[VCF Fleet with Multiple Sites in a Single Region plus Additional Regions]
+image:vmw-vcf-design-005.png[VCF Fleet with Multiple Sites in a Single Region plus Additional Regions]
 
 ONTAP tools or BlueXP can be utilized to setup the replication relationship.
 
