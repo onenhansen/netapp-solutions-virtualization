@@ -15,7 +15,6 @@ summary: Deploy, integrate, or upgrade VMware Cloud Foundation 9 environments wi
 Deploy, converge, or upgrade VMware Cloud Foundation 9 environments with ONTAP. Learn how to set up new VCF 9.0 environments, converge existing vCenter instances and ONTAP datastores, and upgrade earlier VCF deployments. 
 
 == Deploy a new VCF 9 instance
-[.lead]
 Use this workflow to deploy a clean VMware Cloud Foundation (VCF) 9.0 environment. After deployment, you can migrate workloads or begin provisioning applications and provide infrastructure services.
 
 For high-level steps, see the link:https://techdocs.broadcom.com/content/dam/broadcom/techdocs/us/en/assets/vmware-cis/vcf/vcf-9.0-vcf-deploy-journey.pdf[Build Journey – Install a new VMware Cloud Foundation deployment].
