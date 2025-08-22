@@ -46,11 +46,6 @@ indexpage:
         - title: "Configure disaster recovery"
           url: vmw-nfs-vlsr.html
 #
-    - title: "ONTAP Security for VMware environments"
-      links:
-        - title: "Autonomous Ransomware Protection for NFS and VMFS"
-          url: vmw-arp-nfs-vmfs.html
-#
     - title: "VMware tools and utilities"
       links:
         - title: "Virtual Machine Data Collector"
