@@ -1,0 +1,117 @@
+---
+sidebar: sidebar
+permalink: vmware/vmw-vcf-deployment.html
+keywords: netapp, vmware, cloud, foundation, vcf, flexpod
+summary: Deploy, integrate, or upgrade VMware Cloud Foundation 9 environments with ONTAP. Learn how to set up new VCF 9.0 environments, integrate existing vCenter instances and ONTAP datastores, and upgrade earlier VCF deployments.
+---
+= Set up private cloud environments with VMware Cloud Foundation and ONTAP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Deploy, converge, or upgrade VMware Cloud Foundation 9 environments with ONTAP. Learn how to set up new VCF 9.0 environments, converge existing vCenter instances and ONTAP datastores, and upgrade earlier VCF deployments. 
+
+== Deploy a new VCF 9 instance
+Use this workflow to deploy a clean VMware Cloud Foundation (VCF) 9.0 environment. After deployment, you can migrate workloads or begin provisioning applications and provide infrastructure services.
+
+For high-level steps, see the link:https://techdocs.broadcom.com/content/dam/broadcom/techdocs/us/en/assets/vmware-cis/vcf/vcf-9.0-vcf-deploy-journey.pdf[Build Journey – Install a new VMware Cloud Foundation deployment].
+
+.Steps
+. Follow the link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/deployment/deploying-a-new-vmware-cloud-foundation-or-vmware-vsphere-foundation-private-cloud-/preparing-your-environment.html[Broadcom VCF 9 deployment steps].
+
+. In the deployment preparation step, complete the tasks for your principal storage option.
+
+[role="tabbed-block"]
+====
+.VMFS on FC
+--
+. Collect the WWPNs for all ESXi hosts. You can run `esxcli storage san fc list`, use the ESXi Host Client, or use PowerCLI.
+. Configure zoning. See link:https://docs.netapp.com/us-en/ontap/san-config/fc-fcoe-recommended-zoning-configuration.html#dual-fabric-zoning-configurations[Recommended FC zoning configurations for ONTAP systems].
++
+NOTE: Use the WWPNs of the SVM logical interfaces (LIFs), not the physical adapter WWPNs.
+. Create a LUN and map it to the hosts by WWPN using System Manager, the ONTAP CLI, or the API.
+. Rescan the storage adapter on ESXi and create the VMFS datastore.
+--
+
+.NFSv3
+--
+. Create a VMkernel interface on one ESXi host.
+. Ensure the link:https://docs.netapp.com/us-en/ontap/task_nas_enable_linux_nfs.html[SVM has NFS enabled] and link:https://docs.netapp.com/us-en/ontap/nfs-admin/enable-disable-vmware-vstorage-over-nfs-task.html[vStorage over NFS is enabled].
+. Create a volume and export it with a policy that allows the ESXi hosts.
+. Adjust permissions as needed.
+. Deploy the ONTAP NFS VAAI VIB and include it in the vLCM image. For example: `esxcli software vib install -d /NetAppNasPlugin2.0.1.zip`. (Download the ZIP from the NetApp Support Site.)
+. Mount the NFS volume on the host where you created the VMkernel interface. For example: `esxcli storage nfs add -c 4 -H 192.168.122.210 -s /use1_m01_nfs01 -v use1-m01-cl01-nfs01`.
++
+NOTE: The `nConnect` session count is per host. Update other hosts after deployment as needed.
+--
+====
+
+[start=3]
+. At the end of *Verify deployment summary and review next steps* in the *Deploy VCF Fleet* phase, complete the following:
+.. Deploy ONTAP tools
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/deploy/ontap-tools-deployment.html[Download ONTAP tools 10.x] from the NetApp Support Site.
+* Create DNS records for ONTAP tools Manager, node(s), and the virtual IP used for internal communication.
+* Deploy the OVA to the management vCenter Server.
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/add-vcenter.html[Register the management domain vCenter] with ONTAP tools Manager.
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/add-storage-backend.html[Add the storage backend] using the vSphere Client UI.
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/create-datastore.html[Create a supplemental datastore] (include one for the content registry).
+* Create the content registry if you plan an HA deployment.
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/manage/edit-appliance-settings.html[Enable HA] in ONTAP tools Manager.
+.. Deploy the SnapCenter Plug-in
+* link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html[Deploy the SnapCenter Plug-in for VMware vSphere].
+* link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_add_storage.html[Add the storage backend].
+* link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies.html[Create backup policies].
+* link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups.html[Create resource groups].
+.. Deploy the BlueXP Connector
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#what-you-can-do-without-a-connector[Review what you can do without a Connector].
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#overview[Deploy the Connector].
+.. Use BlueXP for backup and recovery
+* link:https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-vmware-protect-overview.html[Protect VM workloads].
+* link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-kubernetes-protect-overview.html[Protect VKS workloads].
+
+. After you import vCenter as a workload domain in the VCF instance, complete the following:
+.. Register ONTAP tools
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/add-vcenter.html[Register the workload domain vCenter] with ONTAP tools Manager.
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/add-storage-backend.html[Add the storage backend] using the vSphere Client UI.
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/create-datastore.html[Create a supplemental datastore].
+.. Deploy the SnapCenter Plug-in for VMware vSphere
+* link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html[Deploy the SnapCenter Plug-in for VMware vSphere].
+* link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_add_storage.html[Add the storage backend].
+* link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies.html[Create backup policies].
+* link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups.html[Create resource groups].
+.. Use BlueXP for backup and recovery
+* link:https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-vmware-protect-overview.html[Protect VM workloads].
+* link:https://docs.netapp.com/us-en/bluexp-backup-recovery/br-use-kubernetes-protect-overview.html[Protect VKS workloads].
+
+You can reuse these steps whenever you create a new workload domain.
+
+
+== Converge existing components into VCF 9
+You may already have some components of the VCF fleet and prefer to reuse them. When you reuse a vCenter instance, datastores are frequently provisioned with ONTAP tools, which can serve as the principal storage for VCF. 
+
+.Prerequisites
+* Confirm existing vCenter instances are functional.
+* Verify ONTAP-provisioned datastores are available.
+* Ensure access to the link:https://imt.netapp.com/imt/#welcome[Interoperability Matrix].
+
+.Steps
+. Review the link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/deployment/converging-your-existing-vsphere-infrastructure-to-a-vcf-or-vvf-platform-/supported-scenarios-to-converge-to-vcf.html[supported scenarios to converge to VCF].
+. Converge a vCenter instance with ONTAP-provisioned datastores as principal storage.
+. Verify supported versions using the link:https://imt.netapp.com/imt/#welcome[Interoperability Matrix].
+. Upgrade link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/upgrade/upgrade-ontap-tools.html[ONTAP tools] if required.
+. Upgrade the link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[SnapCenter Plugin for VMware vSphere] if required.
+
+== Upgrade an existing VCF environment to VCF 9
+Upgrade an earlier VCF deployment to version 9.0 using the standard upgrade process. The outcome is a VCF environment running version 9.0 with upgraded management and workload domains.
+
+.Prerequisites
+* Back up the management domain and workload domains.
+* Verify compatibility of ONTAP tools and SnapCenter Plug-in with VCF 9.0. Follow the link:https://imt.netapp.com/imt/#welcome[Interoperability Matrix] to link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/upgrade/upgrade-ontap-tools.html[upgrade ONTAP tools] and link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_upgrade.html[SnapCenter Plugin for VMware vSphere] that are supported for VCF 9. 
+
+
+.Steps
+. Upgrade the VCF management domain. See link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/deployment/upgrading-cloud-foundation.html[Upgrade VCF Management Domain to VCF 9] for instructions.
+. Upgrade any VCF 5.x workload domains. See link:https://techdocs.broadcom.com/us/en/vmware-cis/vcf/vcf-9-0-and-later/9-0/lifecycle-management/lifecycle-management-of-vcf-core-components/upgrade-workload-domains-to-vcf-5-2.html[Upgrade VCF 5.x Workload Domain to VCF 9] for instructions.
