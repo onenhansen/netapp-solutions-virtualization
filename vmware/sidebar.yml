@@ -45,6 +45,8 @@ entries:
         url: /vmware/vmw-vcf-design.html
       - title: "VCF 9 Deployment with ONTAP"
         url: /vmware/vmw-vcf-deployment.html
+      - title: "VCF 9 DR with BlueXP"
+        url: /vmware/vmw-vcf-dr-bxp-nfs.html
       - title: "Convert existing vSphere clusters to VCF"
         entries:
           - title: "About converting existing vSphere clusters to VCF"
