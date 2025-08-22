@@ -217,7 +217,7 @@ image::vmw-vcf-dr-bxp-nfs-021.png[vSphere Client - recent tasks]
 * Resynchronize the SnapMirror relationship to reverse the replication.
 * Mount the volume on the source, power on and register the source virtual machines. 
 +
-image::vmw-vcf-dr-bxp-nfs-021.png[vSphere Client - VMs powered on]
+image::vmw-vcf-dr-bxp-nfs-022.png[vSphere Client - VMs powered on]
 
 For more details about accessing and configuring BlueXP DRaaS, see the link:https://docs.netapp.com/us-en/bluexp-disaster-recovery/get-started/dr-intro.html[Learn about BlueXP Disaster Recovery for VMware].
 
@@ -225,12 +225,12 @@ For more details about accessing and configuring BlueXP DRaaS, see the link:http
 
 From BlueXP or the ONTAP CLI, you can monitor the replication health status for the appropriate datastore volumes, and the status of a failover or test failover can be tracked via Job Monitoring. 
 
-image::vmw-vcf-dr-bxp-nfs-022.png[BlueXP job monitoring]
+image::vmw-vcf-dr-bxp-nfs-023.png[BlueXP job monitoring]
 
 NOTE: If a job is currently in progress or queued, and you wish to stop it, there is an option to cancel it.
 
 With the BlueXP disaster recovery dashboard, confidently evaluate the status of disaster recovery sites and replication plans. This enables administrators to swiftly identify healthy, disconnected, or degraded sites and plans.
 
-image::vmw-vcf-dr-bxp-nfs-022.png[BlueXP updated dr deashboard]
+image::vmw-vcf-dr-bxp-nfs-024.png[BlueXP updated dr deashboard]
 
 This provides a powerful solution to handle a tailored and customized disaster recovery plan. Failover can be done as planned failover or failover with a click of a button when disaster occurs and decision is made to activate the DR site.
