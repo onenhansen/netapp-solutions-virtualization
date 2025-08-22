@@ -43,9 +43,9 @@ For more details, see link:https://docs.netapp.com/us-en/ontap/anti-ransomware/#
 
 NOTE: ARP support is included with the ONTAP ONE license.
 
-Learn how to enable NetApp ONTAP Autonomous Ransomware Protection (ARP) on NAS and SAN volumes used for VMware datastores, and simulate ransomware attacks to see how ARP detects threats and facilitates rapid recovery.
-
 == Configure ARP on NAS volumes and simulating an attack on a VM
+
+Learn how to enable NetApp ONTAP Autonomous Ransomware Protection (ARP) on NAS and SAN volumes used for VMware datastores, and simulate ransomware attacks to see how ARP detects threats and facilitates rapid recovery.
 
 When ARP is enabled on a NAS volume using System Manager or the CLI, ARP/AI protection is enabled and active immediately. No learning period is required.
 
