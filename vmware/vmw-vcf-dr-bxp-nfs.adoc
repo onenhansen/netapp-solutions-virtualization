@@ -4,7 +4,7 @@ permalink: vmware/vmw-vcf-dr-bxp-nfs.html
 keywords: netapp, vmware, cloud, foundation, vcf, bluexp, disaster recovery, nfs
 summary: Disaster recovery solution for VCF with BlueXP disaster recovery as a service.
 ---
-= Design options with VMware Cloud Foundation and ONTAP
+= Implementing Disaster Recovery with NetApp SnapMirror and BlueXP DRaaS
 :hardbreaks:
 :nofooter:
 :icons: font
@@ -14,12 +14,12 @@ summary: Disaster recovery solution for VCF with BlueXP disaster recovery as a s
 [.lead]
 VCF disaster recovery solution for NFS datastore with NetApp SnapMirror and BlueXP DRaaS
 
-= Implementing Disaster Recovery with NetApp SnapMirror and BlueXP DRaaS
-
 Block-level replication from a production site to a disaster recovery (DR) site offers a resilient and cost-effective strategy for protecting workloads against site outages and data corruption events, including ransomware attacks. NetApp SnapMirror replication enables VMware VCF 9 workload domains running on on-premises ONTAP systems—using either NFS or VMFS datastores—to be replicated to a secondary ONTAP system located in a designated recovery datacenter where VMware is also deployed.
+
 This section outlines the configuration of BlueXP Disaster Recovery as a Service (DRaaS) to establish DR for on-premises VMware virtual machines. 
 
 The setup includes:
+
 * Creating a BlueXP account and deploying a BlueXP Connector.
 * Adding ONTAP arrays to the BlueXP canvas to facilitate communication between VMware vCenter and ONTAP storage.
 * Configuring replication between sites using SnapMirror.
@@ -65,15 +65,20 @@ In this demonstration, the workload domains are configured with ONTAP NFS storag
 image::vmw-vcf-dr-bxp-nfs-003.png[BlueXP detailed DR Dashboard]
 
 == BlueXP disaster recovery configuration
+
 The first step in preparing for disaster recovery is to discover and add the source vCenter and storage resources to BlueXP disaster recovery. 
+
 Open BlueXP console and select Protection > Disaster Recovery from left navigation. Select Discover vCenter servers or use top menu, Select Sites > Add > Add vCenter.
+
 Add the following platforms:
+
 * Source workload domain vCenter
 * Destination workload domain vCenter.
 
 Once the vCenters are added, automated discovery is triggered.
 
 == Configuring Storage replication between source site array and destination site array
+
 SnapMirror provides data replication in a NetApp environment. Built on NetApp Snapshot® technology, SnapMirror replication is extremely efficient because it replicates only the blocks that have been changed or added since the previous update. SnapMirror is easily configured by using either NetApp OnCommand® System Manager or the ONTAP CLI. BlueXP DRaaS also creates the SnapMirror relationship provided cluster and SVM peering is configured beforehand.
 
 For cases in which the primary storage is not completely lost, SnapMirror provides an efficient means of resynchronizing the primary and DR sites. SnapMirror can resynchronize the two sites, transferring only changed or new data back to the primary site from the DR site by simply reversing the SnapMirror relationships. This means replication plans in BlueXP DRaaS can be resynchronized in either direction after a failover without recopying the entire volume. If a relationship is resynchronized in the reverse direction, only new data that was written since the last successful synchronization of the Snapshot copy is sent back to the destination.
@@ -83,6 +88,7 @@ NOTE: If SnapMirror relationship is already configured for the volume via CLI or
 == How to set it up for VMware Disaster Recovery
 
 The process to create SnapMirror replication remains the same for any given application. The process can be manual or automated. The easiest way is to leverage BlueXP DRaaS which will automate the same provided the following two criteria’s are met:
+
 * Source and destination clusters have a peer relationship.
 * Source SVM and destination SVM have a peer relationship.
 
@@ -129,6 +135,7 @@ As soon as the plan is created, a series of validations are triggered and SnapMi
 image::vmw-vcf-dr-bxp-nfs-011.png[BlueXP job monitoring]
 
 BlueXP DRaaS consists of the following workflows:
+
 * Test failover (including periodic automated simulations)
 * Cleanup failover test
 * Failover:
@@ -149,6 +156,7 @@ BlueXP DRaaS incorporates the ability to select the snapshot as an optional capa
 image::vmw-vcf-dr-bxp-nfs-014.png[BlueXP replication plan test failover confirmation]
 
 When the VMware administrator runs a test failover operation, BlueXP DRaaS automates the following tasks:
+
 * Triggering SnapMirror relationships to update storage at the destination site with any recent changes that were made at the production site.
 * Creating NetApp FlexClone volumes of the FlexVol volumes on the DR storage array.
 * Connecting the datastores in the FlexClone volumes to the ESXi hosts at the DR site.
@@ -167,6 +175,7 @@ image::vmw-vcf-dr-bxp-nfs-016.png[BlueXP replication plan test failover clean up
 
 This action will reset the virtual machines (VMs) and the status of the replication plan to the ready state.
 When the VMware administrator performs a recovery operation, BlueXP DRaaS completes the following process:
+
 . It powers off each recovered VM in the FlexClone copy that was used for testing.
 . It deletes the FlexClone volume that was used to present the recovered VMs during the test.
 
@@ -179,6 +188,7 @@ image::vmw-vcf-dr-bxp-nfs-017.png[BlueXP replication plan failover action]
 image::vmw-vcf-dr-bxp-nfs-018.png[BlueXP replication plan failover action confirmation]
 
 When the VMware administrator performs a failover operation, BlueXP DRaaS automates the following tasks:
+
 * Break and fail over the NetApp SnapMirror relationships.
 * Connect the replicated datastores to the ESXi hosts at the DR site.
 * Connect the VM network adapters to the appropriate destination site network.
@@ -199,6 +209,7 @@ VMware administrators can configure and run a failback procedure when they are r
 NOTE: BlueXP DRaaS replicates (resyncs) any changes back to the original source virtual machine before reversing the replication direction. 
 
 This process starts from a relationship that has completed failing over to a target and involves the following steps:
+
 * Power off and unregister the virtual machines and volumes on the destination site are unmounted.
 +
 image::vmw-vcf-dr-bxp-nfs-021.png[vSphere Client - recent tasks]
