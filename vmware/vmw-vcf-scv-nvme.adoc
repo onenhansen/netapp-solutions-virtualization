@@ -42,7 +42,7 @@ SCV is a powerful tool designed to facilitate fast, space-efficient, crash-consi
 * Remote Plug-in Architecture: SCV uses a remote plug-in architecture, allowing for scalability and flexibility in managing multiple instances.
 * One-to-One Relationship: Each VCF domain requires a dedicated SCV instance, ensuring isolated and efficient backup and restore operations.
 
-With ONTAP 9.10.1 and later versions, NetApp AFF and ASA support NVMe over TCP. Data that is on AFF, or ASA primary systems and can replicate to ONTAP AFF, or ASA secondary systems. SCV also works with SnapCenter Server to support application-based backup and restore operations in VMware environments for SnapCenter application-specific plug-ins. For more information check, link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere documentation] and link:https://docs.netapp.com/us-en/netapp-solutions/vmware/vmware_vcf_aff_multi_wkld_scv.html#audience[SnapCenter Plug-in for VMware vSphere documentation and Protect VCF Management Domain and Multiple Workload Domains with NetApp SnapCenter for VMWare vSphere (SCV).]
+With ONTAP 9.10.1 and later versions, NetApp AFF and ASA support NVMe over TCP. Data that is on AFF, or ASA primary systems and can replicate to ONTAP AFF, or ASA secondary systems. SCV also works with SnapCenter Server to support application-based backup and restore operations in VMware environments for SnapCenter application-specific plug-ins. For more information check, link:https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/index.html[SnapCenter Plug-in for VMware vSphere documentation] and link:vmw-vcf-protect-sc.html[Protect Workloads with SnapCenter]
  
 image:vmware-vcf-aff-050.png[VCF multi-workload domain with SCV]
 
@@ -52,8 +52,8 @@ The 3-2-1 backup rule is a data protection strategy that involves making three 
 
 The link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html[ONTAP tools for VMware vSphere] (OTV) provides a powerful and efficient solution for managing NetApp storage in VMware environments. By integrating directly with the vCenter Server, OTV simplifies storage management, enhances data protection, and optimizes performance. While optional, deploying OTV can significantly improve the management capabilities and overall efficiency of VMware environments.
 
-* link:https://docs.netapp.com/us-en/netapp-solutions/vmware/vmware_vcf_asa_supp_wkld_nvme.html#scenario-overview[Create a NVMe/TCP storage for VCF workload domains] 
-* link:https://docs.netapp.com/us-en/netapp-solutions/vmware/vmware_vcf_aff_multi_wkld_scv.html#architecture-overview[Configure NetApp SnapCenter for VMware vSphere (SCV)]
+* link:vmw-vcf-viwld-supp-nvme.html[Create a NVMe/TCP storage for VCF workload domains] 
+* link:vmw-vcf-scv-nvme.html[Configure NetApp SnapCenter for VMware vSphere (SCV)]
 
 .Restore VM, datastore, virtual disk and files or folders 
 [%collapsible%open]
