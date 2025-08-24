@@ -19,5 +19,5 @@ indexpage:
         - title: Back up and restore Proxmox VE
           url: https://pve.proxmox.com/pve-docs/chapter-vzdump.html
         - title: Storage for Proxmox VE
-          url: https://pve.proxmox.com/pve-docs/chapter-storage.html
+          url: https://pve.proxmox.com/pve-docs/chapter-pvesm.html
 #

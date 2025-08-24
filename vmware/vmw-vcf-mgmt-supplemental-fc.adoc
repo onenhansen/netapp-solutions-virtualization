@@ -59,7 +59,7 @@ To deploy ONTAP Tools and use it to create a VMFS datastore on the VCF managemen
 
 * link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/deploy/ontap-tools-deployment.html[Deploy ONTAP tools on management domain]
 * link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/add-storage-backend.html[Define Storage backend using vSphere client interface]
-* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/create-vvols-datastore.html[Provision VMFS on FC]
+* link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/create-datastore.html[Provision VMFS on FC]
 
 == Additional information
 
