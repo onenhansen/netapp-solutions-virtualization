@@ -499,7 +499,7 @@ image:bxp-scv-hybrid-023.png[View available resources]
 =====
 In BlueXP backup and recovery for virtual machines, create policies to specify the retention period, backup source and the archival policy.
 
-For more information on creating policies refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/task-create-policies-vms.html[Create a policy to back up datastores].
+For more information on creating policies refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-vmware-policy-create.html[Create a policy to back up datastores].
 
 . From the BlueXP backup and recovery for virtual machines main page, access the *Settings* drop down menu and select *Policies*.
 +
@@ -523,7 +523,7 @@ NOTE: The SnapMirror Label entered here is used to identify which backups to app
 =====
 The final step is to activate data protection for the individual datastores and virtual machines. The following steps outline how to activate backups to AWS.
 
-For more information refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/task-backup-vm-data-to-aws.html[Back up datastores to Amazon Web Services].
+For more information refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-vmware-backup-aws.html[Back up datastores to Amazon Web Services].
 
 . From the BlueXP backup and recovery for virtual machines main page, access the settings drop down for the datastore to be backed up and select *Activate Backup*. 
 +
@@ -594,7 +594,7 @@ image:bxp-scv-hybrid-035.png[Choose primary or secondary]
 
 BlueXP backup and recovery for virtual machines allows restores of virtual machines to their original location. Restore functions are accessed through the BlueXP web console.
 
-For more information refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/task-restore-vm-data.html[Restore virtual machines data from the cloud].
+For more information refer to https://docs.netapp.com/us-en/bluexp-backup-recovery/prev-vmware-restore.html[Restore virtual machines data from the cloud].
 
 .Restore virtual machines from BlueXP backup and recovery
 [%collapsible%open]

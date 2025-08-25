@@ -95,7 +95,7 @@ If not, follow link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/
 . Ensure ONTAP Storage systems are registered to ONTAP Tools. This includes both fault domain storage systems and third one for Asynchronous remote replication to use for VM protection with SnapCenter Plugin for VMware vSphere.
 image:vmware-vmsc-with-smas-016.png[Registered storage backends]
 If not, follow link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/add-storage-backend.html#add-storage-backend-using-vsphere-client-ui[Add storage backend using vSphere client UI]
-. Update hosts data to sync with ONTAP Tools and then, link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/create-vvols-datastore.html#create-a-vmfs-datastore[create a datastore].
+. Update hosts data to sync with ONTAP Tools and then, link:https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere-10/configure/create-datastore.html[create a datastore].
 image:vmware-vmsc-with-smas-017.png[Update hosts data]
 . To enable SM-as, right click on vSphere cluster and pick Protect cluster on NetApp ONTAP Tools (refer above screenshot)
 . It will show existing datastores for that cluster along with SVM details. The default CG name is <vSphere Cluster name>_<SVM name>. Click on Add Relationship button.
