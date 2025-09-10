@@ -1,0 +1,19 @@
+indexpage:
+  title: NetApp Solutions for OpenNebula
+  lead: "NetApp Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using OpenNebula."
+  summary: "NetApp Virtualization Solutions are a set of strategic and technology capabilities that demonstrate the capabilities of NetApp storage for virtualization using OpenNebula."
+  tiles:
+    - title: "Solutions"
+      links:
+        - title: "Overview"
+          url: /opennebula-overview.html
+        - title: "NetApp storage for OpenNebula"
+          url: /opennebula-ontap.html
+#
+    - title: "Additional Resources"
+      links:
+        - title: "Installing OpenNebula"
+          url: https://docs.opennebula.io/7.0/software/installation_process/
+        - title: "Configuring NetApp SAN Datastore for OpenNebula Enterprise Edition"
+          url: https://docs.opennebula.io/7.0/integrations/storage_extensions/netapp/
+#

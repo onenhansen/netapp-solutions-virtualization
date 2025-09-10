@@ -1,0 +1,79 @@
+---
+sidebar: sidebar
+permalink: opennebula/opennebula-overview.html
+keywords: netapp, opennebula, libvirt, kvm, qemu, lxc, vm
+summary:
+---
+= Overview of OpenNebula
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media
+
+[.lead]
+OpenNebula is an open source Cloud & Edge Computing platform combining KVM/LXC with advanced features like multi-tenancy, automatic provsion, and resource elasticity.
+
+== Overview
+
+OpenNebula is a cloud orchestration platform that can be deployed on-premises, at the edge, or in hybrid and multi-cloud environments. It primarily supports the KVM open-source hypervisor, with additional support for LXC system containers.
+
+Cloud resources are managed by one or more OpenNebula Front-ends, which execute and interact with various daemons, services, and APIs to provide deployment, orchestration, and monitoring of infrastructure.
+
+OpenNebula is modular and designed for flexibility. It supports multiple deployment models and integration options, including different database backends, external authentication systems, and accounting platforms. Management can be performed through the link:https://docs.opennebula.io/7.0/product/control_plane_configuration/graphical_user_interface/overview/[Sunstone web interface], the link:https://docs.opennebula.io/7.0/product/operation_references/configuration_references/cli/[command-line interface], or the link:https://docs.opennebula.io/7.0/product/integration_references/system_interfaces/[XML-RPC API], which also has wrappers for Ruby, Python, and other languages.
+
+image:opennebula-overview-image01.png[OpenNebula Sunstone Dashboard]
+
+== Cluster Management
+
+OpenNebula clusters can use NetApp ONTAP storage in a few different ways, depending on your setup and preferences. One approach uses the LVM Thin driver on top of iSCSI LUNs. In this case, OpenNebula hosts are added to a NetApp initiator group, and each host logs in to shared iSCSI targets. The connected LUN is then used as a local LVM volume group, and OpenNebula creates thin-provisioned logical volumes for virtual machines. This setup enables standard OpenNebula features like live migration and high availability, while also benefiting from ONTAP's deduplication, thin provisioning, and snapshot capabilities.
+
+For environments that want deeper integration, OpenNebula also includes a native NetApp driver that talks directly to the ONTAP API. This method allows OpenNebula to create and manage volumes and LUNs automatically on the storage side. Once created, the LUNs are mapped to the correct initiator groups so they’re immediately available to the right hosts. This setup is ideal for dynamic provisioning and minimizes abstractions and reduces manual setup on the storage system.
+
+== Compute
+
+OpenNebula allows you to define compute resources for each virtual machine using templates. You can configure the number of vCPUs, CPU topology (cores and sockets), NUMA node affinity, CPU model, resource usage limits, and attach PCI devices including vGPUs. These settings help control scheduling, performance isolation, and live migration compatibility across the cluster.
+
+image:opennebula-compute-image01.png[VM CPU settings in Sunstone]
+
+Memory allocation is also defined in the template, including support for dynamic memory ballooning on compatible guests. CPU and memory settings can be updated during runtime for supported configurations.
+
+For more details on KVM virtualization and tuning, refer to the link:https://docs.opennebula.io/7.0/product/virtual_machines_operation/virtual_machine_definitions/overview/[VM Management documentation].
+
+== Storage
+
+OpenNebula supports multiple storage backends. In this context we focus on those backed by NetApp: NFS exports, iSCSI LUNs with LVM-thin, and the native NetApp driver that provisions LUNs directly through the ONTAP API.
+
+A virtual machine’s data is stored across two types of datastores: the **system datastore** which holds ephemeral runtime files and current disks both persistent and non-persistent, and the **image datastore** which contains base images and persistent volumes when not being used. For NetApp-based deployments, these datastores can reside on shared NFS mounts or on LVM-thin volumes layered over iSCSI LUNs.
+
+When using the LVM-thin method, OpenNebula utilizes a LUN which has LVM metadata setup on it. This setup supports thin provisioning, snapshots, and high performance, with multipath recommended for availability. The NetApp driver, on the other hand, communicates directly with ONTAP to create and manage volumes and LUNs for each VM disk. These are automatically mapped to the correct initiator groups so they’re visible to the right hosts without additional manual steps.
+
+Other storage solutions are supported by OpenNebula, however these methods are optimized for use with NetApp. The NFS datastore can use either RAW or QCOW2 images, while the LVM and NetApp drivers will utilize RAW since they will be block devices being presented to the virtual machine.
+
+== Networking
+
+OpenNebula supports a variety of networking setups, from simple bridged networks to complex virtual switches and software-defined overlays. Network configuration is typically handled at the cluster or host level, with support for VLANs, VXLAN, IP management, and automated address assignment through virtual networks.
+
+For deployments using NetApp over iSCSI, proper network configuration is critical. Each OpenNebula host must have IP connectivity to the ONTAP iSCSI target LIFs, ideally across multiple paths for redundancy and performance. Multipath I/O (MPIO) should be enabled on each host, and iSCSI sessions should be established to all relevant LIFs in the target SVM. This allows the OS and OpenNebula to access the SAN-backed LUNs reliably.
+
+For detailed steps on configuring virtual networks in OpenNebula, refer to the link:https://docs.opennebula.io/7.0/networking/overview.html[OpenNebula Networking Guide].
+
+== Monitoring
+
+OpenNebula provides built‑in monitoring through the Sunstone dashboard, showing real-time metrics and status for clusters, hosts, virtual machines, and datastores. This includes CPU and memory usage, disk I/O, and VM lifecycle events. Each host view also includes package and driver version information to help with troubleshooting and lifecycle tracking.
+
+For external monitoring, OpenNebula supports Prometheus integration out of the box. Prometheus metrics are exported by the OpenNebula daemons, and can be visualized using pre-built Grafana dashboards or customized to fit your needs. This is the recommended method for monitoring large-scale OpenNebula environments. Metrics can also be exported to other time-series databases like InfluxDB or Graphite using hooks and external collectors.
+
+In NetApp-backed deployments, it’s especially useful to monitor I/O performance, iSCSI session health, and multipath path availability. These metrics are typically gathered from the host OS and exposed through the same Prometheus stack, giving full visibility into both compute and storage layers.
+
+== Data Protection
+
+OpenNebula offers full and incremental backup capabilities for VM disks. You can configure backup policies in VM templates or individual VMs using the BACKUP_CONFIG attributes (MODE, KEEP_LAST, FS_FREEZE). Incremental backups are supported on **qcow2** or block backing datastores (e.g. LVM‑thin) and allow space-efficient, repeatable backups.
+
+When used with NetApp storage:
+- **LVM‑thin iSCSI-backed datastores** benefit from underlying ONTAP snapshot and clone capabilities; OpenNebula’s backup mechanism works on top of these logical volumes.
+- With the **native NetApp driver**, snapshots and clones can be managed within ONTAP and integrated into backup workflows with lower overhead.
+
+Restores can be performed in‑place (replacing the VM disk) or via full restore, creating new VM/image objects. OpenNebula’s tools (`onevm restore`, `oneimage`) support selecting increments or doing full rebuilds depending on the saved state.
+
+For NetApp-centric deployments, we recommend combining OpenNebula incremental backup with ONTAP-level snapshot policies to maximize efficiency and minimize backup time or storage costs.

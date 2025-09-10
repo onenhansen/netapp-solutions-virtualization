@@ -1,0 +1,10 @@
+section: opennebula
+title: "OpenNebula"
+url: /opennebula/index.html
+entries:
+  - title: "Overview"
+    pdf-filename: "Overview of OpenNebula with NetApp"
+    url: /opennebula/opennebula-overview.html
+  - title: "NetApp storage for OpenNebula"
+    pdf-filename: "NetApp storage for OpenNebula"
+    url: /opennebula/opennebula-ontap.html

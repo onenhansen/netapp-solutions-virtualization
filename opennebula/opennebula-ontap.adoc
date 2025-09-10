@@ -1,0 +1,227 @@
+---
+sidebar: sidebar
+permalink: opennebula/opennebula-ontap.html
+keywords: netapp, opennebula, libvirt, kvm, qemu, lxc, vm, all-flash, nfs, iscsi, lvm, ontap, storage, aff
+summary: Shared storage in OpenNebula clusters enables fast VM live migration, centralized backups, and consistent image management across hosts. NetApp ONTAP storage can support OpenNebula system and image datastores, while also providing guest VMs with file, block, or object storage when needed.
+---
+= OpenNebula Clusters with ONTAP
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ../media/
+
+[.lead]
+Shared storage in OpenNebula clusters enables fast VM live migration, centralized backups, and consistent image management across hosts. NetApp ONTAP storage can support OpenNebula system and image datastores, while also providing guest VMs with file, block, or object storage when needed.
+
+KVM hosts need to have FC, Ethernet, or other supported interfaces cabled to switches and have communication to ONTAP logical interfaces.
+
+Always check https://mysupport.netapp.com/matrix/#welcome[Interoperability Matrix Tool] for supported configurations.
+
+== High-level ONTAP Features
+
+*Common features*
+
+* Scale out Cluster
+* Secure Authentication and RBAC support
+* Zero trust multi admin support
+* Secure Multitenancy
+* Replicate data with SnapMirror.
+* Point in time copies with Snapshots.
+* Space efficient clones.
+* Storage efficiency features like dedupe, compression, etc.
+* Trident CSI support for Kubernetes
+* Snaplock
+* Tamperproof Snapshot copy locking
+* Encryption support
+* FabricPool to tier cold data to object store.
+* BlueXP and Data Infrastructure Insights Integration.
+* Microsoft offloaded data transfer (ODX)
+
+*NAS*
+
+* FlexGroup volumes are a scale out NAS container, providing high performance along with load distribution and scalability.
+* FlexCache allows data to be distributed globally and still provides local read and write access to the data.
+* Multiprotocol support enables the same data to be accessible via SMB, as well as NFS.
+* NFS nConnect allows multiple TCP sessions per TCP connection increasing network throughput. This increases utilization of high speed nics available on modern servers.
+* NFS session trunking provides increased data transfer speeds, high availability and fault tolerance.
+* pNFS for optimized data path connection.
+* SMB multichannel provides increased data transfer speed, high availability and fault tolerance.
+* Integration with Active directory/LDAP for file permissions.
+* Secure connection with NFS over TLS. 
+* NFS Kerberos support.
+* NFS over RDMA.
+* Name mapping between Windows and Unix identities.
+* Autonomous ransomware protection.
+* File System Analytics.
+
+*SAN*
+
+* Stretch cluster across fault domains with SnapMirror active sync.
+* ASA models provide active/active multipathing and fast path failover.
+* Support for FC, iSCSI, NVMe-oF protocols.
+* Support for iSCSI CHAP mutual authentication.
+* Selective LUN Map and Portset.
+
+== OpenNebula cluster storage types supported with ONTAP
+
+OpenNebula supports multiple storage backends, but in the context of NetApp integration the following three methods are fully supported and validated:
+
+[width=100%,cols="30% 20% 20% 20%",frame=all,grid=all,options="header"]
+|===
+| Feature | NetApp ONTAP API | LVM-thin | NFS
+| VM disks | Yes | Yes | Yes
+| Image storage^1^ | Yes | Yes | Yes
+| Live snapshots | Yes | Yes | Yes
+| Clone VM or image | Yes | Yes | Yes
+| Incremental backup^2^ | Yes | Yes | Yes
+|===
+
+*Notes:*
+
+1. Image storage refers to using the backend for OpenNebula image datastores. LVM-thin and ONTAP API methods involve copying or creating block devices from the image source.
+2. Incremental backups work with `qcow2` disks (on NFS) or with block devices that support tracking changes. The OpenNebula NetApp ONTAP driver uses rolling snapshots to make incremental backups.  IMPORTANT: incremental backups require the `nbd` kernel module to be loaded.
+
+== Helpful Commands
+
+These are a few sections of helpful commands that are used in one or more places during setup.
+
+[[iscsi-prereqs]]
+=== Host iSCSI & multipath prerequisites
+. Install packages:
+  * RHEL-like: `device-mapper-multipath`, `iscsi-initiator-utils`
+  * Debian-based: `multipath-tools`, `open-iscsi`
+. Enable services (persist across reboots):
++
+[source,shell]
+----
+sudo systemctl enable --now iscsid # open-iscsi for Debian-based
+sudo systemctl enable --now multipathd
+----
+. Discover *all* iSCSI LIF portals (creates node records; safe to do before LUNs exist):
++
+[source,shell]
+----
+iscsiadm -m discovery -t sendtargets -p <portal1>
+iscsiadm -m discovery -t sendtargets -p <portal2>
+iscsiadm -m node -o show
+----
+
+[[iscsi-login]]
+=== Host iSCSI login & verify
+. Log in to all discovered nodes and confirm sessions:
++
+[source,shell]
+----
+iscsiadm -m node --login
+iscsiadm -m session -o show -P3   # expect all sessions LOGGED_IN
+iscsiadm -m node --op update -n node.start -v automatic # auto-login on reboot
+----
+. Verify multipath and device creation if LUNs are already mapped:
++
+[source,shell]
+----
+multipath -ll
+ls -l /dev/mapper      # expect dm-mapped ONTAP LUNs
+----
+*NOTE*: Do not expect devices unless you have already created the LUN and mapped it to the initiator group.
+
+[[nbd-enable]]
+=== Host NBD module enable and persistent configuration
+. Load the NBD module for the current boot session. You can use `max_part=#` to define a maximum number of partitions on each device, however the incremental backups do not require these devices and just require the module.
++
+[source,shell]
+----
+modprobe nbd
+----
+. Make the module load on boot:
+ - Debian-based: `echo nbd | sudo tee -a /etc/modules`
+ - RHEL-like: `echo nbd | sudo tee /etc/modules-load.d/nbd.conf`
+. Update boot files:
+ - Debian-based; `sudo update-initramfs -u`
+ - RHEL-like: `sudo dracut -f`
+
+== NetApp ONTAP API Driver
+
+OpenNebula’s native NetApp integration uses ONTAP’s API to automatically create and manage volumes, LUNs, snapshots, and mappings. This method offers the best level of automation and avoids manual iSCSI and LVM setup. Also, having the link:https://docs.opennebula.io/7.0/integrations/storage_extensions/netapp/[OpenNebula documentation] available for these steps will provide more information about creating these resources in ONTAP.
+
+=== Storage Configuration Tasks
+
+. Enable iSCSI protocol in the ONTAP SVM (Storage VM). Follow link:https://docs.netapp.com/us-en/ontap/san-management/index.html[ONTAP 9 SAN Storage Management] for more information.
++
+image::opennebula-ontap-image01.png[iSCSI protocol enabled]
+. Create at least two iSCSI LIF (logical interfaces) per controller for multipath access. Follow the steps found in the above link.
++
+image::opennebula-ontap-image03.png[iSCSI LIFs]
+. Configure an initiator group (igroup) containing the IQNs of all OpenNebula hosts. Follow the steps found in the above link. Each host's IQN can be found or defined in the `/etc/iscsi/initiatorname.iscsi` file (if you modify this, log out of all iscsi sessions and restart iscsid with `systemctl restart iscsid` before logging back in).
+. Create an ONTAP role and user account with ONTAP REST API access scoped to the target SVM. This user will be used by the NetApp driver in OpenNebula. See link:https://docs.netapp.com/us-en/ontap-automation/rest/rbac_overview.html[Work with users and roles] ONTAP documentation for more information. Keep note of the Username and Password, to be used in the Virtualization Configuration Tasks.
+. Gather the SVM iSCSI Target IQN and UUIDs for the following resources for use in the Virtualization Configuration Tasks:
+  - The SVM
+  - The Aggregate(s) / Tier(s) to be used
+  - The igroup with the OpenNebula hosts
++
+[source,shell]
+----
+NETAPP_SVM="ad32e4a7-f436-11ef-bcf8-d039ea927bab"
+NETAPP_TARGET="iqn.1992-08.com.netapp:sn.ad32e4a7f43611efbcf8d039ea927bab:vs.3"
+NETAPP_AGGREGATES="8569ee25-f7c5-41f0-9497-877ff01e0f91"
+NETAPP_IGROUP="9591dea7-2c2f-11f0-bdde-d039ea927bab"
+----
+
+
+=== Virtualization Configuration Tasks
+
+Having the link:https://docs.opennebula.io/7.0/integrations/storage_extensions/netapp/[OpenNebula documentation] available for these steps will provide more information about creating these resources.
+
+. Ensure the <<iscsi-prereqs>> section has been completed.
+. Complete the <<iscsi-login>> section.
+. Enable `nbd` kernel module in order to use incremental backups. This can be done temporarily by running `sudo modprobe nbd`, however you should also add `nbd` to your `/etc/modules` and then regenerate the initramfs with `sudo update-initramfs -u`.
+. Ensure automatic iSCSI login and multipath configuration for LUN detection and failover.
+. Add new image datastore in OpenNebula with `DS_MAD=netapp` and `TM_MAD=netapp`, and a system datastore with `TM_MAD=netapp` (system datastores do not use DS_MAD). Refer to the OpenNebula Documentation mentioned above for all required and optional attributes.
+. These two datastores will be nearly identical, the only difference being that System Datastores do not use `DS_MAD` and the `TYPE` is `SYSTEM_DS` rather than `IMAGE_DS`.  Please refer to the OpenNebula Documentation linked above for examples.
+
+== LVM-thin (iSCSI)
+
+This integration uses NetApp iSCSI LUNs in combination with LVM-thin on the OpenNebula hosts. It provides reliable shared block storage with native LVM snapshot support and requires some manual configuration.
+
+=== Storage Configuration Tasks
+
+. Enable iSCSI protocol on the ONTAP SVM. Follow link:https://docs.netapp.com/us-en/ontap/san-management/index.html[ONTAP 9 SAN Storage Management] for more information.
+. Create at least two LIFs per controller for HA and performance (multipath). Follow the steps found in the above link.
+. Configure an initiator group (igroup) containing the IQNs of all OpenNebula hosts. Follow the steps found in the above link. Each host's IQN can be found or defined in the `/etc/iscsi/initiatorname.iscsi` file (if you modify this, log out of all iscsi sessions and restart iscsid with `systemctl restart iscsid` before logging back in).
+. Create a Volume and corresponding LUN sized according to your intended datastore capacity and map them to the initiator group. Follow the steps found in the above link. 
++
+image::opennebula-ontap-image04.png[Add LVM Volume]
+
+=== Virtualization Configuration Tasks
+
+Having the link:https://docs.opennebula.io/7.0/solutions/certified_hw_platforms/san_appliances/netapp_-_lvm_thin_validation/[OpenNebula NetApp LVM Documentation] available for these steps will provide more information about creating these resources. Also, the generic link:https://docs.opennebula.io/7.0/product/cluster_configuration/storage_system/lvm_drivers/[OpenNebula SAN Datastore] documentation will be helpful.
+
+. Ensure the <<iscsi-prereqs>> section has been completed.
+. Complete the <<iscsi-login>> section.
+. Use `pvcreate` and `vgcreate` to prepare the LUN(s) as shared LVM volume groups.
+. In OpenNebula, register a system datastore using `DS_MAD=fs_lvm` or `block_lvm`, and set `TM_MAD=ssh`.
+. Image datastores can be hosted on NFS or a separate local filesystem — OpenNebula will copy images into LVs at deployment time.
+
+== NFS Storage
+
+NetApp exports over NFS can be used for both image and system datastores in OpenNebula. This method is simple to set up, supports `qcow2`-based live snapshots, and works well with incremental backup and contextual files. See link:https://docs.opennebula.io/7.0/product/cluster_configuration/storage_system/nas_ds/[OpenNebula NAS/NFS Datastore] documentation for further details.
+
+=== Storage Configuration Tasks
+
+. Enable NFS protocol on the ONTAP SVM. Follow link:https://docs.netapp.com/us-en/ontap/nas-management/index.html[ONTAP 9 NAS Storage Management] for more information.
++
+image::opennebula-ontap-image02.png[NFS storage configuration]
+. Create at least two LIFs per controller for performance and failover (optionally using session trunking with NFS v4.1+).
+. Create a Volume, and configure an export policy allowing access from all OpenNebula hosts.
++
+image::opennebula-ontap-image06.png[NFS volume configuration]
+. Export the volume over NFS using the assigned policy and provide the export path to the virtualization team.
+
+=== Virtualization Configuration Tasks
+
+. Mount the NFS export on all OpenNebula hosts in the correct directory (`/var/lib/one/datastores/<ID>`).
+. Use your platform’s tested NFS v4.x options and specify multiple LIFs for resilience. Avoid `soft` / `intr` for VM datastores. Basic example: `hard,nointr,nfsvers=4.1,sec=sys`
+. Register the NFS-backed datastore in OpenNebula with `DS_MAD=fs` and `TM_MAD=qcow2` (for image) or `TM_MAD=shared` (for system).
+. `qcow2` images support native KVM snapshots and incremental backup.
+. ISO files, kernel/context files, and template overlays can also be stored on NFS datastores for convenience.
